@@ -16,7 +16,7 @@ var gulp = require('gulp'),
 	runSequence = require('run-sequence'),
     browserSync = require('browser-sync'),
     gutil = require('gulp-util'),
-    projectName = 'themeTest';
+    projectName = 'audiovisual';
 
 
 gulp.task('nunjucks', function() {
