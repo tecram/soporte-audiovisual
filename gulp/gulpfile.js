@@ -4,6 +4,7 @@ var gulp = require('gulp'),
 	reporter = require('postcss-reporter'),
 	scss = require("postcss-scss"),
 	stylelint = require('stylelint'),
+	ignore = require('gulp-ignore'),
 	uglify = require('gulp-uglify');
 	sass = require('gulp-sass'),
 	sourcemaps = require('gulp-sourcemaps'),
@@ -30,7 +31,7 @@ gulp.task('nunjucks', function() {
 gulp.task('lint:css', function() {
 	return gulp.src([
 		'../html/stylesheets/**/*.+(css|scss)',
-		'!../html/stylesheets/libs/*.+(css|scss)'
+		'!../html/stylesheets/libs/**'
 	])
 	.pipe(postcss(
 		[
