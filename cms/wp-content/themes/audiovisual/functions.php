@@ -390,6 +390,126 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
     ));
 }*/
 
+// Register Custom Post Type
+function products_post_type() {
+
+    $labels = array(
+        'name'                  => _x( 'Productos', 'Post Type General Name', 'text_domain' ),
+        'singular_name'         => _x( 'Producto', 'Post Type Singular Name', 'text_domain' ),
+        'menu_name'             => __( 'Productos', 'text_domain' ),
+        'name_admin_bar'        => __( 'Productos', 'text_domain' ),
+        'archives'              => __( 'Productos Archives', 'text_domain' ),
+        'parent_item_colon'     => __( 'Parent producto:', 'text_domain' ),
+        'all_items'             => __( 'Todos los productos', 'text_domain' ),
+        'add_new_item'          => __( 'Agregar nuevo producto', 'text_domain' ),
+        'add_new'               => __( 'Agregar nuevo producto', 'text_domain' ),
+        'new_item'              => __( 'Nuevo producto', 'text_domain' ),
+        'edit_item'             => __( 'Editar producto', 'text_domain' ),
+        'update_item'           => __( 'Actualizar producto', 'text_domain' ),
+        'view_item'             => __( 'Ver producto', 'text_domain' ),
+        'search_items'          => __( 'Buscar Producto', 'text_domain' ),
+        'not_found'             => __( 'No encontrado', 'text_domain' ),
+        'not_found_in_trash'    => __( 'No encontrado en papelera', 'text_domain' ),
+        'featured_image'        => __( 'Imagen destacada', 'text_domain' ),
+        'set_featured_image'    => __( 'Imagen destacada', 'text_domain' ),
+        'remove_featured_image' => __( 'Remover imagen destacada', 'text_domain' ),
+        'use_featured_image'    => __( 'Usar imagen destacada', 'text_domain' ),
+        'insert_into_item'      => __( 'Insertar item', 'text_domain' ),
+        'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
+        'items_list'            => __( 'Lista de productos', 'text_domain' ),
+        'items_list_navigation' => __( 'Navegar lista de productos', 'text_domain' ),
+        'filter_items_list'     => __( 'Filtrar lista de productos', 'text_domain' ),
+    );
+    $args = array(
+        'label'                 => __( 'Productos', 'text_domain' ),
+        'description'           => __( 'Productos', 'text_domain' ),
+        'labels'                => $labels,
+        'supports'              => array( 'title', 'thumbnail' ),
+        // 'taxonomies'            => array( 'category', 'post_tag' ),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 1,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,        
+        'hierarchical'          => false,
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'menu_icon'             => 'dashicons-products',
+        'capability_type'       => 'post',
+        'rewrite'               => array( 'slug' => 'Producto' ),
+        'supports'              => array( 'title', 'thumbnail')
+    );
+    register_post_type( 'products', $args );
+
+}
+add_action( 'init', 'products_post_type');
+
+
+add_action( 'init', 'create_typepost_taxonomies_categories', 0 );
+
+function create_typepost_taxonomies_categories() {
+    // Add new taxonomy, make it hierarchical (like categories)
+    $labels = array(
+        'name'              => __( 'Categorias', 'text_domain' ),
+        'singular_name'     => __( 'Categorias', 'text_domain' ),
+        'search_items'      => __( 'Buscar Categorias' ),
+        'all_items'         => __( 'Todas las Categorias' ),
+        'parent_item'       => __( 'Parent Categoria' ),
+        'parent_item_colon' => __( 'Parent Categoria:' ),
+        'edit_item'         => __( 'Editar Categoria' ),
+        'update_item'       => __( 'Actualizar Categoria' ),
+        'add_new_item'      => __( 'Agregar nueva Categoria' ),
+        'new_item_name'     => __( 'Nuevo nombre de Categoria' ),
+        'menu_name'         => __( 'Categorias' ),
+    );
+
+    $args = array(
+        'hierarchical'      => true,
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => array( 'slug' => 'categoria', 'with_front' => false),
+    );
+
+    register_taxonomy( 'categoria', array( 'products' ), $args );
+}
+
+add_action( 'init', 'create_typepost_taxonomies_enabled', 0 );
+
+function create_typepost_taxonomies_enabled() {
+    // Add new taxonomy, make it hierarchical (like categories)
+    $labels = array(
+        'name'              => __( 'Disponibilidad', 'text_domain' ),
+        'singular_name'     => __( 'Disponibilidad', 'text_domain' ),
+        'search_items'      => __( 'Buscar Disponibilidad' ),
+        'all_items'         => __( 'Disponibilidad' ),
+        'parent_item'       => __( 'Parent Disponibilidad' ),
+        'parent_item_colon' => __( 'Parent Disponibilidad:' ),
+        'edit_item'         => __( 'Editar Disponibilidad' ),
+        'update_item'       => __( 'Actualizar Disponibilidad' ),
+        'add_new_item'      => __( 'Agregar nueva Disponibilidad' ),
+        'new_item_name'     => __( 'Nuevo nombre de Disponibilidad' ),
+        'menu_name'         => __( 'Disponibilidad' ),
+    );
+
+    $args = array(
+        'hierarchical'      => true,
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => array( 'slug' => 'disponibility', 'with_front' => false),
+    );
+
+    register_taxonomy( 'disponibilidad', array( 'products' ), $args );
+}
+
+
 /*------------------------------------*\
 	ShortCode Functions
 \*------------------------------------*/

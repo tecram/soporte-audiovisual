@@ -15,5 +15,28 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
+		<?php 
+			$terms = get_terms('disponibilidad');
+			
+			$categories_args = array(
+			    'taxonomy'               => 'categoria',
+			    'orderby'                => 'name',
+			    'order'                  => 'ASC',
+			    'hide_empty'             => false,
+			);
+			$categories = new WP_Term_Query($categories_args);
 
-		
+		?>
+		<!-- <pre><?php var_dump($categories); ?></pre> -->
+		<?php foreach ($terms as $term => $value) { ?>
+			<ul>
+				<li class="<?php echo $value->slug; ?>"><?php echo $value->name; ?></li>
+			</ul>
+		<?php } ?>
+		<hr>
+		<?php foreach ($categories->get_terms() as $category) { ?>
+			<ul>
+				<li class="<?php echo $category->slug; ?>"><?php echo $category->name; ?></li>
+			</ul>
+		<?php } ?>
+		<hr>
