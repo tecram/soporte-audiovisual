@@ -1,43 +1,58 @@
 <div class="container">
-	<div class="col-md-3">
-		<header role="logo">
-			<a href="" title="Soporte Audiovisual">
-				<h1><strong>Soporte Audiovisual</strong></h1>
-			</a>
-		</header>
-	</div>
-	<div class="col-md-9">
-		<nav role="navigation" class="main-nav">
-			<div class="col-md-3">
-				<a class="btn btn-primary" href="">Alquiler</a>
-				<a class="btn btn-default" href="">Venta</a>
+	<div class="header-container">
+		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-10">
+			<header role="logo">
+				<a href="" title="Soporte Audiovisual">
+					<h1><strong>Soporte Audiovisual</strong></h1>
+				</a>
+			</header>
+		</div>
+		<div class="col-lg-10 col-md-9 col-sm-8">
+			<nav role="navigation" class="main-nav hidden-xs hidden-sm">
+				<div class="col-lg-2 col-md-2 nopadding">
+					<a class="btn btn-primary" href="">Alquiler</a>
+					<a class="btn btn-default" href="">Venta</a>
+				</div>
+				<div class="col-lg-7 col-md-8 ">
+					<ul class="nav">
+						<li class="active">
+							<a href="" title="Video">Video</a>
+						</li>
+						<li>
+							<a href="" title="Led">Led</a>
+						</li>
+						<li>
+							<a href="" title="Audio">Audio</a>
+						</li>
+						<li>
+							<a href="" title="Rigging">Rigging</a>
+						</li>
+						<li>
+							<a href="" title="Informatica">Informatica</a>
+						</li>
+						<li>
+							<a href="" title="Alimentacion">Alimentacion</a>
+						</li>
+						<li>
+							<a href="" title="Contacto">Contacto</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-2 ">
+					<div class="search-content pull-right">
+						<div class="input-group input-group-sm">
+							<input type="text" class="form-control" placeholder="Buscar...">
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="hidden-md hidden-lg col-sm-2 col-xs-2 pull-right">
+				<a href="#" class="mobileToggle">
+					<span class="line"></span>
+				</a>
 			</div>
-			<div class="col-md-9">
-				<ul class="nav nav-pill">
-					<li>
-						<a href="" title="">Video</a>
-					</li>
-					<li>
-						<a href="" title="">Led</a>
-					</li>
-					<li>
-						<a href="" title="">Audio</a>
-					</li>
-					<li>
-						<a href="" title="">Rigging</a>
-					</li>
-					<li>
-						<a href="" title="">Informatica</a>
-					</li>
-					<li>
-						<a href="" title="">Alimentacion</a>
-					</li>
-					<li>
-						<a href="" title="">Contacto</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+		<div class="clearfix"></div>
+		<hr class="shadow"></hr>
 	</div>
-	<hr class="shadow"></hr>
 </div>

@@ -9,5 +9,10 @@ var initPage = (function () {
 
 	$(document).ready( function () {
 		asd();
+		$('.mobileToggle').on('click', function(e){ 
+			e.preventDefault();
+			$(this).toggleClass('active');
+			$('.main-nav').toggleClass('hidden-xs hidden-sm');
+		})
 	})
 });
