@@ -9,3 +9,24 @@
 	display: none;
 	overflow: hidden;
 }
+
+.amenities-detail {
+	padding: 30px 0;
+
+	.wrap {
+		display: block !important;
+
+		.intro-title {
+			flex: 1 1 40%;
+
+			h2 {
+				font-size: 26px;
+				line-height: 26px;
+			}
+
+			@include breakpoint(phablet) {
+				max-height: 610px;
+			}
+		}
+	}
+}

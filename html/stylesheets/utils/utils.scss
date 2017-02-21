@@ -1,3 +1,41 @@
-.utils {
-	color: #000;
+// FONTS
+$font-base:			'Abel', sans-serif;
+$font-title:		'norwester-regular';
+$font-link:			'courier-prime';
+
+// COLORS
+$main-gray:			#8a8b8a;
+$main-red:			#f63440;
+$dark-grey:			#241f21; // black
+$medium-grey:		#a9a9a9;
+$light-grey:		#fafafa;
+$light-blue:		#c0e4ea; //river
+$white:				#fff;
+
+// BREAKPOINTS
+@mixin breakpoint($point) {
+	@if $point == bigdesktop {
+		@media (min-width: 1600px) { @content ; }
+	}
+	@if $point == desktop {
+		@media (min-width: 1440px) { @content ; }
+	}
+	@else if $point == laptop {
+		@media (min-width: 1200px) { @content ; }
+	}
+	@else if $point == tablet {
+		@media (min-width: 1024px) { @content ; }
+	}
+	@else if $point == phablet {
+		@media (min-width: 768px)  { @content ; }
+	}
+	@else if $point == phabletonly {
+		@media (min-width: 768px) and (max-width: 1024px) { @content ; }
+	}
+	@else if $point == largemobile {
+		@media (min-width: 361px)  { @content ; }
+	}
+	@else if $point == phargemobile {
+		@media (max-width: 768px) and (orientation: landscape) { @content ; }
+	}
 }
