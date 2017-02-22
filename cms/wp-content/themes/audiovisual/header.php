@@ -20,23 +20,26 @@
 			
 			$categories_args = array(
 			    'taxonomy'               => 'categoria',
+			    'parent'				 => 0,
 			    'orderby'                => 'name',
 			    'order'                  => 'ASC',
 			    'hide_empty'             => false,
 			);
 			$categories = new WP_Term_Query($categories_args);
 
+			$currentterm = get_term_by( 'slug', get_query_var( 'categoria' ), get_query_var( 'taxonomy' ) );
+		
 		?>
-		<!-- <pre><?php var_dump($categories); ?></pre> -->
-		<?php foreach ($terms as $term => $value) { ?>
-			<ul>
-				<li class="<?php echo $value->slug; ?>"><?php echo $value->name; ?></li>
-			</ul>
-		<?php } ?>
+		<ul>
+			<?php foreach ($terms as $term => $value) { ?>
+					<li class="<?php echo $value->slug; ?>"><a href="/disponibilidad/<?php echo $value->slug; ?>"><?php echo $value->name; ?></a></li>
+			<?php } ?>
+		</ul>
 		<hr>
-		<?php foreach ($categories->get_terms() as $category) { ?>
-			<ul>
-				<li class="<?php echo $category->slug; ?>"><?php echo $category->name; ?></li>
-			</ul>
-		<?php } ?>
+		<ul>
+			<?php foreach ($categories->get_terms() as $category) { ?>
+					<li class="<?php echo $category->slug; if ($currentterm->slug == $category->slug) { echo ' active';} ?>"><a href="/categoria/<?php echo $category->slug; ?>"><?php echo $category->name; ?></a></li>
+			<?php } ?>
+		</ul>
 		<hr>
+
