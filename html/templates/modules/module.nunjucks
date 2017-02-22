@@ -1,3 +1,24 @@
+<section class="loader">
+	<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50"
+	 height="50" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+		<switch>
+			<g i:extraneous="self">
+				<g>
+					<polygon class="path" fill="none" stroke="#0088FF" stroke-miterlimit="10" points="0.5,9.01 22.5,0.536 44.5,9.01 44.5,34.237 22.5,42.712 
+						0.5,34.237 			"/>
+					<g>
+						<polygon class="line-logo" fill="#007AFF" points="38,18.679 38,13.017 23,7.215 23,12.923 				"/>
+						<polygon class="line-logo" fill="#000081" points="8,18.679 8,13.017 23,7.215 23,12.923 				"/>
+						<polygon class="line-logo" fill="#007AFF" points="38,29.996 38,24.333 8,13.008 8,18.671 				"/>
+						<polygon class="line-logo" fill="#007AFF" points="8,24.342 8,30.004 23,35.806 23,30.097 				"/>
+						<polygon class="line-logo" fill="#000081" points="38,24.342 38,30.004 23,35.806 23,30.097 			"/>
+					</g>
+				</g>
+			</g>
+		</switch>
+	</svg>
+</section>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem dolor. Morbi pharetra eleifend augue eget placerat. Cras mattis, lorem nec malesuada congue, mauris ante convallis tortor, eget posuere dolor urna eu lectus. Pellentesque neque augue, aliquet non consequat ut, gravida id mi. Phasellus tincidunt rhoncus massa eu vulputate. Nullam et commodo quam. Nam lectus elit, sodales at euismod vel, iaculis tincidunt urna. Aliquam auctor justo eget felis porta condimentum. Aliquam viverra urna vel sagittis congue. Donec bibendum, quam eu maximus varius, dui orci aliquam quam, et rutrum odio lorem eget erat. Integer sapien dui, cursus eget pharetra tempus, dignissim et ante. Duis laoreet ante at velit faucibus varius. Suspendisse in hendrerit metus, non egestas eros.</p>
 <p>Sed accumsan lacus mauris, quis hendrerit lectus ullamcorper non. Sed nec ligula gravida felis lacinia semper. Fusce mollis hendrerit tortor, a tristique tellus lobortis quis. Integer pretium diam at aliquam pharetra. Aenean lacinia, ligula sed placerat dictum, lacus sapien aliquet ante, non fermentum urna nisi et ante. Cras in risus ornare, fermentum libero vitae, efficitur metus. Aenean lobortis purus tincidunt fringilla vehicula. Maecenas arcu erat, finibus eu pretium et, tempus a ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin malesuada nisi ipsum, et cursus tortor sagittis vel. Fusce eget dapibus diam.</p>
 <p>Vivamus vitae luctus nisl. Suspendisse sit amet massa erat. Donec consequat, erat sit amet rhoncus semper, felis neque tempus nisl, fermentum eleifend enim libero a erat. Etiam vitae viverra magna. Donec pharetra urna sit amet porttitor luctus. Sed feugiat quam eros. Nulla in velit nulla. Nullam sit amet erat odio. Quisque mi leo, imperdiet at pellentesque vitae, iaculis sit amet urna. Proin finibus, lorem vitae molestie semper, eros ante lobortis sapien, ut imperdiet elit nunc ut nisl. Sed dapibus nec eros sit amet congue. Donec et lorem feugiat sem pharetra ornare. Pellentesque eu ullamcorper velit. Donec finibus elit tempus dolor posuere mollis.</p>

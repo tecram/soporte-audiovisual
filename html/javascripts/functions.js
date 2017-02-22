@@ -15,4 +15,7 @@ var initPage = (function () {
 			$('.main-nav').toggleClass('hidden-xs hidden-sm');
 		})
 	})
+	$(window).load(function(){
+		$('section.loader').fadeOut('fast');
+	})
 });
