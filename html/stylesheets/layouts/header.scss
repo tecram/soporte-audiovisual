@@ -1,5 +1,12 @@
 .header-container {
 	position: relative;
+	@include breakpoint(tablet) {
+		position: fixed;
+	    width: 100%;
+	    background-color: #fff;
+	    left: 0;
+	    height: 70px;
+	}
 	header {
 		display: block;
 		h1 {
@@ -7,8 +14,12 @@
 			display: block;
 			height: 47px;
 			min-width: 153px;
-			background: url('/assets/images/logo.jpg') center center no-repeat;
+			background: url('/assets/images/logo.svg') center center no-repeat;
 			margin: 5px;
+			@include breakpoint(tablet) {
+				z-index: 6;
+				position: relative;
+			}
 			strong {
 				overflow: hidden;
 				display: block;
@@ -18,18 +29,40 @@
 	}
 	nav.main-nav {
 		padding: 10px 0;
-		ul {
+		@include breakpoint(tablet) {
+			position: fixed;
+			background-color: #fff;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			transition: all 0.25s ease-in;
+		}
+
+		ul.nav {
+			@include breakpoint(tablet) {
+				margin-top: 50px;
+			}
 			li {
 				display: inline-block;
 				font-size: 11px;
 				text-transform: uppercase;
+
+				@include breakpoint(laptop) {
+					font-size: 10px;
+				}
+
+				@include breakpoint(tablet) {
+					display: block;
+					width: 100%;
+					font-size: 26px;
+				}
 				a {
 					padding: 10px 9px;
 					transition: all 0.25s ease-in;
-				}
-				@include breakpoint(laptop) {
-					font-size: 10px;
-					a {
+					@include breakpoint(laptop) {
 						padding: 10px 5px;
 					}
 				}
@@ -43,28 +76,62 @@
 							left: 10%;
 							width: 80%;
 							height: 2px;
-							background-color: #5bc0de;
+							background-color: $main-blue;
 							display: block;
+							@include breakpoint(tablet) {
+								display: none;
+							}
+						}
+						@include breakpoint(tablet) {
+							background-color: $main-blue;
+							color: #fff;
 						}
 						&:hover {
 							background-color: transparent;
+							@include breakpoint(tablet) {
+								background-color: $main-blue;
+								color: #fff;
+							}
 						}
 					}
 				}
 			}
 		}
-		.btn {
-			font-size: 11px;
-			text-transform: uppercase;
-			margin-top: 3px;
-			@include breakpoint(laptop) {
-				font-size: 10px;
-				margin-top: 5px;
-				padding: 5px;
+		.action-btn {
+			@include breakpoint(tablet) {
+				text-align: center;
+				margin-top: 41px;
+			}
+			.btn {
+				font-size: 11px;
+				text-transform: uppercase;
+				margin-top: 3px;
+				@include breakpoint(laptop) {
+					font-size: 10px;
+					margin-top: 5px;
+					padding: 5px;
+				}
+				@include breakpoint(tablet) {
+					font-size: 18px;
+					padding: 10px 15px;
+				}
 			}
 		}
 		.search-content {
 			margin-top: 3px;
+			@include breakpoint(tablet) {
+				width: 100%;
+				position: fixed;
+				top: 110px;
+				left: 0;
+				padding: 0 15px;
+				.input-group{
+					width: 100%;
+					input{
+						width: 100%;
+					}
+				}
+			}
 		}
 	}
 	hr.shadow {
@@ -86,7 +153,7 @@
 		right: 10px;
 		height: 36px;
 		width: 46px;
-		border: 1px solid #007aff;
+		border: 1px solid $main-blue;
 		overflow: hidden;
 		border-radius: 5px;
 
@@ -99,7 +166,7 @@
 			position: absolute;
 			height: 2px;
 			width: 26px;
-			background-color: #007aff;
+			background-color: $main-blue;
 			left: 50%;
 			margin-left: -13px;
 			transition: transform 0.2s;
@@ -111,7 +178,7 @@
 				position: absolute;
 				height: 2px;
 				width: 26px;
-				background-color: #007aff;
+				background-color: $main-blue;
 				left: 50%;
 				margin-left: -13px;
 				transition: transform 0.2s;
