@@ -1,5 +1,6 @@
 .header-container {
 	position: relative;
+	min-height: 70px;
 	@include breakpoint(tablet) {
 		position: fixed;
 	    width: 100%;
@@ -47,11 +48,11 @@
 			}
 			li {
 				display: inline-block;
-				font-size: 11px;
+				font-size: 12px;
 				text-transform: uppercase;
 
 				@include breakpoint(laptop) {
-					font-size: 10px;
+					font-size: 10.5px;
 				}
 
 				@include breakpoint(tablet) {

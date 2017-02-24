@@ -1,3 +1,24 @@
 .pages {
 	color: #000;
 }
+.contact-page {
+	.contact-info {
+		padding-top: 55px;
+		.details {
+			margin-top: 80px;
+		}
+	}
+	.google-map {
+		position: relative;
+		padding-bottom: 80%; // This is the aspect ratio
+		height: 0;
+		overflow: hidden;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100% !important;
+			height: 100% !important;
+		}
+	}
+}
