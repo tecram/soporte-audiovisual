@@ -1,3 +1,6 @@
+.main-content {
+	min-height: calc(100vh - 170px); /* 70px header+100px footer*/
+}
 .loader {
 	position: fixed;
 	z-index: 500;
@@ -10,11 +13,11 @@
 	background-color: #fff;
 
 	svg {
-		width: 200px;
+		width: 220px;
 		height: 200px;
-		position: absolute;
+		position: relative;
 		left: 50%;
-		top: 20%;
+		margin-top: 50px;
 		margin-left: -100px;
 		.path {
 			stroke-dasharray: 200;
@@ -23,7 +26,7 @@
 			animation-delay: 0.8s;
 		}
 		.line-logo {
-			animation: kaboom 8s linear infinite;
+			animation: loadCube 8s linear infinite;
 			animation-delay: 0.8s;
 			opacity: 0;
 
@@ -41,6 +44,13 @@
 			}
 		}
 	}
+	.load-text {
+		text-align: center;
+		color: $main-blue;
+		animation: colorchange 10s infinite alternate;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
 
 }
 
@@ -52,6 +62,23 @@
 		stroke-dashoffset: 0;
 	}
 }
+
+@keyframes colorchange {
+	25% {
+		color: #8f8f8f;
+	}
+	50% {
+		color: #c7eafb;
+	}
+	75% {
+		color: #000081;
+	}
+	100% {
+		color: $main-blue;
+	}
+
+}
+
 @keyframes kaboom {
 	0% {
 		opacity: 0;
@@ -65,4 +92,18 @@
 	90% {
 		opacity: 0;
 	}
+}
+@keyframes loadCube {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

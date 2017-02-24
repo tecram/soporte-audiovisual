@@ -1,0 +1,24 @@
+<section class="loader">
+	<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50"
+	 height="50" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+		<switch>
+			<g i:extraneous="self">
+				<g>
+					<polygon class="path" fill="none" stroke="#0088FF" stroke-miterlimit="10" points="0.5,9.01 22.5,0.536 44.5,9.01 44.5,34.237 22.5,42.712 
+						0.5,34.237 			"/>
+					<g>
+						<polygon class="line-logo" fill="#007AFF" points="38,18.679 38,13.017 23,7.215 23,12.923 				"/>
+						<polygon class="line-logo" fill="#000081" points="8,18.679 8,13.017 23,7.215 23,12.923 				"/>
+						<polygon class="line-logo" fill="#007AFF" points="38,29.996 38,24.333 8,13.008 8,18.671 				"/>
+						<polygon class="line-logo" fill="#007AFF" points="8,24.342 8,30.004 23,35.806 23,30.097 				"/>
+						<polygon class="line-logo" fill="#000081" points="38,24.342 38,30.004 23,35.806 23,30.097 			"/>
+					</g>
+				</g>
+			</g>
+		</switch>
+	</svg>
+	<div class="load-text">
+		&#183; Cargando &#183;
+	</div>
+</section>
