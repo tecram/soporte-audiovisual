@@ -1,0 +1,60 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "modules/loader.nunjucks" %}
+
+<div class="container">
+	<div class="main-content alquiler-page">
+		<section class="projectors-module">
+			<div class="module-header">
+				<h3><span class="icon icon-projector"></span> Proyectores</h3>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-6">
+				{% include "modules/product-a.nunjucks" %}
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">
+					{% include "modules/product-b.nunjucks" %}
+				</div>	
+				<div class="col-md-6">
+					{% include "modules/product-b.nunjucks" %}
+				</div>
+				<div class="col-md-6">
+					{% include "modules/product-b.nunjucks" %}
+				</div>	
+				<div class="col-md-6">
+					{% include "modules/product-b.nunjucks" %}
+				</div>
+			</div>			
+		</section>
+		<div class="clearfix"></div>
+		<section class="projectors-module">
+			<div class="module-header">
+				<h3><span class="icon icon-lens"></span> Lentes</h3>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-6">
+				{% include "modules/product-a.nunjucks" %}
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">
+					{% include "modules/product-b.nunjucks" %}
+				</div>	
+				<div class="col-md-6">
+					{% include "modules/product-b.nunjucks" %}
+				</div>
+				<div class="col-md-6">
+					{% include "modules/product-b.nunjucks" %}
+				</div>	
+				<div class="col-md-6">
+					{% include "modules/product-b.nunjucks" %}
+				</div>
+			</div>
+			</div>			
+		</section>
+	</div>
+</div>
+
+{% endblock %}

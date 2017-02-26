@@ -1,0 +1,14 @@
+<div class="product-b">
+	<div class="content-img">
+		<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=250%C3%97150&w=250&h=150" alt="...">
+	</div>
+	<div class="content-detail">
+		<h3 class="title">BARCO RLM-W14</h3>
+		<h4 class="sub-title">14.500 Lumens WUXGA</h4>
+		<hr>
+		<div class="description">
+			<p>El RLM-W14 presenta un elegante diseño de proyector con un montaje de objetivo muy estable.</p>
+		</div>
+		<a class="show-more btn btn-primary" href="">Ver mas</a>
+	</div>
+</div>
