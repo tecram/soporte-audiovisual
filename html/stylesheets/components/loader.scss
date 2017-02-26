@@ -1,0 +1,84 @@
+.loader {
+	position: fixed;
+	z-index: 500;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+
+	svg {
+		width: 220px;
+		height: 200px;
+		position: relative;
+		left: 50%;
+		margin-top: 50px;
+		margin-left: -100px;
+		.path {
+			stroke-dasharray: 200;
+			stroke-dashoffset: 1000;
+			animation: dash 2s linear infinite;
+			animation-delay: .8s;
+		}
+		.line-logo {
+			animation: loadCube 2s linear infinite;
+			animation-delay: .8s;
+			opacity: 0;
+
+			&:nth-child(2) {
+				animation-delay: .6s;
+			}
+			&:nth-child(3) {
+				animation-delay: .4s;
+			}
+			&:nth-child(5) {
+				animation-delay: .2s;
+			}
+		}
+	}
+	.load-text {
+		text-align: center;
+		color: $main-blue;
+		animation: colorchange 2s infinite alternate;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
+@keyframes dash {
+	from {
+		stroke-dashoffset: 1000;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes colorchange {
+	25% {
+		color: #8f8f8f;
+	}
+	50% {
+		color: #c7eafb;
+	}
+	75% {
+		color: #000081;
+	}
+	100% {
+		color: $main-blue;
+	}
+}
+@keyframes loadCube {
+	0% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 0;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
