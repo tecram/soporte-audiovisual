@@ -1,109 +1,27 @@
 .main-content {
-	min-height: calc(100vh - 170px); /* 70px header+100px footer*/
+	min-height: calc(100vh - 170px);/* 70px header+100px footer */
 }
-.loader {
-	position: fixed;
-	z-index: 500;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #fff;
-
-	svg {
-		width: 220px;
-		height: 200px;
+.position-initial {
+	position: initial;
+}
+.module-header {
+	h3 {
+		font-size: 13px;
+		color: $main-blue;
+		vertical-align: middle;
 		position: relative;
-		left: 50%;
-		margin-top: 50px;
-		margin-left: -100px;
-		.path {
-			stroke-dasharray: 200;
-			stroke-dashoffset: 1000;
-			animation: dash 20s linear infinite;
-			animation-delay: 0.8s;
+		margin-bottom: 20px;
+		@include breakpoint(tablet) {
+			margin-top: 70px;
 		}
-		.line-logo {
-			animation: loadCube 8s linear infinite;
-			animation-delay: 0.8s;
-			opacity: 0;
-
-			&:nth-child(2) {
-				animation-delay: 0.6s;
-			}
-			&:nth-child(3) {
-				animation-delay: 0.4s;
-			}
-			&:nth-child(4) {
-				animation-delay: 0s;
-			}
-			&:nth-child(5) {
-				animation-delay: 0.2s;
-			}
+		&:before {
+			content: '';
+			height: 1px;
+			background-color: #000;
+			position: absolute;
+			bottom: -2px;
+			width: 70px;
 		}
 	}
-	.load-text {
-		text-align: center;
-		color: $main-blue;
-		animation: colorchange 10s infinite alternate;
-		text-transform: uppercase;
-		font-weight: bold;
-	}
-
 }
 
-@keyframes dash {
-	from {
-		stroke-dashoffset: 1000;
-	}
-	to {
-		stroke-dashoffset: 0;
-	}
-}
-
-@keyframes colorchange {
-	25% {
-		color: #8f8f8f;
-	}
-	50% {
-		color: #c7eafb;
-	}
-	75% {
-		color: #000081;
-	}
-	100% {
-		color: $main-blue;
-	}
-
-}
-
-@keyframes kaboom {
-	0% {
-		opacity: 0;
-	}
-	40% {
-		opacity: 1;
-	}
-	80% {
-		opacity: 1;
-	}
-	90% {
-		opacity: 0;
-	}
-}
-@keyframes loadCube {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}

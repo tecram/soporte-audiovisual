@@ -3,10 +3,11 @@
 	min-height: 70px;
 	@include breakpoint(tablet) {
 		position: fixed;
-	    width: 100%;
-	    background-color: #fff;
-	    left: 0;
-	    height: 70px;
+		width: 100%;
+		background-color: #fff;
+		left: 0;
+		height: 70px;
+		z-index: 50;
 	}
 	header {
 		display: block;
@@ -39,7 +40,7 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			transition: all 0.25s ease-in;
+			transition: all .25s ease-in;
 		}
 
 		ul.nav {
@@ -62,7 +63,7 @@
 				}
 				a {
 					padding: 10px 9px;
-					transition: all 0.25s ease-in;
+					transition: all .25s ease-in;
 					@include breakpoint(laptop) {
 						padding: 10px 5px;
 					}
@@ -118,22 +119,6 @@
 				}
 			}
 		}
-		.search-content {
-			margin-top: 3px;
-			@include breakpoint(tablet) {
-				width: 100%;
-				position: fixed;
-				top: 110px;
-				left: 0;
-				padding: 0 15px;
-				.input-group{
-					width: 100%;
-					input{
-						width: 100%;
-					}
-				}
-			}
-		}
 	}
 	hr.shadow {
 		border: none;
@@ -170,10 +155,9 @@
 			background-color: $main-blue;
 			left: 50%;
 			margin-left: -13px;
-			transition: transform 0.2s;
+			transition: transform .2s;
 
-			&:before, 
-			&:after {
+			&:before, &:after {
 				content: '';
 				display: block;
 				position: absolute;
@@ -182,7 +166,7 @@
 				background-color: $main-blue;
 				left: 50%;
 				margin-left: -13px;
-				transition: transform 0.2s;
+				transition: transform .2s;
 			}
 
 			&:before {
@@ -203,12 +187,12 @@
 				&:after {
 					top: 20px;
 					transform: rotate(-140deg);
-					transition: transform 0.2s;
+					transition: transform .2s;
 				}
 				&:before {
 					top: 20px;
 					transform: rotate(140deg);
-					transition: transform 0.2s;
+					transition: transform .2s;
 				}
 			}
 		}
