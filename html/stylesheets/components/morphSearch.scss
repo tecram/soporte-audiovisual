@@ -83,7 +83,7 @@
 		height: 30px;
 		margin: 0 auto;
 		position: relative;
-		transition-property: width, height, transform;
+		transition-property: width,height,transform;
 		transition-duration: .5s;
 		transition-timing-function: cubic-bezier(.7,0,.3,1);
 	}
@@ -139,7 +139,7 @@
 		pointer-events: none;
 		opacity: 0;
 		transform: scale3d(0,0,1);
-		&:after,&:before {
+		&:after, &:before {
 			content: '';
 			position: absolute;
 			width: 2px;
@@ -157,7 +157,7 @@
 			transform: rotate(-45deg);
 		}
 		&:hover {
-			&:after,&:before {
+			&:after, &:before {
 				opacity: 1;
 			}
 		}
@@ -174,13 +174,4 @@
 		opacity: 0;
 		font-size: 0;
 	}
-}
-
-/* hide placeholder when active in Chrome */
-.gn-search:focus::-webkit-input-placeholder {
-	color: transparent;
-}
-input[type="search"] { /* reset normalize */
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
 }
