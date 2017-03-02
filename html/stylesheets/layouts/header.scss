@@ -16,7 +16,7 @@
 			display: block;
 			height: 47px;
 			min-width: 153px;
-			background: url('/assets/images/logo.svg') center center no-repeat;
+			background: url('../images/logo.svg') center center no-repeat;
 			margin: 5px;
 			@include breakpoint(tablet) {
 				z-index: 6;

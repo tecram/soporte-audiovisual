@@ -1,16 +1,24 @@
 <?php
 	get_header();
-
+	$currentdisp = get_term_by( 'slug', get_query_var( 'disponibilidad' ), get_query_var( 'taxonomy' ) );
+	$current_category = $currentdisp->slug;
+		
 ?>
-<?php 
+
+<?php if (have_posts()): while (have_posts()) : the_post(); 
 	$slider = get_field('slide');
-	$products = get_field('productos');	
+	$productos = get_field('productos_seleccionados');
 ?>
-<pre><?php var_dump($products); ?></pre>
-taxonomy
+	
+	<pre><?php var_dump($productos); ?></pre>
+<?php endwhile; endif; ?>
 
 
 
+
+
+
+<h1>alquiler</h1>
 <section class="projectors-module">
 	<div class="module-header">
 		<h3><span class="icon icon-lens"></span> Lentes</h3>
