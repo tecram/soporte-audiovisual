@@ -1,16 +1,38 @@
 <?php
 	get_header();
+	$currentdisp = get_term_by( 'slug', get_query_var( 'disponibilidad' ), get_query_var( 'taxonomy' ) );
+	$current_category = $currentdisp->slug;
+
+	$args = array(
+        'post_type' => 'products',
+        'tax_query' => array(
+			array(
+				'taxonomy' => 'disponibilidad',
+				'field'    => 'slug',
+				'terms'    => $current_category,
+			)
+		),
+			'posts_per_page'	=> -1
+    );
+	
+	$query = new WP_Query($args);
 
 ?>
-<?php 
-	$slider = get_field('slide');
-	$products = get_field('productos');	
+<!-- <pre><?php var_dump($query); ?></pre> -->
+<?php
+	if ($query->have_posts()) : 
+		while ($query->have_posts()) : $query->the_post();
+			$slider = get_field('slide');
+			$products = get_field('productos');
 ?>
-<pre><?php var_dump($products); ?></pre>
-taxonomy
+			<pre><?php var_dump($products); ?></pre>
+<?php endwhile; endif; ?>
 
 
 
+
+
+<h3><?php echo $current_category; ?></h3>
 <section class="projectors-module">
 	<div class="module-header">
 		<h3><span class="icon icon-lens"></span> Lentes</h3>
