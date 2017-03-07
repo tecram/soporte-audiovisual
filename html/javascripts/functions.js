@@ -48,6 +48,12 @@ var initPage = (function () {
 			toggleSearch(ev);
 		}
 	} );
+
+	if($('.slick-slider').length){
+		$('.slick-slider').slick({
+			dots: true
+		}).find('img').css('width', '100%');
+	}
 	
 });
 

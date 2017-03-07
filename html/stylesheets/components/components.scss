@@ -1,5 +1,8 @@
 .main-content {
 	min-height: calc(100vh - 170px);/* 70px header+100px footer */
+	@include breakpoint(tablet) {
+		padding-top: 80px;
+	}
 }
 .position-initial {
 	position: initial;
@@ -12,7 +15,7 @@
 		position: relative;
 		margin-bottom: 20px;
 		@include breakpoint(tablet) {
-			margin-top: 70px;
+			margin-top: 20px;
 		}
 		&:before {
 			content: '';

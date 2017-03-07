@@ -1,2 +1,22 @@
-slider
-<br>
+<div class="col-md-12">
+	<div class="slick-slider">
+		<div class="item">
+			<h3>P3.91</h3>
+			<h2>
+				PANTALLA LED<br>ADAPTABLE.
+			</h2>
+			<img src="/assets/images/slider/slider.jpg" alt="...">
+			<p>Módulos de 100x50cm y 50x50cm Compatibles Armado plano con en ángulo hasta 15º cóncavo y convexo<br>
+			Alta tasa de refresco lo que permite el uso en estudios de TV <br>
+			Sistema NOVA que facilita la configuración<br>
+			Mantenimiento frontal, paneles de reemplazo universales<br>
+			Sistema magnetico y conector sin cables que no requiere.<br>
+			herramientas adicionales. Liviana con armazón de aluminio<br>
+			de alta resistencia. Separación de piso de la primer línea de<br>
+			pixeles. Bajo Consumo</p>
+		</div>
+		<div class="item"><img src="/assets/images/slider/slider.jpg" alt="..."></div>
+		<div class="item"><img src="/assets/images/slider/slider.jpg" alt="..."></div>
+	</div>
+</div>
+<div class="clearfix"></div>
