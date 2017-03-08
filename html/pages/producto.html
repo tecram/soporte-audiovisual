@@ -1,0 +1,93 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "modules/loader.nunjucks" %}
+
+<div class="container">
+	<div class="main-content product-detail-page">
+		{% include "modules/breadcrumb.nunjucks" %}
+		<div class="col-md-12">
+			<div class="product-a">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="content-detail">
+							<h3 class="title">BARCO RLM-W14</h3>
+							<h4 class="sub-title">14.500 Lumens WUXGA</h4>
+							<hr>
+							<div class="description">
+								<p>El RLM-W14 presenta un elegante diseño de proyector con un montaje de objetivo muy estable, y ofrece estéreo activo 3D y vídeo a través de un cable único de categoría 5 (HDBaseTTM). Está diseñado para una instalación fija en museos, teatros, templos de culto, hoteles, aulas o auditorios de conferencias, aunque también puede usarse en el mercado de alquiler, gracias a su corrección geométrica y mezclado ampliados, su chasis robusto y su bastidor de alquiler opcional.El RLM-W14 presenta un elegante diseño de proyector con un montaje de objetivo muy estable, y ofrece estéreo activo 3D y vídeo a través de un cable único de categoría 5 (HDBaseTTM). Está diseñado para una instalación fija en museos, teatros, templos de culto, hoteles, aulas o auditorios de conferencias, aunque también puede usarse en el mercado de alquiler, gracias a su corrección geométrica y mezclado ampliados, su chasis robusto.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="content-img">
+							<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=570%C3%97300&w=560&h=300" alt="...">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Descripcion</a></li>
+				<li role="presentation"><a href="#specifications" aria-controls="specifications" role="tab" data-toggle="tab">Especificaciones</a></li>
+				<li role="presentation"><a href="#download" aria-controls="download" role="tab" data-toggle="tab">Descargas</a></li>
+			</ul>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="description">
+					<p>El RLM-W14 presenta un elegante diseño de proyector con un montaje de objetivo muy estable, y ofrece estéreo activo 3D y vídeo a través de un cable único de categoría 5 (HDBaseTTM). Está diseñado para una instalación fija en museos, teatros, templos de culto, hoteles, aulas o auditorios de conferencias, aunque también puede usarse en el mercado de alquiler, gracias a su corrección geométrica y mezclado ampliados, su chasis robusto y su bastidor de alquiler opcional.</p>
+
+
+					<p><strong>Vídeo a través de un único cable de categoría 5</strong></p>
+
+					<p>Admite la transmisión de punto a punto de señales de vídeo desde un convertidor de origen hacia un proyector a través de un único cable de categoría 5, con una resolución máxima de WUXGA (1.920 x 1.200) a 60 Hz. Con la tecnología HDBaseTTM del RLM-W14 ya no necesitará varios cables y conectores, lo que simplifica la instalación y reduce los costes.</p>
+
+					<p><strong>Imágenes asombrosas</strong></p>
+
+					<p>Equipado con tecnología DLP de tres chips, el RLM-W14 de alto brillo genera imágenes nítidas y estables de alto contraste y colores deslumbrantes. También incorpora un modo simulado DICOM que garantiza escalas de grises precisas e imágenes muy detalladas, todos ellos requisitos esenciales para la formación médica.</p>
+
+					<p><strong>Diseño robusto</strong></p>
+
+					<p>El RLM-W14 es un proyector compacto, que funciona con un voltaje de 110-240 V y ofrece un nivel reducido de ruido y un bajo consumo eléctrico. Además, sus objetivos TLD son compatibles con los proyectores RLM-W12, HDX y HDF. También viene equipado de serie con BarcoLink, que permite transmitir señales con una resolución WUXGA nativa a 60 Hz entre procesadores de imágenes y proyectores de Barco, a través de un único cable BNC, para una distribución de la señal sencilla y fiable.</p>
+
+					<p><strong>Características</strong></p>
+
+					<p>Potencia lumínica de 14.500 lúmenes<br>
+					Tecnología DLP de 3 chips<br>
+					Resolución WUXGA (1.920 x 1.200)<br>
+					Vídeo a través de un único cable de categoría 5, gracias a su HDBaseTTM estándar<br>
+					Estéreo activo 3D estándar<br>
+					Corrección de geometría.<br>
+					Mejor saturación y estabilidad de color<br>
+					Perfecto para instalaciones fijas<br>
+					Marco de alquiler disponible<br>
+					Bajo consumo de energía<br>
+					Amplia gama de objetivos TLD, compatible con proyectores RLM-W12, HDX, HDF y FLM</p>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="specifications">...</div>
+				<div role="tabpanel" class="tab-pane" id="download">...</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<hr class="separator">
+		<div class="related-products">
+			<h4 class="title">Productos Relacionados</h4>
+			<div class="row">	
+				<div class="col-md-3">
+					{% include "modules/product-b.nunjucks" %}
+				</div>
+				<div class="col-md-3">
+					{% include "modules/product-b.nunjucks" %}
+				</div>
+				<div class="col-md-3">
+					{% include "modules/product-b.nunjucks" %}
+				</div>
+				<div class="col-md-3">
+					{% include "modules/product-b.nunjucks" %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

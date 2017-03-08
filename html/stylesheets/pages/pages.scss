@@ -31,3 +31,54 @@
 		}
 	}
 }
+.product-detail-page {
+	.nav-tabs {
+		margin-top: 25px;
+		border-bottom: 0;
+		li {
+			&.active {
+				position: relative;
+				border: 0;
+				&:after {
+					content: '';
+					display: block;
+					position: absolute;
+					width: 80%;
+					height: 2px;
+					left: 10%;
+					bottom: 5px;
+					background-color: $main-blue;
+				}
+			}
+			a {
+				text-transform: uppercase;
+				border: 0;
+				&:hover, &:visited, &:active, &:focus{
+					border: 0;
+				}
+			}
+		}
+	}
+	#description {
+		p {
+			margin: 20px 0px;
+			strong {
+				font-family: $font-bold;
+			}
+		}
+	}
+	.related-products {
+		margin-top: 25px;
+		&>h4 {
+			margin-bottom: 30px;
+			font-family: $font-medium;
+		}
+	}
+}
+.error-page {
+	padding: 40px 15px;
+	text-align: center;
+	h1.404error {
+		font-size :100px;
+	}
+}

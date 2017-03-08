@@ -34,6 +34,16 @@ var initPage = (function () {
 		isOpen = !isOpen;
 	};
 
+	if($('.nav-tabs').length){
+		$('.nav-tabs a').click( function (e) {
+			e.preventDefault();
+			$('.nav-tabs a, .nav-tabs li, .tab-pane').removeClass('active');
+			var tabToShow = $(this).attr('href');
+			$(this).parent().addClass('active');
+			$(tabToShow).addClass('active');
+		})
+	}
+
 	$('.mobileToggle').on('click', function(e){ 
 		e.preventDefault();
 		$(this).toggleClass('active');
@@ -52,7 +62,7 @@ var initPage = (function () {
 	if($('.slick-slider').length){
 		$('.slick-slider').slick({
 			dots: true
-		}).find('img').css('width', '100%');
+		});
 	}
 	
 });
