@@ -30,34 +30,25 @@
 					<nav role="navigation" class="main-nav hidden-xs hidden-sm">
 						<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 nopadding">
 							<div class="action-btn">
-								<a class="btn btn-primary" href="">Alquiler</a>
-								<a class="btn btn-default" href="">Venta</a>
+								<?php
+									$menu = wp_nav_menu( array(
+									    'menu'       => 'Menu Disponibilidad',
+									    'menu_class' => 'nav',
+									    'current-menu-item' => 'active'
+									));
+								?>
+								<!-- <a class="btn btn-primary" href="">Alquiler</a>
+								<a class="btn btn-default" href="">Venta</a> -->
 							</div>
 						</div>
 						<div class="col-lg-7 col-md-8 col-sm-12 col-xs-12">
-							<ul class="nav">
-								<li class="active">
-									<a href="" title="Video">Video</a>
-								</li>
-								<li>
-									<a href="" title="Led">Led</a>
-								</li>
-								<li>
-									<a href="" title="Audio">Audio</a>
-								</li>
-								<li>
-									<a href="" title="Rigging">Rigging</a>
-								</li>
-								<li>
-									<a href="" title="Informatica">Informatica</a>
-								</li>
-								<li>
-									<a href="" title="Alimentacion">Alimentacion</a>
-								</li>
-								<li>
-									<a href="" title="Contacto">Contacto</a>
-								</li>
-							</ul>
+							<?php
+								$menu = wp_nav_menu( array(
+								    'menu'       => 'Menu',
+								    'menu_class' => 'nav',
+								    'current-menu-item' => 'active'
+								));
+							?>
 						</div>
 						<div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 position-initial">
 							<div class="search-content">
