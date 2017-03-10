@@ -92,7 +92,8 @@
 						</div>
 								
 				</section>
-			
+			</div>
+</div>
 		
 			<div class="clearfix"></div>
 		<?php endif; ?>

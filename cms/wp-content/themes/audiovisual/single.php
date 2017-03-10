@@ -1,67 +1,100 @@
 <?php get_header(); ?>
 
-	<main role="main">
-	<!-- section -->
-	<section>
+	<?php if (have_posts()): while (have_posts()) : the_post();
+		$subtitulo = get_field('subtitulo');
+		$breve_descripcion = get_field('breve_descripcion');
+		$descripcion = get_field('descripcion');
+		$especificaciones = get_field('especificaciones');
+		$descargas = get_field('descargas');
+		$productos_relacionados = get_field('productos_relacionados');
+		$big_image = get_the_post_thumbnail_url($post_id, $size = 'big-product');
+	?>
+		<div class="container">
+			<div class="main-content product-detail-page">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><span class="icon icon-projector"></span> <a href="#">Proyectores</a></li>
+					<li class="breadcrumb-item"><a href="#">Full HD</a></li>
+					<li class="breadcrumb-item active">BARCO RLM-W14</li>
+				</ol>
+				<div class="clearfix"></div>
+				<div class="col-md-12">
+					<div class="product-a">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="content-detail">
+									<h3 class="title"><?php the_title(); ?></h3>
+									<h4 class="sub-title"><?php echo $subtitulo; ?></h4>
+									<hr>
+									<div class="description">
+										<p><?php echo $breve_descripcion; ?></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="content-img">
+									<img src="<?php echo $big_image; ?>" alt="...">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Descripcion</a></li>
+						<?php if ($especificaciones) { ?><li role="presentation"><a href="#specifications" aria-controls="specifications" role="tab" data-toggle="tab">Especificaciones</a></li><?php } ?>
+						<?php if (!empty($descargas)) { ?><li role="presentation"><a href="#download" aria-controls="download" role="tab" data-toggle="tab">Descargas</a></li><?php } ?>
+					</ul>
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="description">
+							<?php echo $descripcion; ?>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="specifications">
+							<?php echo $especificaciones; ?>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="download">
+							<?php foreach ($descargas as $descarga) { ?>
+								<a href="<?php echo $descarga['archivo_de_descarga']; ?>" target="_blank"><?php echo $descarga['titulo_de_descarga']; ?></a>
+								<br>
+							<?php } ?>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<?php if (!empty($productos_relacionados)) { ?>
+						<hr class="separator">
+						<div class="related-products">
+							<h4 class="title">Productos Relacionados</h4>
+							<div class="row">	
+								<?php foreach ($productos_relacionados as $id) {
+									$post_id = $id;
+									$subtitulo = get_field('subtitulo', $post_id);
+									$breve_descripcion = get_field('breve_descripcion', $post_id);
+									$small_image = get_the_post_thumbnail_url($post_id, $size = 'small-product');
 
-	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+								?>
+									<div class="col-md-3">
+										<div class="product-b">
+											<div class="content-img">
+												<img src="<?php echo $small_image; ?>" alt="...">
+											</div>
+											<div class="content-detail">
+												<h3 class="title"><?php echo get_the_title($post_id); ?></h3>
+												<h4 class="sub-title"><?php echo $subtitulo; ?></h4>
+												<hr>
+												<div class="description">
+													<p><?php echo $breve_descripcion; ?></p>
+												</div>
+												<a class="show-more btn btn-primary" href="<?php echo get_the_permalink($post_id); ?>">Ver mas</a>
+											</div>
+										</div>
+									</div>
+								<?php } ?>
+							</div>
+						</div>
+				<?php } ?>
 
-		<!-- article -->
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<!-- post thumbnail -->
-			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-				</a>
-			<?php endif; ?>
-			<!-- /post thumbnail -->
-
-			<!-- post title -->
-			<h1>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-			</h1>
-			<!-- /post title -->
-
-			<!-- post details -->
-			<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-			<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-			<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
-			<!-- /post details -->
-
-			<?php the_content(); // Dynamic Content ?>
-
-			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
-
-			<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
-
-			<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
-
-			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
-
-			<?php comments_template(); ?>
-
-		</article>
-		<!-- /article -->
-
-	<?php endwhile; ?>
-
-	<?php else: ?>
-
-		<!-- article -->
-		<article>
-
-			<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
-
-		</article>
-		<!-- /article -->
-
-	<?php endif; ?>
-
-	</section>
-	<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
+			</div>
+		</div>
+	<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>
