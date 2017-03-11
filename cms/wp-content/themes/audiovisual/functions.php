@@ -508,7 +508,7 @@ function create_typepost_taxonomies_enabled() {
         'rewrite'           => array( 'slug' => 'disponibilidad', 'with_front' => false),
     );
 
-    register_taxonomy( 'disponibilidad', array( 'products' ), $args );
+    register_taxonomy( 'disponibility', array( 'products' ), $args );
 }
 
 
