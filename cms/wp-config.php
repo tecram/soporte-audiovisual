@@ -77,8 +77,11 @@ $table_prefix  = 'sa_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
+/* Direct updates */
 define('FS_METHOD','direct');
+/* Remove Contact Form 7 p and br */
+define('WPCF7_AUTOP', false);
 
 /* That's all, stop editing! Happy blogging. */
 

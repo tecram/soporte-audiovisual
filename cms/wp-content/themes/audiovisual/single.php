@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 	<?php if (have_posts()): while (have_posts()) : the_post();
+		$post_id = get_the_ID();
 		$subtitulo = get_field('subtitulo');
 		$breve_descripcion = get_field('breve_descripcion');
 		$descripcion = get_field('descripcion');
@@ -8,6 +9,7 @@
 		$descargas = get_field('descargas');
 		$productos_relacionados = get_field('productos_relacionados');
 		$big_image = get_the_post_thumbnail_url($post_id, $size = 'big-product');
+		echo $post_id;
 	?>
 		<div class="container">
 			<div class="main-content product-detail-page">

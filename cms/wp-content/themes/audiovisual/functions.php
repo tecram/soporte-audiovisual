@@ -442,7 +442,7 @@ function products_post_type() {
         'publicly_queryable'    => true,
         'menu_icon'             => 'dashicons-products',
         'capability_type'       => 'post',
-        'rewrite'               => array( 'slug' => 'Producto' ),
+        'rewrite'               => array( 'slug' => 'producto' ),
         'supports'              => array( 'title', 'thumbnail')
     );
     register_post_type( 'products', $args );
@@ -478,7 +478,7 @@ function create_typepost_taxonomies_categories() {
         'rewrite'           => array( 'slug' => 'categoria', 'with_front' => false),
     );
 
-    register_taxonomy( 'categoria', array( 'products' ), $args );
+    register_taxonomy( 'category', array( 'products' ), $args );
 }
 
 add_action( 'init', 'create_typepost_taxonomies_enabled', 0 );

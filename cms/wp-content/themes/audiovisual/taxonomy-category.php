@@ -1,8 +1,8 @@
 <?php
 	get_header();
 
-	$tax_terms = get_terms('categoria');
-	$currentterm = get_term_by( 'slug', get_query_var( 'categoria' ), get_query_var( 'taxonomy' ) );
+	$tax_terms = get_terms('category');
+	$currentterm = get_term_by( 'slug', get_query_var( 'category' ), get_query_var( 'taxonomy' ) );
 	
 	$terms = array(
 		'post_type' => 'products',
@@ -17,8 +17,9 @@
 	);
 	$products = new WP_Query ($terms);
 ?>
+<pre><?php var_dump($products); ?></pre>
 	<hr>
-	<?php if ($products->have_posts()) : 
+	<!-- <?php if ($products->have_posts()) : 
 		while ($products->have_posts()) : $products->the_post();
 			$brand = get_field('marca');
 			$model = get_field('modelo');
@@ -36,12 +37,7 @@
 			<p>Descripcion Corta: <?php echo $description; ?></p>
 			
 			<hr>
-			<!-- <p>Detalle de producto: <?php echo $detalle_de_producto; ?></p>
-			<p>Especificaciones: <?php echo $especificaciones; ?></p>
-			<p>Destacado: <?php echo $hot; ?></p>
-			<p>Nuevo: <?php echo $new; ?></p>
-			<p>Relacionados: <?php print_r($related); ?></p> -->
 		<?php endwhile; ?>
-	<?php endif; ?>
+	<?php endif; ?> -->
 	
 <?php get_footer(); ?>

@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: es_AR\n"
 "Project-Id-Version: Themes - Twenty Fifteen\n"
 
@@ -69,15 +69,15 @@ msgctxt "Used before post author name."
 msgid "Author"
 msgstr "Autor"
 
-#: inc/template-tags.php:55
-msgctxt "Used before post format."
-msgid "Format"
-msgstr "Formato"
-
 #: inc/template-tags.php:76
 msgctxt "Used before publish date."
 msgid "Posted on"
 msgstr "Publicado el"
+
+#: inc/template-tags.php:55
+msgctxt "Used before post format."
+msgid "Format"
+msgstr "Formato"
 
 #: inc/template-tags.php:49
 msgid "Featured"
@@ -123,26 +123,26 @@ msgstr "Predeterminado"
 msgid "Header and Sidebar Background Color"
 msgstr "Color de fondo de la cabecera y barra lateral"
 
-#: inc/customizer.php:59
-msgid "Header and Sidebar Text Color"
-msgstr "Color de texto de cabecera y barra lateral"
-
 #: inc/customizer.php:60 inc/customizer.php:76 inc/customizer.php:81
 msgid "Applied to the header on small screens and the sidebar on wide screens."
 msgstr "Aplicado a la cabecera en pantallas pequeñas y a la barra lateral en pantallas anchas."
+
+#: inc/customizer.php:59
+msgid "Header and Sidebar Text Color"
+msgstr "Color de texto de cabecera y barra lateral"
 
 #: inc/customizer.php:44
 msgid "Base Color Scheme"
 msgstr "Esquema de color básico"
 
+#: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
+msgid "Twenty Fifteen requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
+msgstr "Twenty Fifteen requiere al menos la versión 4.1 de WordPress. Estás ejecutando la versión %s. Por favor, actualizá e intentalo de nuevo."
+
 #: image.php:84
 msgctxt "Parent post link"
 msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
 msgstr "<span class=\"meta-nav\">Publicado en</span><span class=\"post-title\">%title</span>"
-
-#: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
-msgid "Twenty Fifteen requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
-msgstr "Twenty Fifteen requiere al menos la versión 4.1 de WordPress. Estás ejecutando la versión %s. Por favor, actualizá e intentalo de nuevo."
 
 #: image.php:24
 msgid "Next Image"
@@ -168,14 +168,6 @@ msgstr "plegar menú inferior"
 msgid "expand child menu"
 msgstr "expandir el menú inferior"
 
-#. Translators: If there are characters in your language that are not supported
-#. by Inconsolata, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:204
-msgctxt "Inconsolata font: on or off"
-msgid "on"
-msgstr "activa"
-
 #. Translators: To add an additional character subset specific to your
 #. language, translate this to 'greek', 'cyrillic', 'devanagari' or
 #. 'vietnamese'. Do not translate into your own language.
@@ -183,6 +175,14 @@ msgstr "activa"
 msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
 msgid "no-subset"
 msgstr "sin derivada"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Inconsolata, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:204
+msgctxt "Inconsolata font: on or off"
+msgid "on"
+msgstr "activa"
 
 #. Translators: If there are characters in your language that are not supported
 #. by Noto Serif, translate this to 'off'. Do not translate into your own
