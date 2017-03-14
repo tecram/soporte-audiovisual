@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 14-03-2017 a las 02:16:59
+-- Tiempo de generación: 14-03-2017 a las 23:44:13
 -- Versión del servidor: 5.6.31
 -- Versión de PHP: 5.5.38
 
@@ -97,7 +97,7 @@ CREATE TABLE IF NOT EXISTS `sa_options` (
   `option_name` varchar(191) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
   `option_value` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `autoload` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'yes'
-) ENGINE=InnoDB AUTO_INCREMENT=276 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=286 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
 -- Volcado de datos para la tabla `sa_options`
@@ -132,7 +132,7 @@ INSERT INTO `sa_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (26, 'comment_moderation', '0', 'yes'),
 (27, 'moderation_notify', '1', 'yes'),
 (28, 'permalink_structure', '/%postname%/', 'yes'),
-(29, 'rewrite_rules', 'a:115:{s:11:"^wp-json/?$";s:22:"index.php?rest_route=/";s:14:"^wp-json/(.*)?";s:33:"index.php?rest_route=/$matches[1]";s:21:"^index.php/wp-json/?$";s:22:"index.php?rest_route=/";s:24:"^index.php/wp-json/(.*)?";s:33:"index.php?rest_route=/$matches[1]";s:11:"producto/?$";s:28:"index.php?post_type=products";s:41:"producto/feed/(feed|rdf|rss|rss2|atom)/?$";s:45:"index.php?post_type=products&feed=$matches[1]";s:36:"producto/(feed|rdf|rss|rss2|atom)/?$";s:45:"index.php?post_type=products&feed=$matches[1]";s:28:"producto/page/([0-9]{1,})/?$";s:46:"index.php?post_type=products&paged=$matches[1]";s:50:"categoria/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?category=$matches[1]&feed=$matches[2]";s:45:"categoria/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?category=$matches[1]&feed=$matches[2]";s:26:"categoria/([^/]+)/embed/?$";s:41:"index.php?category=$matches[1]&embed=true";s:38:"categoria/([^/]+)/page/?([0-9]{1,})/?$";s:48:"index.php?category=$matches[1]&paged=$matches[2]";s:20:"categoria/([^/]+)/?$";s:30:"index.php?category=$matches[1]";s:44:"tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:39:"tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:20:"tag/([^/]+)/embed/?$";s:36:"index.php?tag=$matches[1]&embed=true";s:32:"tag/([^/]+)/page/?([0-9]{1,})/?$";s:43:"index.php?tag=$matches[1]&paged=$matches[2]";s:14:"tag/([^/]+)/?$";s:25:"index.php?tag=$matches[1]";s:45:"type/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:40:"type/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:21:"type/([^/]+)/embed/?$";s:44:"index.php?post_format=$matches[1]&embed=true";s:33:"type/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?post_format=$matches[1]&paged=$matches[2]";s:15:"type/([^/]+)/?$";s:33:"index.php?post_format=$matches[1]";s:55:"disponibilidad/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?disponibility=$matches[1]&feed=$matches[2]";s:50:"disponibilidad/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?disponibility=$matches[1]&feed=$matches[2]";s:31:"disponibilidad/([^/]+)/embed/?$";s:46:"index.php?disponibility=$matches[1]&embed=true";s:43:"disponibilidad/([^/]+)/page/?([0-9]{1,})/?$";s:53:"index.php?disponibility=$matches[1]&paged=$matches[2]";s:25:"disponibilidad/([^/]+)/?$";s:35:"index.php?disponibility=$matches[1]";s:36:"producto/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:46:"producto/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:66:"producto/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:61:"producto/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:61:"producto/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:42:"producto/[^/]+/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:25:"producto/([^/]+)/embed/?$";s:41:"index.php?products=$matches[1]&embed=true";s:29:"producto/([^/]+)/trackback/?$";s:35:"index.php?products=$matches[1]&tb=1";s:49:"producto/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?products=$matches[1]&feed=$matches[2]";s:44:"producto/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?products=$matches[1]&feed=$matches[2]";s:37:"producto/([^/]+)/page/?([0-9]{1,})/?$";s:48:"index.php?products=$matches[1]&paged=$matches[2]";s:44:"producto/([^/]+)/comment-page-([0-9]{1,})/?$";s:48:"index.php?products=$matches[1]&cpage=$matches[2]";s:33:"producto/([^/]+)(?:/([0-9]+))?/?$";s:47:"index.php?products=$matches[1]&page=$matches[2]";s:25:"producto/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:35:"producto/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:55:"producto/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:50:"producto/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:50:"producto/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:31:"producto/[^/]+/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:12:"robots\\.txt$";s:18:"index.php?robots=1";s:48:".*wp-(atom|rdf|rss|rss2|feed|commentsrss2)\\.php$";s:18:"index.php?feed=old";s:20:".*wp-app\\.php(/.*)?$";s:19:"index.php?error=403";s:18:".*wp-register.php$";s:23:"index.php?register=true";s:32:"feed/(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:27:"(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:8:"embed/?$";s:21:"index.php?&embed=true";s:20:"page/?([0-9]{1,})/?$";s:28:"index.php?&paged=$matches[1]";s:41:"comments/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:36:"comments/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:17:"comments/embed/?$";s:21:"index.php?&embed=true";s:44:"search/(.+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:39:"search/(.+)/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:20:"search/(.+)/embed/?$";s:34:"index.php?s=$matches[1]&embed=true";s:32:"search/(.+)/page/?([0-9]{1,})/?$";s:41:"index.php?s=$matches[1]&paged=$matches[2]";s:14:"search/(.+)/?$";s:23:"index.php?s=$matches[1]";s:47:"author/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:42:"author/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:23:"author/([^/]+)/embed/?$";s:44:"index.php?author_name=$matches[1]&embed=true";s:35:"author/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?author_name=$matches[1]&paged=$matches[2]";s:17:"author/([^/]+)/?$";s:33:"index.php?author_name=$matches[1]";s:69:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:64:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:45:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/embed/?$";s:74:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&embed=true";s:57:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:81:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&paged=$matches[4]";s:39:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$";s:63:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]";s:56:"([0-9]{4})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:51:"([0-9]{4})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:32:"([0-9]{4})/([0-9]{1,2})/embed/?$";s:58:"index.php?year=$matches[1]&monthnum=$matches[2]&embed=true";s:44:"([0-9]{4})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:65:"index.php?year=$matches[1]&monthnum=$matches[2]&paged=$matches[3]";s:26:"([0-9]{4})/([0-9]{1,2})/?$";s:47:"index.php?year=$matches[1]&monthnum=$matches[2]";s:43:"([0-9]{4})/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:38:"([0-9]{4})/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:19:"([0-9]{4})/embed/?$";s:37:"index.php?year=$matches[1]&embed=true";s:31:"([0-9]{4})/page/?([0-9]{1,})/?$";s:44:"index.php?year=$matches[1]&paged=$matches[2]";s:13:"([0-9]{4})/?$";s:26:"index.php?year=$matches[1]";s:27:".?.+?/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:".?.+?/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:".?.+?/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:33:".?.+?/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:16:"(.?.+?)/embed/?$";s:41:"index.php?pagename=$matches[1]&embed=true";s:20:"(.?.+?)/trackback/?$";s:35:"index.php?pagename=$matches[1]&tb=1";s:40:"(.?.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:35:"(.?.+?)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:28:"(.?.+?)/page/?([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&paged=$matches[2]";s:35:"(.?.+?)/comment-page-([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&cpage=$matches[2]";s:24:"(.?.+?)(?:/([0-9]+))?/?$";s:47:"index.php?pagename=$matches[1]&page=$matches[2]";s:27:"[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:"[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:"[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:33:"[^/]+/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:16:"([^/]+)/embed/?$";s:37:"index.php?name=$matches[1]&embed=true";s:20:"([^/]+)/trackback/?$";s:31:"index.php?name=$matches[1]&tb=1";s:40:"([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:35:"([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:28:"([^/]+)/page/?([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&paged=$matches[2]";s:35:"([^/]+)/comment-page-([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&cpage=$matches[2]";s:24:"([^/]+)(?:/([0-9]+))?/?$";s:43:"index.php?name=$matches[1]&page=$matches[2]";s:16:"[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:26:"[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:46:"[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:22:"[^/]+/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";}', 'yes'),
+(29, 'rewrite_rules', 'a:120:{s:11:"^wp-json/?$";s:22:"index.php?rest_route=/";s:14:"^wp-json/(.*)?";s:33:"index.php?rest_route=/$matches[1]";s:21:"^index.php/wp-json/?$";s:22:"index.php?rest_route=/";s:24:"^index.php/wp-json/(.*)?";s:33:"index.php?rest_route=/$matches[1]";s:11:"producto/?$";s:28:"index.php?post_type=products";s:41:"producto/feed/(feed|rdf|rss|rss2|atom)/?$";s:45:"index.php?post_type=products&feed=$matches[1]";s:36:"producto/(feed|rdf|rss|rss2|atom)/?$";s:45:"index.php?post_type=products&feed=$matches[1]";s:28:"producto/page/([0-9]{1,})/?$";s:46:"index.php?post_type=products&paged=$matches[1]";s:47:"category/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:42:"category/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:23:"category/(.+?)/embed/?$";s:46:"index.php?category_name=$matches[1]&embed=true";s:35:"category/(.+?)/page/?([0-9]{1,})/?$";s:53:"index.php?category_name=$matches[1]&paged=$matches[2]";s:17:"category/(.+?)/?$";s:35:"index.php?category_name=$matches[1]";s:44:"tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:39:"tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:20:"tag/([^/]+)/embed/?$";s:36:"index.php?tag=$matches[1]&embed=true";s:32:"tag/([^/]+)/page/?([0-9]{1,})/?$";s:43:"index.php?tag=$matches[1]&paged=$matches[2]";s:14:"tag/([^/]+)/?$";s:25:"index.php?tag=$matches[1]";s:45:"type/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:40:"type/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:21:"type/([^/]+)/embed/?$";s:44:"index.php?post_format=$matches[1]&embed=true";s:33:"type/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?post_format=$matches[1]&paged=$matches[2]";s:15:"type/([^/]+)/?$";s:33:"index.php?post_format=$matches[1]";s:50:"categoria/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?type=$matches[1]&feed=$matches[2]";s:45:"categoria/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?type=$matches[1]&feed=$matches[2]";s:26:"categoria/([^/]+)/embed/?$";s:37:"index.php?type=$matches[1]&embed=true";s:38:"categoria/([^/]+)/page/?([0-9]{1,})/?$";s:44:"index.php?type=$matches[1]&paged=$matches[2]";s:20:"categoria/([^/]+)/?$";s:26:"index.php?type=$matches[1]";s:55:"disponibilidad/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?disponibility=$matches[1]&feed=$matches[2]";s:50:"disponibilidad/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?disponibility=$matches[1]&feed=$matches[2]";s:31:"disponibilidad/([^/]+)/embed/?$";s:46:"index.php?disponibility=$matches[1]&embed=true";s:43:"disponibilidad/([^/]+)/page/?([0-9]{1,})/?$";s:53:"index.php?disponibility=$matches[1]&paged=$matches[2]";s:25:"disponibilidad/([^/]+)/?$";s:35:"index.php?disponibility=$matches[1]";s:36:"producto/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:46:"producto/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:66:"producto/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:61:"producto/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:61:"producto/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:42:"producto/[^/]+/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:25:"producto/([^/]+)/embed/?$";s:41:"index.php?products=$matches[1]&embed=true";s:29:"producto/([^/]+)/trackback/?$";s:35:"index.php?products=$matches[1]&tb=1";s:49:"producto/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?products=$matches[1]&feed=$matches[2]";s:44:"producto/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?products=$matches[1]&feed=$matches[2]";s:37:"producto/([^/]+)/page/?([0-9]{1,})/?$";s:48:"index.php?products=$matches[1]&paged=$matches[2]";s:44:"producto/([^/]+)/comment-page-([0-9]{1,})/?$";s:48:"index.php?products=$matches[1]&cpage=$matches[2]";s:33:"producto/([^/]+)(?:/([0-9]+))?/?$";s:47:"index.php?products=$matches[1]&page=$matches[2]";s:25:"producto/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:35:"producto/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:55:"producto/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:50:"producto/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:50:"producto/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:31:"producto/[^/]+/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:12:"robots\\.txt$";s:18:"index.php?robots=1";s:48:".*wp-(atom|rdf|rss|rss2|feed|commentsrss2)\\.php$";s:18:"index.php?feed=old";s:20:".*wp-app\\.php(/.*)?$";s:19:"index.php?error=403";s:18:".*wp-register.php$";s:23:"index.php?register=true";s:32:"feed/(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:27:"(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:8:"embed/?$";s:21:"index.php?&embed=true";s:20:"page/?([0-9]{1,})/?$";s:28:"index.php?&paged=$matches[1]";s:41:"comments/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:36:"comments/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:17:"comments/embed/?$";s:21:"index.php?&embed=true";s:44:"search/(.+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:39:"search/(.+)/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:20:"search/(.+)/embed/?$";s:34:"index.php?s=$matches[1]&embed=true";s:32:"search/(.+)/page/?([0-9]{1,})/?$";s:41:"index.php?s=$matches[1]&paged=$matches[2]";s:14:"search/(.+)/?$";s:23:"index.php?s=$matches[1]";s:47:"author/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:42:"author/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:23:"author/([^/]+)/embed/?$";s:44:"index.php?author_name=$matches[1]&embed=true";s:35:"author/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?author_name=$matches[1]&paged=$matches[2]";s:17:"author/([^/]+)/?$";s:33:"index.php?author_name=$matches[1]";s:69:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:64:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:45:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/embed/?$";s:74:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&embed=true";s:57:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:81:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&paged=$matches[4]";s:39:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$";s:63:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]";s:56:"([0-9]{4})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:51:"([0-9]{4})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:32:"([0-9]{4})/([0-9]{1,2})/embed/?$";s:58:"index.php?year=$matches[1]&monthnum=$matches[2]&embed=true";s:44:"([0-9]{4})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:65:"index.php?year=$matches[1]&monthnum=$matches[2]&paged=$matches[3]";s:26:"([0-9]{4})/([0-9]{1,2})/?$";s:47:"index.php?year=$matches[1]&monthnum=$matches[2]";s:43:"([0-9]{4})/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:38:"([0-9]{4})/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:19:"([0-9]{4})/embed/?$";s:37:"index.php?year=$matches[1]&embed=true";s:31:"([0-9]{4})/page/?([0-9]{1,})/?$";s:44:"index.php?year=$matches[1]&paged=$matches[2]";s:13:"([0-9]{4})/?$";s:26:"index.php?year=$matches[1]";s:27:".?.+?/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:".?.+?/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:".?.+?/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:33:".?.+?/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:16:"(.?.+?)/embed/?$";s:41:"index.php?pagename=$matches[1]&embed=true";s:20:"(.?.+?)/trackback/?$";s:35:"index.php?pagename=$matches[1]&tb=1";s:40:"(.?.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:35:"(.?.+?)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:28:"(.?.+?)/page/?([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&paged=$matches[2]";s:35:"(.?.+?)/comment-page-([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&cpage=$matches[2]";s:24:"(.?.+?)(?:/([0-9]+))?/?$";s:47:"index.php?pagename=$matches[1]&page=$matches[2]";s:27:"[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:"[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:"[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:33:"[^/]+/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:16:"([^/]+)/embed/?$";s:37:"index.php?name=$matches[1]&embed=true";s:20:"([^/]+)/trackback/?$";s:31:"index.php?name=$matches[1]&tb=1";s:40:"([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:35:"([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:28:"([^/]+)/page/?([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&paged=$matches[2]";s:35:"([^/]+)/comment-page-([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&cpage=$matches[2]";s:24:"([^/]+)(?:/([0-9]+))?/?$";s:43:"index.php?name=$matches[1]&page=$matches[2]";s:16:"[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:26:"[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:46:"[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:22:"[^/]+/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";}', 'yes'),
 (30, 'hack_file', '0', 'yes'),
 (31, 'blog_charset', 'UTF-8', 'yes'),
 (32, 'moderation_keys', '', 'no'),
@@ -210,7 +210,6 @@ INSERT INTO `sa_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (104, 'widget_nav_menu', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (105, 'cron', 'a:4:{i:1489448051;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1489448062;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1489451679;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
 (106, 'theme_mods_twentyseventeen', 'a:2:{s:18:"custom_css_post_id";i:-1;s:16:"sidebars_widgets";a:2:{s:4:"time";i:1488411614;s:4:"data";a:4:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:9:"sidebar-2";a:0:{}s:9:"sidebar-3";a:0:{}}}}', 'yes'),
-(115, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1489446072;s:7:"checked";a:4:{s:11:"audiovisual";s:5:"1.4.3";s:13:"twentyfifteen";s:3:"1.7";s:15:"twentyseventeen";s:3:"1.1";s:13:"twentysixteen";s:3:"1.3";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'no'),
 (118, 'can_compress_scripts', '1', 'no'),
 (129, 'recently_activated', 'a:0:{}', 'yes'),
 (137, 'acf_version', '5.5.10', 'yes'),
@@ -248,12 +247,14 @@ INSERT INTO `sa_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (245, 'disponibility_children', 'a:0:{}', 'yes'),
 (246, '_transient_timeout_acf_get_remote_plugin_info', '1489532373', 'no'),
 (247, '_transient_acf_get_remote_plugin_info', 'a:12:{s:4:"name";s:26:"Advanced Custom Fields PRO";s:4:"slug";s:26:"advanced-custom-fields-pro";s:8:"homepage";s:37:"https://www.advancedcustomfields.com/";s:7:"version";s:6:"5.5.10";s:6:"author";s:13:"Elliot Condon";s:10:"author_url";s:28:"http://www.elliotcondon.com/";s:12:"contributors";s:12:"elliotcondon";s:8:"requires";s:5:"3.6.0";s:6:"tested";s:5:"4.7.0";s:6:"tagged";s:123:"acf, advanced, custom, field, fields, custom field, custom fields, simple fields, magic fields, more fields, repeater, edit";s:9:"changelog";s:1015:"<h4>5.5.10</h4><ul><li>API: Added new functionality to the `acf_form()` function:</li><li>- added new <code>html_updated_message</code> setting</li><li>- added new <code>html_submit_button</code> setting</li><li>- added new <code>html_submit_spinner</code> setting</li><li>- added new <code>acf/pre_submit_form</code> filter run when form is successfully submit (before saving $_POST)</li><li>- added new <code>acf/submit_form</code> action run when form is successfully submit (after saving $_POST)</li><li>- added new <code>%post_id%</code> replace string to the <code>return</code> setting</li><li>- added new encryption logic to prevent $_POST exploits</li><li>- added new `acf_register_form()` function</li><li>Core: Fixed bug preventing values being loaded on a new post/page preview</li><li>Core: Fixed missing <code>Bulk Actions</code> dropdown on sync screen when no field groups exist</li><li>Core: Fixed bug ignoring PHP field groups if exists in JSON</li><li>Core: Minor fixes and improvements</li></ul>";s:14:"upgrade_notice";s:0:"";}', 'no'),
-(248, '_site_transient_timeout_theme_roots', '1489447774', 'no'),
-(249, '_site_transient_theme_roots', 'a:4:{s:11:"audiovisual";s:7:"/themes";s:13:"twentyfifteen";s:7:"/themes";s:15:"twentyseventeen";s:7:"/themes";s:13:"twentysixteen";s:7:"/themes";}', 'no'),
-(253, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:65:"https://downloads.wordpress.org/release/es_AR/wordpress-4.7.3.zip";s:6:"locale";s:5:"es_AR";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:65:"https://downloads.wordpress.org/release/es_AR/wordpress-4.7.3.zip";s:10:"no_content";b:0;s:11:"new_bundled";b:0;s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:5:"4.7.3";s:7:"version";s:5:"4.7.3";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.7";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1489446025;s:15:"version_checked";s:5:"4.7.3";s:12:"translations";a:0:{}}', 'no'),
-(254, '_site_transient_update_plugins', 'O:8:"stdClass":5:{s:12:"last_checked";i:1489447188;s:7:"checked";a:3:{s:34:"advanced-custom-fields-pro/acf.php";s:6:"5.5.10";s:36:"contact-form-7/wp-contact-form-7.php";s:3:"4.7";s:47:"regenerate-thumbnails/regenerate-thumbnails.php";s:5:"2.2.6";}s:8:"response";a:0:{}s:12:"translations";a:1:{i:0;a:7:{s:4:"type";s:6:"plugin";s:4:"slug";s:14:"contact-form-7";s:8:"language";s:5:"es_AR";s:7:"version";s:3:"4.7";s:7:"updated";s:19:"2017-03-03 19:38:59";s:7:"package";s:79:"https://downloads.wordpress.org/translation/plugin/contact-form-7/4.7/es_AR.zip";s:10:"autoupdate";b:1;}}s:9:"no_update";a:2:{s:36:"contact-form-7/wp-contact-form-7.php";O:8:"stdClass":6:{s:2:"id";s:3:"790";s:4:"slug";s:14:"contact-form-7";s:6:"plugin";s:36:"contact-form-7/wp-contact-form-7.php";s:11:"new_version";s:3:"4.7";s:3:"url";s:45:"https://wordpress.org/plugins/contact-form-7/";s:7:"package";s:61:"https://downloads.wordpress.org/plugin/contact-form-7.4.7.zip";}s:47:"regenerate-thumbnails/regenerate-thumbnails.php";O:8:"stdClass":6:{s:2:"id";s:4:"4437";s:4:"slug";s:21:"regenerate-thumbnails";s:6:"plugin";s:47:"regenerate-thumbnails/regenerate-thumbnails.php";s:11:"new_version";s:5:"2.2.6";s:3:"url";s:52:"https://wordpress.org/plugins/regenerate-thumbnails/";s:7:"package";s:64:"https://downloads.wordpress.org/plugin/regenerate-thumbnails.zip";}}}', 'no'),
-(255, '_transient_doing_cron', '1489457802.5695710182189941406250', 'yes'),
-(269, 'category_children', 'a:2:{i:20;a:1:{i:0;i:26;}i:26;a:2:{i:0;i:27;i:1;i:28;}}', 'yes');
+(255, '_transient_doing_cron', '1489534999.6905291080474853515625', 'yes'),
+(269, 'category_children', 'a:2:{i:20;a:1:{i:0;i:26;}i:26;a:2:{i:0;i:27;i:1;i:28;}}', 'yes'),
+(270, '_site_transient_timeout_theme_roots', '1489533859', 'no'),
+(271, '_site_transient_theme_roots', 'a:4:{s:11:"audiovisual";s:7:"/themes";s:13:"twentyfifteen";s:7:"/themes";s:15:"twentyseventeen";s:7:"/themes";s:13:"twentysixteen";s:7:"/themes";}', 'no'),
+(272, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:65:"https://downloads.wordpress.org/release/es_AR/wordpress-4.7.3.zip";s:6:"locale";s:5:"es_AR";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:65:"https://downloads.wordpress.org/release/es_AR/wordpress-4.7.3.zip";s:10:"no_content";b:0;s:11:"new_bundled";b:0;s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:5:"4.7.3";s:7:"version";s:5:"4.7.3";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.7";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1489532178;s:15:"version_checked";s:5:"4.7.3";s:12:"translations";a:0:{}}', 'no'),
+(273, '_site_transient_update_plugins', 'O:8:"stdClass":4:{s:12:"last_checked";i:1489532178;s:8:"response";a:0:{}s:12:"translations";a:0:{}s:9:"no_update";a:2:{s:36:"contact-form-7/wp-contact-form-7.php";O:8:"stdClass":6:{s:2:"id";s:3:"790";s:4:"slug";s:14:"contact-form-7";s:6:"plugin";s:36:"contact-form-7/wp-contact-form-7.php";s:11:"new_version";s:3:"4.7";s:3:"url";s:45:"https://wordpress.org/plugins/contact-form-7/";s:7:"package";s:61:"https://downloads.wordpress.org/plugin/contact-form-7.4.7.zip";}s:47:"regenerate-thumbnails/regenerate-thumbnails.php";O:8:"stdClass":6:{s:2:"id";s:4:"4437";s:4:"slug";s:21:"regenerate-thumbnails";s:6:"plugin";s:47:"regenerate-thumbnails/regenerate-thumbnails.php";s:11:"new_version";s:5:"2.2.6";s:3:"url";s:52:"https://wordpress.org/plugins/regenerate-thumbnails/";s:7:"package";s:64:"https://downloads.wordpress.org/plugin/regenerate-thumbnails.zip";}}}', 'no'),
+(274, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1489532181;s:7:"checked";a:4:{s:11:"audiovisual";s:5:"1.4.3";s:13:"twentyfifteen";s:3:"1.7";s:15:"twentyseventeen";s:3:"1.1";s:13:"twentysixteen";s:3:"1.3";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'no'),
+(285, 'type_children', 'a:2:{i:29;a:1:{i:0;i:35;}i:35;a:2:{i:0;i:36;i:1;i:37;}}', 'yes');
 
 -- --------------------------------------------------------
 
@@ -266,7 +267,7 @@ CREATE TABLE IF NOT EXISTS `sa_postmeta` (
   `post_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
   `meta_value` longtext COLLATE utf8mb4_unicode_520_ci
-) ENGINE=InnoDB AUTO_INCREMENT=883 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=887 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
 -- Volcado de datos para la tabla `sa_postmeta`
@@ -280,7 +281,7 @@ INSERT INTO `sa_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (5, 23, '_edit_lock', '1488416113:1'),
 (6, 24, '_edit_last', '1'),
 (7, 24, '_wp_page_template', 'default'),
-(8, 24, '_edit_lock', '1489457623:1'),
+(8, 24, '_edit_lock', '1489457728:1'),
 (9, 26, '_edit_last', '1'),
 (10, 26, '_edit_lock', '1489457278:1'),
 (11, 23, '_wp_trash_meta_status', 'draft'),
@@ -727,13 +728,12 @@ INSERT INTO `sa_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (526, 91, '_horario_atencion', 'field_58c44327fddc7'),
 (527, 91, 'email', 'info@soporteaudiovisual.net'),
 (528, 91, '_email', 'field_58c4435cfddc8'),
-(529, 92, '_form', '<div class="col-md-4"><div class="module-header"><h3><span class="icon icon-edit"></span> Contacto</h3></div><form class="form-horizontal"><div class="form-group"><label class="control-label col-md-4" for="name">Nombre</label><div class="col-md-8">[text* Nombre class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="address">Direccion</label><div class="col-md-8">[text* Dirección class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="city">Ciudad</label><div class="col-md-8">[text* Ciudad class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="phone">Telefono</label><div class="col-md-8"><input id="phone" name="phone" type="text" placeholder="" class="form-control">[text* Teléfono class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="email">Email</label><div class="col-md-8">[email* Nombre class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="country">Pais</label><div class="col-md-8">[text* País class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="comment">Comentario</label><div class="col-md-8"><textarea class="form-control" cols="40" id="comment" name="comment" placeholder="" rows="3"></textarea>[textarea* Comentario class:form-control]</div></div>[submit "Send"]</form></div>'),
+(529, 92, '_form', '<div class="col-md-4"><div class="module-header"><h3><span class="icon icon-edit"></span> Contacto</h3></div><div class="form-horizontal"><div class="form-group"><label class="control-label col-md-4" for="name">Nombre</label><div class="col-md-8">[text* Nombre class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="address">Direccion</label><div class="col-md-8">[text* Direccion class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="city">Ciudad</label><div class="col-md-8">[text* Ciudad class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="phone">Telefono</label><div class="col-md-8"><input id="phone" name="phone" type="text" placeholder="" class="form-control">[text* Teléfono class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="email">Email</label><div class="col-md-8">[email* Nombre class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="country">Pais</label><div class="col-md-8">[text* Pais class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="comment">Comentario</label><div class="col-md-8">[textarea* Comentario 40x5 class:form-control]</div></div>[submit class:btn class:btn-primary class:pull-right "Send"]</div></div>'),
 (530, 92, '_mail', 'a:9:{s:6:"active";b:1;s:7:"subject";s:36:"Soporte Audiovisual "[your-subject]"";s:6:"sender";s:41:"[your-name] <wordpress@audiovisual.local>";s:9:"recipient";s:25:"marcet.cristian@gmail.com";s:4:"body";s:182:"From: [your-name] <[your-email]>\nSubject: [your-subject]\n\nMessage Body:\n[your-message]\n\n-- \nThis e-mail was sent from a contact form on Soporte Audiovisual (http://audiovisual.local)";s:18:"additional_headers";s:22:"Reply-To: [your-email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}'),
 (531, 92, '_mail_2', 'a:9:{s:6:"active";b:0;s:7:"subject";s:36:"Soporte Audiovisual "[your-subject]"";s:6:"sender";s:49:"Soporte Audiovisual <wordpress@audiovisual.local>";s:9:"recipient";s:12:"[your-email]";s:4:"body";s:124:"Message Body:\n[your-message]\n\n-- \nThis e-mail was sent from a contact form on Soporte Audiovisual (http://audiovisual.local)";s:18:"additional_headers";s:35:"Reply-To: marcet.cristian@gmail.com";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}'),
 (532, 92, '_messages', 'a:23:{s:12:"mail_sent_ok";s:45:"Thank you for your message. It has been sent.";s:12:"mail_sent_ng";s:71:"There was an error trying to send your message. Please try again later.";s:16:"validation_error";s:61:"One or more fields have an error. Please check and try again.";s:4:"spam";s:71:"There was an error trying to send your message. Please try again later.";s:12:"accept_terms";s:69:"You must accept the terms and conditions before sending your message.";s:16:"invalid_required";s:22:"The field is required.";s:16:"invalid_too_long";s:22:"The field is too long.";s:17:"invalid_too_short";s:23:"The field is too short.";s:12:"invalid_date";s:29:"The date format is incorrect.";s:14:"date_too_early";s:44:"The date is before the earliest one allowed.";s:13:"date_too_late";s:41:"The date is after the latest one allowed.";s:13:"upload_failed";s:46:"There was an unknown error uploading the file.";s:24:"upload_file_type_invalid";s:49:"You are not allowed to upload files of this type.";s:21:"upload_file_too_large";s:20:"The file is too big.";s:23:"upload_failed_php_error";s:38:"There was an error uploading the file.";s:14:"invalid_number";s:29:"The number format is invalid.";s:16:"number_too_small";s:47:"The number is smaller than the minimum allowed.";s:16:"number_too_large";s:46:"The number is larger than the maximum allowed.";s:23:"quiz_answer_not_correct";s:36:"The answer to the quiz is incorrect.";s:17:"captcha_not_match";s:31:"Your entered code is incorrect.";s:13:"invalid_email";s:38:"The e-mail address entered is invalid.";s:11:"invalid_url";s:19:"The URL is invalid.";s:11:"invalid_tel";s:32:"The telephone number is invalid.";}'),
 (533, 92, '_additional_settings', ''),
 (534, 92, '_locale', 'es_AR'),
-(540, 92, '_config_errors', 'a:1:{s:23:"mail.additional_headers";a:1:{i:0;a:2:{s:4:"code";i:102;s:4:"args";a:3:{s:7:"message";s:51:"Invalid mailbox syntax is used in the %name% field.";s:6:"params";a:1:{s:4:"name";s:8:"Reply-To";}s:4:"link";s:68:"https://contactform7.com/configuration-errors/invalid-mailbox-syntax";}}}}'),
 (541, 93, '_menu_item_type', 'taxonomy'),
 (542, 93, '_menu_item_menu_item_parent', '0'),
 (543, 93, '_menu_item_object_id', '25'),
@@ -923,15 +923,15 @@ INSERT INTO `sa_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (733, 102, 'productos_seleccionados_1_seleccione_categoria', '27'),
 (734, 102, '_productos_seleccionados_1_seleccione_categoria', 'field_58b783298083f'),
 (735, 102, 'productos_seleccionados_1_icono_de_categoria', ''),
-(736, 102, '_productos_seleccionados_1_icono_de_categoria', 'field_58b76a722b72b');
-INSERT INTO `sa_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
+(736, 102, '_productos_seleccionados_1_icono_de_categoria', 'field_58b76a722b72b'),
 (737, 102, 'productos_seleccionados_1_elige_productos', 'a:5:{i:0;s:2:"36";i:1;s:2:"47";i:2;s:2:"48";i:3;s:2:"45";i:4;s:2:"56";}'),
 (738, 102, '_productos_seleccionados_1_elige_productos', 'field_58b769c82b729'),
 (739, 47, 'productos_relacionados', ''),
 (740, 47, '_productos_relacionados', 'field_58c1ebdc7bccd'),
 (741, 47, 'slide', ''),
 (742, 47, '_slide', 'field_58b768b5b4738'),
-(743, 47, 'productos_seleccionados', ''),
+(743, 47, 'productos_seleccionados', '');
+INSERT INTO `sa_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 (744, 47, '_productos_seleccionados', 'field_58b769a72b728'),
 (745, 43, 'slide', ''),
 (746, 43, '_slide', 'field_58b768b5b4738'),
@@ -1070,7 +1070,8 @@ INSERT INTO `sa_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (879, 105, 'slider_1_breve_descripcion', 'Breve descripción'),
 (880, 105, '_slider_1_breve_descripcion', 'field_58b76937b473b'),
 (881, 105, 'slider_1_imagen', '37'),
-(882, 105, '_slider_1_imagen', 'field_58b76957b473c');
+(882, 105, '_slider_1_imagen', 'field_58b76957b473c'),
+(886, 92, '_config_errors', 'a:1:{s:23:"mail.additional_headers";a:1:{i:0;a:2:{s:4:"code";i:102;s:4:"args";a:3:{s:7:"message";s:74:"Se utilizó una sintaxis no valida en el campo correo electrónico %name%.";s:6:"params";a:1:{s:4:"name";s:8:"Reply-To";}s:4:"link";s:68:"https://contactform7.com/configuration-errors/invalid-mailbox-syntax";}}}}');
 
 -- --------------------------------------------------------
 
@@ -1102,7 +1103,7 @@ CREATE TABLE IF NOT EXISTS `sa_posts` (
   `post_type` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'post',
   `post_mime_type` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
   `comment_count` bigint(20) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=107 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
 -- Volcado de datos para la tabla `sa_posts`
@@ -1132,7 +1133,7 @@ INSERT INTO `sa_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (32, 1, '2017-03-01 22:18:35', '2017-03-02 01:18:35', 'a:10:{s:4:"type";s:8:"repeater";s:12:"instructions";s:0:"";s:8:"required";i:0;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:9:"collapsed";s:0:"";s:3:"min";s:0:"";s:3:"max";s:0:"";s:6:"layout";s:3:"row";s:12:"button_label";s:0:"";}', 'Descargas', 'descargas', 'publish', 'closed', 'closed', '', 'field_58b772595f418', '', '', '2017-03-01 23:04:04', '2017-03-02 02:04:04', '', 26, 'http://audiovisual.local/?post_type=acf-field&#038;p=32', 6, 'acf-field', '', 0),
 (33, 1, '2017-03-01 22:18:35', '2017-03-02 01:18:35', 'a:10:{s:4:"type";s:4:"text";s:12:"instructions";s:0:"";s:8:"required";i:1;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:9:"maxlength";s:0:"";}', 'Título de Descarga', 'titulo_de_descarga', 'publish', 'closed', 'closed', '', 'field_58b7726c5f419', '', '', '2017-03-01 22:18:35', '2017-03-02 01:18:35', '', 32, 'http://audiovisual.local/?post_type=acf-field&p=33', 0, 'acf-field', '', 0),
 (34, 1, '2017-03-01 22:18:35', '2017-03-02 01:18:35', 'a:10:{s:4:"type";s:4:"file";s:12:"instructions";s:0:"";s:8:"required";i:1;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"return_format";s:3:"url";s:7:"library";s:3:"all";s:8:"min_size";s:0:"";s:8:"max_size";s:0:"";s:10:"mime_types";s:0:"";}', 'Archivo de descarga', 'archivo_de_descarga', 'publish', 'closed', 'closed', '', 'field_58b772855f41a', '', '', '2017-03-01 22:18:35', '2017-03-02 01:18:35', '', 32, 'http://audiovisual.local/?post_type=acf-field&p=34', 1, 'acf-field', '', 0),
-(36, 1, '2017-03-01 22:24:35', '2017-03-02 01:24:35', '', 'BARCO RLM-W14', '', 'publish', 'closed', 'closed', '', 'barco-rlm-w14', '', '', '2017-03-13 20:50:37', '2017-03-13 23:50:37', '', 0, 'http://audiovisual.local/?post_type=products&#038;p=36', 0, 'products', '', 0),
+(36, 1, '2017-03-01 22:24:35', '2017-03-02 01:24:35', '', 'BARCO RLM-W14', '', 'publish', 'closed', 'closed', '', 'barco-rlm-w14', '', '', '2017-03-14 20:13:19', '2017-03-14 23:13:19', '', 0, 'http://audiovisual.local/?post_type=products&#038;p=36', 0, 'products', '', 0),
 (37, 1, '2017-03-01 22:21:47', '2017-03-02 01:21:47', '', 'img0151', '', 'inherit', 'open', 'closed', '', 'img0151', '', '', '2017-03-13 23:13:39', '2017-03-14 02:13:39', '', 36, 'http://audiovisual.local/wp-content/uploads/2017/03/img0151.png', 0, 'attachment', 'image/png', 0),
 (38, 1, '2017-03-01 22:31:59', '2017-03-02 01:31:59', '', 'TDE6643_00_ReferenceGuide', '', 'inherit', 'open', 'closed', '', 'tde6643_00_referenceguide', '', '', '2017-03-01 22:31:59', '2017-03-02 01:31:59', '', 36, 'http://audiovisual.local/wp-content/uploads/2017/03/TDE6643_00_ReferenceGuide.pdf', 0, 'attachment', 'application/pdf', 0),
 (39, 1, '2017-03-01 22:32:41', '2017-03-02 01:32:41', '', 'R5905850_00_Safety', '', 'inherit', 'open', 'closed', '', 'r5905850_00_safety', '', '', '2017-03-01 22:32:41', '2017-03-02 01:32:41', '', 36, 'http://audiovisual.local/wp-content/uploads/2017/03/R5905850_00_Safety.pdf', 0, 'attachment', 'application/pdf', 0),
@@ -1141,17 +1142,17 @@ INSERT INTO `sa_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (42, 1, '2017-03-01 23:32:05', '2017-03-02 02:32:05', '', 'Productos Alquiler', '', 'inherit', 'closed', 'closed', '', '24-revision-v1', '', '', '2017-03-01 23:32:05', '2017-03-02 02:32:05', '', 24, 'http://audiovisual.local/24-revision-v1/', 0, 'revision', '', 0),
 (43, 1, '2017-03-01 23:32:27', '2017-03-02 02:32:27', '', 'Productos Venta', '', 'publish', 'closed', 'closed', '', 'productos-venta', '', '', '2017-03-13 22:34:06', '2017-03-14 01:34:06', '', 0, 'http://audiovisual.local/?page_id=43', 0, 'page', '', 0),
 (44, 1, '2017-03-01 23:32:27', '2017-03-02 02:32:27', '', 'Productos Venta', '', 'inherit', 'closed', 'closed', '', '43-revision-v1', '', '', '2017-03-01 23:32:27', '2017-03-02 02:32:27', '', 43, 'http://audiovisual.local/43-revision-v1/', 0, 'revision', '', 0),
-(45, 1, '2017-03-01 23:36:15', '2017-03-02 02:36:15', '', 'PANASONIC PT-DZ870', '', 'publish', 'closed', 'closed', '', 'panasonic-pt-dz870', '', '', '2017-03-13 22:14:09', '2017-03-14 01:14:09', '', 0, 'http://audiovisual.local/?post_type=products&#038;p=45', 0, 'products', '', 0),
+(45, 1, '2017-03-01 23:36:15', '2017-03-02 02:36:15', '', 'PANASONIC PT-DZ870', '', 'publish', 'closed', 'closed', '', 'panasonic-pt-dz870', '', '', '2017-03-14 20:13:19', '2017-03-14 23:13:19', '', 0, 'http://audiovisual.local/?post_type=products&#038;p=45', 0, 'products', '', 0),
 (46, 1, '2017-03-01 23:36:02', '2017-03-02 02:36:02', '', 'PTDZ870', '', 'inherit', 'open', 'closed', '', 'ptdz870', '', '', '2017-03-01 23:36:02', '2017-03-02 02:36:02', '', 45, 'http://audiovisual.local/wp-content/uploads/2017/03/PTDZ870.png', 0, 'attachment', 'image/png', 0),
-(47, 1, '2017-03-01 23:37:48', '2017-03-02 02:37:48', '', 'LC-HDT700 / PLC-HP7000', '', 'publish', 'closed', 'closed', '', 'lc-hdt700-plc-hp7000', '', '', '2017-03-13 22:29:42', '2017-03-14 01:29:42', '', 0, 'http://audiovisual.local/?post_type=products&#038;p=47', 0, 'products', '', 0),
-(48, 1, '2017-03-01 23:39:12', '2017-03-02 02:39:12', '', 'OPTOMA EH501', '', 'publish', 'closed', 'closed', '', 'optoma-eh501', '', '', '2017-03-13 20:50:37', '2017-03-13 23:50:37', '', 0, 'http://audiovisual.local/?post_type=products&#038;p=48', 0, 'products', '', 0),
+(47, 1, '2017-03-01 23:37:48', '2017-03-02 02:37:48', '', 'LC-HDT700 / PLC-HP7000', '', 'publish', 'closed', 'closed', '', 'lc-hdt700-plc-hp7000', '', '', '2017-03-14 20:13:19', '2017-03-14 23:13:19', '', 0, 'http://audiovisual.local/?post_type=products&#038;p=47', 0, 'products', '', 0),
+(48, 1, '2017-03-01 23:39:12', '2017-03-02 02:39:12', '', 'OPTOMA EH501', '', 'publish', 'closed', 'closed', '', 'optoma-eh501', '', '', '2017-03-14 20:13:19', '2017-03-14 23:13:19', '', 0, 'http://audiovisual.local/?post_type=products&#038;p=48', 0, 'products', '', 0),
 (49, 1, '2017-03-01 23:39:03', '2017-03-02 02:39:03', '', 'EH501', '', 'inherit', 'open', 'closed', '', 'eh501', '', '', '2017-03-01 23:39:03', '2017-03-02 02:39:03', '', 48, 'http://audiovisual.local/wp-content/uploads/2017/03/EH501.jpg', 0, 'attachment', 'image/jpeg', 0),
-(50, 1, '2017-03-01 23:40:43', '2017-03-02 02:40:43', '', 'Sanyo PLC-HF15000', '', 'publish', 'closed', 'closed', '', 'sanyo-plc-hf15000', '', '', '2017-03-13 20:50:37', '2017-03-13 23:50:37', '', 0, 'http://audiovisual.local/?post_type=products&#038;p=50', 0, 'products', '', 0),
+(50, 1, '2017-03-01 23:40:43', '2017-03-02 02:40:43', '', 'Sanyo PLC-HF15000', '', 'publish', 'closed', 'closed', '', 'sanyo-plc-hf15000', '', '', '2017-03-14 20:13:19', '2017-03-14 23:13:19', '', 0, 'http://audiovisual.local/?post_type=products&#038;p=50', 0, 'products', '', 0),
 (51, 1, '2017-03-01 23:40:29', '2017-03-02 02:40:29', '', 'Sanyo_PLC-HF15000', '', 'inherit', 'open', 'closed', '', 'sanyo_plc-hf15000', '', '', '2017-03-13 22:57:26', '2017-03-14 01:57:26', '', 50, 'http://audiovisual.local/wp-content/uploads/2017/03/Sanyo_PLC-HF15000.jpg', 0, 'attachment', 'image/jpeg', 0),
 (52, 1, '2017-03-01 23:41:52', '2017-03-02 02:41:52', '', 'icono-proyectores', '', 'inherit', 'open', 'closed', '', 'icono-proyectores', '', '', '2017-03-01 23:41:52', '2017-03-02 02:41:52', '', 24, 'http://audiovisual.local/wp-content/uploads/2017/03/icono-proyectores.jpg', 0, 'attachment', 'image/jpeg', 0),
 (53, 1, '2017-03-01 23:42:11', '2017-03-02 02:42:11', '', 'Productos Alquiler', '', 'inherit', 'closed', 'closed', '', '24-revision-v1', '', '', '2017-03-01 23:42:11', '2017-03-02 02:42:11', '', 24, 'http://audiovisual.local/24-revision-v1/', 0, 'revision', '', 0),
 (55, 1, '2017-03-01 23:42:57', '2017-03-02 02:42:57', 'Esto es una página de ejemplo. Es diferente a una entrada porque permanece fija en un lugar y se mostrará en la navegación de tu sitio (en la mayoría de los temas). La mayoría de la gente empieza con una página de Acerca de, que les presenta a los potenciales visitantes del sitio. Podría ser algo como esto:\n\n<blockquote>¡Hola! Soy mensajero por el día, aspirante a actor por la noche, y este es mi blog. Vivo en Madrid, tengo un perrazo llamado Duque y me gustan las piñas coladas (y que me pille un chaparrón)</blockquote>\n\n...o algo así:\n\n<blockquote>La empresa XYZ se fundó en 1971 y ha estado ofreciendo "cosas" de calidad al público desde entonces. Situada en Madrid, XYZ emplea a más de 2.000 personas y hace todo tipo de cosas sorprendentes para la comunidad de Madrid.</blockquote>\n\nSi eres nuevo en WordPress deberías ir a <a href="http://audiovisual.local/wp-admin/">tu escritorio</a> para borrar esta página y crear páginas nuevas con tu propio contenido. ¡Pásalo bien!', 'Página de ejemplo', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2017-03-01 23:42:57', '2017-03-02 02:42:57', '', 2, 'http://audiovisual.local/2-revision-v1/', 0, 'revision', '', 0),
-(56, 1, '2017-03-01 23:44:57', '2017-03-02 02:44:57', '', 'Producto test 1', '', 'publish', 'closed', 'closed', '', 'producto-test-1', '', '', '2017-03-13 20:50:53', '2017-03-13 23:50:53', '', 0, 'http://audiovisual.local/?post_type=products&#038;p=56', 0, 'products', '', 0),
+(56, 1, '2017-03-01 23:44:57', '2017-03-02 02:44:57', '', 'Producto test 1', '', 'publish', 'closed', 'closed', '', 'producto-test-1', '', '', '2017-03-14 20:13:19', '2017-03-14 23:13:19', '', 0, 'http://audiovisual.local/?post_type=products&#038;p=56', 0, 'products', '', 0),
 (57, 1, '2017-03-01 23:45:18', '2017-03-02 02:45:18', '', 'Productos Alquiler', '', 'inherit', 'closed', 'closed', '', '24-revision-v1', '', '', '2017-03-01 23:45:18', '2017-03-02 02:45:18', '', 24, 'http://audiovisual.local/24-revision-v1/', 0, 'revision', '', 0),
 (58, 1, '2017-03-02 00:14:46', '2017-03-02 03:14:46', '', 'Productos Alquiler', '', 'inherit', 'closed', 'closed', '', '24-revision-v1', '', '', '2017-03-02 00:14:46', '2017-03-02 03:14:46', '', 24, 'http://audiovisual.local/24-revision-v1/', 0, 'revision', '', 0),
 (59, 1, '2017-03-02 00:22:16', '2017-03-02 03:22:16', '', 'Productos Alquiler', '', 'inherit', 'closed', 'closed', '', '24-revision-v1', '', '', '2017-03-02 00:22:16', '2017-03-02 03:22:16', '', 24, 'http://audiovisual.local/24-revision-v1/', 0, 'revision', '', 0),
@@ -1165,7 +1166,7 @@ INSERT INTO `sa_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (68, 1, '2017-03-06 22:13:41', '2017-03-07 01:13:41', '<label> Your Name (required)\n    [text* your-name] </label>\n\n<label> Your Email (required)\n    [email* your-email] </label>\n\n<label> Subject\n    [text your-subject] </label>\n\n<label> Your Message\n    [textarea your-message] </label>\n\n[submit "Send"]\nSoporte Audiovisual "[your-subject]"\n[your-name] <wordpress@audiovisual.local>\nFrom: [your-name] <[your-email]>\nSubject: [your-subject]\n\nMessage Body:\n[your-message]\n\n-- \nThis e-mail was sent from a contact form on Soporte Audiovisual (http://audiovisual.local)\nmarcet.cristian@gmail.com\nReply-To: [your-email]\n\n0\n0\n\nSoporte Audiovisual "[your-subject]"\nSoporte Audiovisual <wordpress@audiovisual.local>\nMessage Body:\n[your-message]\n\n-- \nThis e-mail was sent from a contact form on Soporte Audiovisual (http://audiovisual.local)\n[your-email]\nReply-To: marcet.cristian@gmail.com\n\n0\n0\nThank you for your message. It has been sent.\nThere was an error trying to send your message. Please try again later.\nOne or more fields have an error. Please check and try again.\nThere was an error trying to send your message. Please try again later.\nYou must accept the terms and conditions before sending your message.\nThe field is required.\nThe field is too long.\nThe field is too short.', 'Contact form 1', '', 'publish', 'closed', 'closed', '', 'contact-form-1', '', '', '2017-03-06 22:13:41', '2017-03-07 01:13:41', '', 0, 'http://audiovisual.local/?post_type=wpcf7_contact_form&p=68', 0, 'wpcf7_contact_form', '', 0),
 (69, 1, '2017-03-09 20:58:37', '2017-03-09 23:58:37', 'a:12:{s:4:"type";s:12:"relationship";s:12:"instructions";s:0:"";s:8:"required";i:0;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:9:"post_type";a:1:{i:0;s:8:"products";}s:8:"taxonomy";a:0:{}s:7:"filters";a:1:{i:0;s:9:"post_type";}s:8:"elements";a:1:{i:0;s:14:"featured_image";}s:3:"min";s:0:"";s:3:"max";s:0:"";s:13:"return_format";s:2:"id";}', 'Productos relacionados', 'productos_relacionados', 'publish', 'closed', 'closed', '', 'field_58c1ebdc7bccd', '', '', '2017-03-09 21:00:13', '2017-03-10 00:00:13', '', 26, 'http://audiovisual.local/?post_type=acf-field&#038;p=69', 7, 'acf-field', '', 0),
 (70, 1, '2017-03-09 21:03:43', '2017-03-10 00:03:43', '', 'BARCO RLM-W14', '', 'inherit', 'closed', 'closed', '', '36-autosave-v1', '', '', '2017-03-09 21:03:43', '2017-03-10 00:03:43', '', 36, 'http://audiovisual.local/36-autosave-v1/', 0, 'revision', '', 0),
-(77, 1, '2017-03-09 22:17:39', '2017-03-10 01:17:39', ' ', '', '', 'publish', 'closed', 'closed', '', '77', '', '', '2017-03-13 20:52:21', '2017-03-13 23:52:21', '', 0, 'http://audiovisual.local/?p=77', 7, 'nav_menu_item', '', 0),
+(77, 1, '2017-03-09 22:17:39', '2017-03-10 01:17:39', ' ', '', '', 'publish', 'closed', 'closed', '', '77', '', '', '2017-03-14 20:34:17', '2017-03-14 23:34:17', '', 0, 'http://audiovisual.local/?p=77', 7, 'nav_menu_item', '', 0),
 (80, 1, '2017-03-11 02:43:07', '2017-03-11 05:43:07', '', 'Alquiler', '', 'publish', 'closed', 'closed', '', 'alquiler-2', '', '', '2017-03-11 15:21:24', '2017-03-11 18:21:24', '', 0, 'http://audiovisual.local/?page_id=80', 0, 'page', '', 0),
 (81, 1, '2017-03-11 02:43:07', '2017-03-11 05:43:07', '', 'Alquiler', '', 'inherit', 'closed', 'closed', '', '80-revision-v1', '', '', '2017-03-11 02:43:07', '2017-03-11 05:43:07', '', 80, 'http://audiovisual.local/80-revision-v1/', 0, 'revision', '', 0),
 (82, 1, '2017-03-11 02:47:30', '2017-03-11 05:47:30', '', 'Alquiler', '', 'inherit', 'closed', 'closed', '', '80-revision-v1', '', '', '2017-03-11 02:47:30', '2017-03-11 05:47:30', '', 80, 'http://audiovisual.local/80-revision-v1/', 0, 'revision', '', 0),
@@ -1178,77 +1179,21 @@ INSERT INTO `sa_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (89, 1, '2017-03-11 15:36:27', '2017-03-11 18:36:27', 'a:10:{s:4:"type";s:4:"text";s:12:"instructions";s:0:"";s:8:"required";i:0;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:9:"maxlength";s:0:"";}', 'Horario de Atención', 'horario_atencion', 'publish', 'closed', 'closed', '', 'field_58c44327fddc7', '', '', '2017-03-11 15:36:27', '2017-03-11 18:36:27', '', 83, 'http://audiovisual.local/?post_type=acf-field&p=89', 3, 'acf-field', '', 0),
 (90, 1, '2017-03-11 15:36:27', '2017-03-11 18:36:27', 'a:9:{s:4:"type";s:5:"email";s:12:"instructions";s:0:"";s:8:"required";i:0;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";}', 'Email', 'email', 'publish', 'closed', 'closed', '', 'field_58c4435cfddc8', '', '', '2017-03-11 15:36:27', '2017-03-11 18:36:27', '', 83, 'http://audiovisual.local/?post_type=acf-field&p=90', 4, 'acf-field', '', 0),
 (91, 1, '2017-03-11 15:37:44', '2017-03-11 18:37:44', '', 'Contacto', '', 'inherit', 'closed', 'closed', '', '66-revision-v1', '', '', '2017-03-11 15:37:44', '2017-03-11 18:37:44', '', 66, 'http://audiovisual.local/66-revision-v1/', 0, 'revision', '', 0),
-(92, 1, '2017-03-11 15:58:21', '2017-03-11 18:58:21', '<div class="col-md-4"><div class="module-header"><h3><span class="icon icon-edit"></span> Contacto</h3></div><form class="form-horizontal"><div class="form-group"><label class="control-label col-md-4" for="name">Nombre</label><div class="col-md-8">[text* Nombre class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="address">Direccion</label><div class="col-md-8">[text* Dirección class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="city">Ciudad</label><div class="col-md-8">[text* Ciudad class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="phone">Telefono</label><div class="col-md-8"><input id="phone" name="phone" type="text" placeholder="" class="form-control">[text* Teléfono class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="email">Email</label><div class="col-md-8">[email* Nombre class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="country">Pais</label><div class="col-md-8">[text* País class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="comment">Comentario</label><div class="col-md-8"><textarea class="form-control" cols="40" id="comment" name="comment" placeholder="" rows="3"></textarea>[textarea* Comentario class:form-control]</div></div>[submit "Send"]</form></div>\n1\nSoporte Audiovisual "[your-subject]"\n[your-name] <wordpress@audiovisual.local>\nmarcet.cristian@gmail.com\nFrom: [your-name] <[your-email]>\r\nSubject: [your-subject]\r\n\r\nMessage Body:\r\n[your-message]\r\n\r\n-- \r\nThis e-mail was sent from a contact form on Soporte Audiovisual (http://audiovisual.local)\nReply-To: [your-email]\n\n\n\n\nSoporte Audiovisual "[your-subject]"\nSoporte Audiovisual <wordpress@audiovisual.local>\n[your-email]\nMessage Body:\r\n[your-message]\r\n\r\n-- \r\nThis e-mail was sent from a contact form on Soporte Audiovisual (http://audiovisual.local)\nReply-To: marcet.cristian@gmail.com\n\n\n\nThank you for your message. It has been sent.\nThere was an error trying to send your message. Please try again later.\nOne or more fields have an error. Please check and try again.\nThere was an error trying to send your message. Please try again later.\nYou must accept the terms and conditions before sending your message.\nThe field is required.\nThe field is too long.\nThe field is too short.\nThe date format is incorrect.\nThe date is before the earliest one allowed.\nThe date is after the latest one allowed.\nThere was an unknown error uploading the file.\nYou are not allowed to upload files of this type.\nThe file is too big.\nThere was an error uploading the file.\nThe number format is invalid.\nThe number is smaller than the minimum allowed.\nThe number is larger than the maximum allowed.\nThe answer to the quiz is incorrect.\nYour entered code is incorrect.\nThe e-mail address entered is invalid.\nThe URL is invalid.\nThe telephone number is invalid.', 'Contacto', '', 'publish', 'closed', 'closed', '', 'contacto', '', '', '2017-03-13 20:26:31', '2017-03-13 23:26:31', '', 0, 'http://audiovisual.local/?post_type=wpcf7_contact_form&#038;p=92', 0, 'wpcf7_contact_form', '', 0),
-(93, 1, '2017-03-13 20:52:21', '2017-03-13 23:52:21', ' ', '', '', 'publish', 'closed', 'closed', '', '93', '', '', '2017-03-13 20:52:21', '2017-03-13 23:52:21', '', 0, 'http://audiovisual.local/?p=93', 6, 'nav_menu_item', '', 0),
-(94, 1, '2017-03-13 20:52:21', '2017-03-13 23:52:21', ' ', '', '', 'publish', 'closed', 'closed', '', '94', '', '', '2017-03-13 20:52:21', '2017-03-13 23:52:21', '', 0, 'http://audiovisual.local/?p=94', 3, 'nav_menu_item', '', 0),
-(95, 1, '2017-03-13 20:52:21', '2017-03-13 23:52:21', ' ', '', '', 'publish', 'closed', 'closed', '', '95', '', '', '2017-03-13 20:52:21', '2017-03-13 23:52:21', '', 0, 'http://audiovisual.local/?p=95', 5, 'nav_menu_item', '', 0),
-(96, 1, '2017-03-13 20:52:21', '2017-03-13 23:52:21', ' ', '', '', 'publish', 'closed', 'closed', '', '96', '', '', '2017-03-13 20:52:21', '2017-03-13 23:52:21', '', 0, 'http://audiovisual.local/?p=96', 2, 'nav_menu_item', '', 0),
-(97, 1, '2017-03-13 20:52:21', '2017-03-13 23:52:21', ' ', '', '', 'publish', 'closed', 'closed', '', '97', '', '', '2017-03-13 20:52:21', '2017-03-13 23:52:21', '', 0, 'http://audiovisual.local/?p=97', 4, 'nav_menu_item', '', 0),
-(98, 1, '2017-03-13 20:52:21', '2017-03-13 23:52:21', ' ', '', '', 'publish', 'closed', 'closed', '', '98', '', '', '2017-03-13 20:52:21', '2017-03-13 23:52:21', '', 0, 'http://audiovisual.local/?p=98', 1, 'nav_menu_item', '', 0),
+(92, 1, '2017-03-11 15:58:21', '2017-03-11 18:58:21', '<div class="col-md-4"><div class="module-header"><h3><span class="icon icon-edit"></span> Contacto</h3></div><div class="form-horizontal"><div class="form-group"><label class="control-label col-md-4" for="name">Nombre</label><div class="col-md-8">[text* Nombre class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="address">Direccion</label><div class="col-md-8">[text* Direccion class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="city">Ciudad</label><div class="col-md-8">[text* Ciudad class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="phone">Telefono</label><div class="col-md-8"><input id="phone" name="phone" type="text" placeholder="" class="form-control">[text* Teléfono class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="email">Email</label><div class="col-md-8">[email* Nombre class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="country">Pais</label><div class="col-md-8">[text* Pais class:form-control]</div></div><div class="form-group"><label class="control-label col-md-4" for="comment">Comentario</label><div class="col-md-8">[textarea* Comentario 40x5 class:form-control]</div></div>[submit class:btn class:btn-primary class:pull-right "Send"]</div></div>\n1\nSoporte Audiovisual "[your-subject]"\n[your-name] <wordpress@audiovisual.local>\nmarcet.cristian@gmail.com\nFrom: [your-name] <[your-email]>\r\nSubject: [your-subject]\r\n\r\nMessage Body:\r\n[your-message]\r\n\r\n-- \r\nThis e-mail was sent from a contact form on Soporte Audiovisual (http://audiovisual.local)\nReply-To: [your-email]\n\n\n\n\nSoporte Audiovisual "[your-subject]"\nSoporte Audiovisual <wordpress@audiovisual.local>\n[your-email]\nMessage Body:\r\n[your-message]\r\n\r\n-- \r\nThis e-mail was sent from a contact form on Soporte Audiovisual (http://audiovisual.local)\nReply-To: marcet.cristian@gmail.com\n\n\n\nThank you for your message. It has been sent.\nThere was an error trying to send your message. Please try again later.\nOne or more fields have an error. Please check and try again.\nThere was an error trying to send your message. Please try again later.\nYou must accept the terms and conditions before sending your message.\nThe field is required.\nThe field is too long.\nThe field is too short.\nThe date format is incorrect.\nThe date is before the earliest one allowed.\nThe date is after the latest one allowed.\nThere was an unknown error uploading the file.\nYou are not allowed to upload files of this type.\nThe file is too big.\nThere was an error uploading the file.\nThe number format is invalid.\nThe number is smaller than the minimum allowed.\nThe number is larger than the maximum allowed.\nThe answer to the quiz is incorrect.\nYour entered code is incorrect.\nThe e-mail address entered is invalid.\nThe URL is invalid.\nThe telephone number is invalid.', 'Contacto', '', 'publish', 'closed', 'closed', '', 'contacto', '', '', '2017-03-14 20:43:21', '2017-03-14 23:43:21', '', 0, 'http://audiovisual.local/?post_type=wpcf7_contact_form&#038;p=92', 0, 'wpcf7_contact_form', '', 0),
+(93, 1, '2017-03-13 20:52:21', '2017-03-13 23:52:21', ' ', '', '', 'publish', 'closed', 'closed', '', '93', '', '', '2017-03-14 20:34:17', '2017-03-14 23:34:17', '', 0, 'http://audiovisual.local/?p=93', 6, 'nav_menu_item', '', 0),
+(94, 1, '2017-03-13 20:52:21', '2017-03-13 23:52:21', ' ', '', '', 'publish', 'closed', 'closed', '', '94', '', '', '2017-03-14 20:34:17', '2017-03-14 23:34:17', '', 0, 'http://audiovisual.local/?p=94', 3, 'nav_menu_item', '', 0),
+(95, 1, '2017-03-13 20:52:21', '2017-03-13 23:52:21', ' ', '', '', 'publish', 'closed', 'closed', '', '95', '', '', '2017-03-14 20:34:17', '2017-03-14 23:34:17', '', 0, 'http://audiovisual.local/?p=95', 5, 'nav_menu_item', '', 0),
+(96, 1, '2017-03-13 20:52:21', '2017-03-13 23:52:21', ' ', '', '', 'publish', 'closed', 'closed', '', '96', '', '', '2017-03-14 20:34:17', '2017-03-14 23:34:17', '', 0, 'http://audiovisual.local/?p=96', 2, 'nav_menu_item', '', 0),
+(97, 1, '2017-03-13 20:52:21', '2017-03-13 23:52:21', ' ', '', '', 'publish', 'closed', 'closed', '', '97', '', '', '2017-03-14 20:34:17', '2017-03-14 23:34:17', '', 0, 'http://audiovisual.local/?p=97', 4, 'nav_menu_item', '', 0),
+(98, 1, '2017-03-13 20:52:21', '2017-03-13 23:52:21', ' ', '', '', 'publish', 'closed', 'closed', '', '98', '', '', '2017-03-14 20:34:17', '2017-03-14 23:34:17', '', 0, 'http://audiovisual.local/?p=98', 1, 'nav_menu_item', '', 0),
 (99, 1, '2017-03-13 21:14:01', '2017-03-14 00:14:01', '', 'Productos Alquiler', '', 'inherit', 'closed', 'closed', '', '24-revision-v1', '', '', '2017-03-13 21:14:01', '2017-03-14 00:14:01', '', 24, 'http://audiovisual.local/24-revision-v1/', 0, 'revision', '', 0),
 (100, 1, '2017-03-13 21:30:01', '2017-03-14 00:30:01', '', 'Productos Alquiler', '', 'inherit', 'closed', 'closed', '', '24-revision-v1', '', '', '2017-03-13 21:30:01', '2017-03-14 00:30:01', '', 24, 'http://audiovisual.local/24-revision-v1/', 0, 'revision', '', 0),
 (101, 1, '2017-03-13 22:15:24', '2017-03-14 01:15:24', '', 'Productos Alquiler', '', 'inherit', 'closed', 'closed', '', '24-revision-v1', '', '', '2017-03-13 22:15:24', '2017-03-14 01:15:24', '', 24, 'http://audiovisual.local/24-revision-v1/', 0, 'revision', '', 0),
 (102, 1, '2017-03-13 22:27:00', '2017-03-14 01:27:00', '', 'Productos Alquiler', '', 'inherit', 'closed', 'closed', '', '24-revision-v1', '', '', '2017-03-13 22:27:00', '2017-03-14 01:27:00', '', 24, 'http://audiovisual.local/24-revision-v1/', 0, 'revision', '', 0),
 (103, 1, '2017-03-13 22:34:06', '2017-03-14 01:34:06', '', 'Productos Venta', '', 'inherit', 'closed', 'closed', '', '43-revision-v1', '', '', '2017-03-13 22:34:06', '2017-03-14 01:34:06', '', 43, 'http://audiovisual.local/43-revision-v1/', 0, 'revision', '', 0),
 (104, 1, '2017-03-13 22:57:31', '2017-03-14 01:57:31', '', 'Productos Alquiler', '', 'inherit', 'closed', 'closed', '', '24-revision-v1', '', '', '2017-03-13 22:57:31', '2017-03-14 01:57:31', '', 24, 'http://audiovisual.local/24-revision-v1/', 0, 'revision', '', 0),
-(105, 1, '2017-03-13 23:13:42', '2017-03-14 02:13:42', '', 'Productos Alquiler', '', 'inherit', 'closed', 'closed', '', '24-revision-v1', '', '', '2017-03-13 23:13:42', '2017-03-14 02:13:42', '', 24, 'http://audiovisual.local/24-revision-v1/', 0, 'revision', '', 0);
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `sa_termmeta`
---
-
-CREATE TABLE IF NOT EXISTS `sa_termmeta` (
-  `meta_id` bigint(20) unsigned NOT NULL,
-  `term_id` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `meta_value` longtext COLLATE utf8mb4_unicode_520_ci
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `sa_terms`
---
-
-CREATE TABLE IF NOT EXISTS `sa_terms` (
-  `term_id` bigint(20) unsigned NOT NULL,
-  `name` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `slug` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `term_group` bigint(10) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
-
---
--- Volcado de datos para la tabla `sa_terms`
---
-
-INSERT INTO `sa_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
-(1, 'Sin categoría', 'sin-categoria', 0),
-(4, 'Alquiler', 'alquiler', 0),
-(5, 'Venta', 'venta', 0),
-(6, 'Video', 'video', 0),
-(7, 'Proyectores', 'proyectores', 0),
-(8, 'Full HD', 'full_hd', 0),
-(9, 'Standard', 'standard', 0),
-(10, 'LED', 'led', 0),
-(11, 'Audio', 'audio', 0),
-(12, 'Rigging', 'rigging', 0),
-(13, 'Informatica', 'informatica', 0),
-(14, 'Alimentacion', 'alimentacion', 0),
-(16, 'Menu', 'menu', 0),
-(17, 'Menu Disponibilidad', 'menu-disponibilidad', 0),
-(18, 'Alquiler', 'alquiler', 0),
-(19, 'Venta', 'venta', 0),
-(20, 'Video', 'video', 0),
-(21, 'LED', 'led', 0),
-(22, 'Audio', 'audio', 0),
-(23, 'Rigging', 'rigging', 0),
-(24, 'Informática', 'informatica', 0),
-(25, 'Alimentación', 'alimentacion', 0),
-(26, 'Proyectores', 'proyectores', 0),
-(27, 'Proyectores Full HD', 'proyectores_full_hd', 0),
-(28, 'Proyectores Standard', 'proyectores_standard', 0);
+(105, 1, '2017-03-13 23:13:42', '2017-03-14 02:13:42', '', 'Productos Alquiler', '', 'inherit', 'closed', 'closed', '', '24-revision-v1', '', '', '2017-03-13 23:13:42', '2017-03-14 02:13:42', '', 24, 'http://audiovisual.local/24-revision-v1/', 0, 'revision', '', 0),
+(106, 1, '2017-03-14 19:54:21', '0000-00-00 00:00:00', '', 'Borrador automático', '', 'auto-draft', 'open', 'open', '', '', '', '', '2017-03-14 19:54:21', '0000-00-00 00:00:00', '', 0, 'http://audiovisual.local/?p=106', 0, 'post', '', 0);
 
 -- --------------------------------------------------------
 
@@ -1276,6 +1221,7 @@ INSERT INTO `sa_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (36, 20, 0),
 (36, 26, 0),
 (36, 27, 0),
+(36, 29, 0),
 (45, 4, 0),
 (45, 6, 0),
 (45, 7, 0),
@@ -1284,6 +1230,7 @@ INSERT INTO `sa_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (45, 20, 0),
 (45, 26, 0),
 (45, 27, 0),
+(45, 29, 0),
 (47, 4, 0),
 (47, 6, 0),
 (47, 7, 0),
@@ -1292,6 +1239,7 @@ INSERT INTO `sa_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (47, 20, 0),
 (47, 26, 0),
 (47, 27, 0),
+(47, 29, 0),
 (48, 4, 0),
 (48, 6, 0),
 (48, 7, 0),
@@ -1300,6 +1248,7 @@ INSERT INTO `sa_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (48, 20, 0),
 (48, 26, 0),
 (48, 27, 0),
+(48, 29, 0),
 (50, 4, 0),
 (50, 6, 0),
 (50, 7, 0),
@@ -1308,6 +1257,7 @@ INSERT INTO `sa_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (50, 20, 0),
 (50, 26, 0),
 (50, 27, 0),
+(50, 29, 0),
 (56, 4, 0),
 (56, 6, 0),
 (56, 7, 0),
@@ -1316,6 +1266,7 @@ INSERT INTO `sa_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (56, 20, 0),
 (56, 26, 0),
 (56, 28, 0),
+(56, 29, 0),
 (77, 16, 0),
 (84, 17, 0),
 (85, 17, 0),
@@ -1339,7 +1290,7 @@ CREATE TABLE IF NOT EXISTS `sa_term_taxonomy` (
   `description` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `parent` bigint(20) unsigned NOT NULL DEFAULT '0',
   `count` bigint(20) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
 -- Volcado de datos para la tabla `sa_term_taxonomy`
@@ -1370,7 +1321,82 @@ INSERT INTO `sa_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (25, 25, 'category', '', 0, 0),
 (26, 26, 'category', '', 20, 6),
 (27, 27, 'category', '', 26, 5),
-(28, 28, 'category', '', 26, 1);
+(28, 28, 'category', '', 26, 1),
+(29, 29, 'type', '', 0, 6),
+(30, 30, 'type', '', 0, 0),
+(31, 31, 'type', '', 0, 0),
+(32, 32, 'type', '', 0, 0),
+(33, 33, 'type', '', 0, 0),
+(34, 34, 'type', '', 0, 0),
+(35, 35, 'type', '', 29, 0),
+(36, 36, 'type', '', 35, 0),
+(37, 37, 'type', '', 35, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `sa_termmeta`
+--
+
+CREATE TABLE IF NOT EXISTS `sa_termmeta` (
+  `meta_id` bigint(20) unsigned NOT NULL,
+  `term_id` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `meta_value` longtext COLLATE utf8mb4_unicode_520_ci
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `sa_terms`
+--
+
+CREATE TABLE IF NOT EXISTS `sa_terms` (
+  `term_id` bigint(20) unsigned NOT NULL,
+  `name` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `slug` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `term_group` bigint(10) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
+--
+-- Volcado de datos para la tabla `sa_terms`
+--
+
+INSERT INTO `sa_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
+(1, 'Sin categoría', 'sin-categoria', 0),
+(4, 'Alquiler', 'alquiler', 0),
+(5, 'Venta', 'venta', 0),
+(6, 'Video', 'video', 0),
+(7, 'Proyectores', 'proyectores', 0),
+(8, 'Full HD', 'full_hd', 0),
+(9, 'Standard', 'standard', 0),
+(10, 'LED', 'led', 0),
+(11, 'Audio', 'audio', 0),
+(12, 'Rigging', 'rigging', 0),
+(13, 'Informatica', 'informatica', 0),
+(14, 'Alimentacion', 'alimentacion', 0),
+(16, 'Menu', 'menu', 0),
+(17, 'Menu Disponibilidad', 'menu-disponibilidad', 0),
+(18, 'Alquiler', 'alquiler', 0),
+(19, 'Venta', 'venta', 0),
+(20, 'Video', 'video', 0),
+(21, 'LED', 'led', 0),
+(22, 'Audio', 'audio', 0),
+(23, 'Rigging', 'rigging', 0),
+(24, 'Informática', 'informatica', 0),
+(25, 'Alimentación', 'alimentacion', 0),
+(26, 'Proyectores', 'proyectores', 0),
+(27, 'Proyectores Full HD', 'proyectores_full_hd', 0),
+(28, 'Proyectores Standard', 'proyectores_standard', 0),
+(29, 'Video', 'video', 0),
+(30, 'LED', 'led', 0),
+(31, 'Audio', 'audio', 0),
+(32, 'Rigging', 'rigging', 0),
+(33, 'Informática', 'informatica', 0),
+(34, 'Alimentación', 'alimentacion', 0),
+(35, 'Proyectores', 'proyectores', 0),
+(36, 'Proyectores Full HD', 'proyectores_full_hd', 0),
+(37, 'Proyectores Standard', 'proyectores_standard', 0);
 
 -- --------------------------------------------------------
 
@@ -1404,8 +1430,8 @@ INSERT INTO `sa_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (12, 1, 'sa_user_level', '10'),
 (13, 1, 'dismissed_wp_pointers', ''),
 (14, 1, 'show_welcome_panel', '0'),
-(15, 1, 'session_tokens', 'a:1:{s:64:"52c0e7fdee28c3599d5f951c3bb4c6cb00714e7627155d84294b0774ef0d6f21";a:4:{s:10:"expiration";i:1489620852;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:109:"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36";s:5:"login";i:1488411252;}}'),
-(16, 1, 'sa_dashboard_quick_press_last_post_id', '3'),
+(15, 1, 'session_tokens', 'a:2:{s:64:"52c0e7fdee28c3599d5f951c3bb4c6cb00714e7627155d84294b0774ef0d6f21";a:4:{s:10:"expiration";i:1489620852;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:109:"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36";s:5:"login";i:1488411252;}s:64:"600646634155eb0ed62a061550dcb6881e64eed2a151547e92d0c15b97541b3f";a:4:{s:10:"expiration";i:1489706929;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:109:"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36";s:5:"login";i:1489534129;}}'),
+(16, 1, 'sa_dashboard_quick_press_last_post_id', '106'),
 (17, 1, 'acf_user_settings', 'a:0:{}'),
 (18, 1, 'sa_user-settings', 'libraryContent=browse&editor_expand=on'),
 (19, 1, 'sa_user-settings-time', '1489256480'),
@@ -1505,6 +1531,21 @@ ALTER TABLE `sa_posts`
   ADD KEY `post_author` (`post_author`);
 
 --
+-- Indices de la tabla `sa_term_relationships`
+--
+ALTER TABLE `sa_term_relationships`
+  ADD PRIMARY KEY (`object_id`,`term_taxonomy_id`),
+  ADD KEY `term_taxonomy_id` (`term_taxonomy_id`);
+
+--
+-- Indices de la tabla `sa_term_taxonomy`
+--
+ALTER TABLE `sa_term_taxonomy`
+  ADD PRIMARY KEY (`term_taxonomy_id`),
+  ADD UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
+  ADD KEY `taxonomy` (`taxonomy`);
+
+--
 -- Indices de la tabla `sa_termmeta`
 --
 ALTER TABLE `sa_termmeta`
@@ -1519,21 +1560,6 @@ ALTER TABLE `sa_terms`
   ADD PRIMARY KEY (`term_id`),
   ADD KEY `slug` (`slug`(191)),
   ADD KEY `name` (`name`(191));
-
---
--- Indices de la tabla `sa_term_relationships`
---
-ALTER TABLE `sa_term_relationships`
-  ADD PRIMARY KEY (`object_id`,`term_taxonomy_id`),
-  ADD KEY `term_taxonomy_id` (`term_taxonomy_id`);
-
---
--- Indices de la tabla `sa_term_taxonomy`
---
-ALTER TABLE `sa_term_taxonomy`
-  ADD PRIMARY KEY (`term_taxonomy_id`),
-  ADD UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
-  ADD KEY `taxonomy` (`taxonomy`);
 
 --
 -- Indices de la tabla `sa_usermeta`
@@ -1575,17 +1601,22 @@ ALTER TABLE `sa_links`
 -- AUTO_INCREMENT de la tabla `sa_options`
 --
 ALTER TABLE `sa_options`
-  MODIFY `option_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=276;
+  MODIFY `option_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=286;
 --
 -- AUTO_INCREMENT de la tabla `sa_postmeta`
 --
 ALTER TABLE `sa_postmeta`
-  MODIFY `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=883;
+  MODIFY `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=887;
 --
 -- AUTO_INCREMENT de la tabla `sa_posts`
 --
 ALTER TABLE `sa_posts`
-  MODIFY `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=106;
+  MODIFY `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=107;
+--
+-- AUTO_INCREMENT de la tabla `sa_term_taxonomy`
+--
+ALTER TABLE `sa_term_taxonomy`
+  MODIFY `term_taxonomy_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=38;
 --
 -- AUTO_INCREMENT de la tabla `sa_termmeta`
 --
@@ -1595,12 +1626,7 @@ ALTER TABLE `sa_termmeta`
 -- AUTO_INCREMENT de la tabla `sa_terms`
 --
 ALTER TABLE `sa_terms`
-  MODIFY `term_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=29;
---
--- AUTO_INCREMENT de la tabla `sa_term_taxonomy`
---
-ALTER TABLE `sa_term_taxonomy`
-  MODIFY `term_taxonomy_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=29;
+  MODIFY `term_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=38;
 --
 -- AUTO_INCREMENT de la tabla `sa_usermeta`
 --
