@@ -2,6 +2,9 @@
 	color: #000;
 }
 .contact-page {
+	textarea {
+		resize: none;
+	}
 	.contact-info {
 		padding-top: 65px;
 		@include breakpoint(tablet) {
