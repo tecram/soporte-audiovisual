@@ -1,25 +1,25 @@
 <?php
 	get_header();
 
-	$tax_terms = get_terms('category');
-	$currentterm = get_term_by( 'slug', get_query_var( 'category' ), get_query_var( 'taxonomy' ) );
+	$currentterm = get_term_by( 'slug', get_query_var( 'type' ), get_query_var( 'taxonomy' ) );
+	$current_category_slug = $currentterm->slug;
 	
 	$terms = array(
 		'post_type' => 'products',
 		'posts_per_page'	=> -1,
 		'tax_query' => array(
 			array(
-				'taxonomy' => 'categoria',
+				'taxonomy' => 'type',
 				'field'    => 'slug',
-				'terms'    => $currentterm,
+				'terms'    => $current_category_slug,
 			),
 		),
 	);
 	$products = new WP_Query ($terms);
 ?>
-<pre><?php var_dump($products); ?></pre>
+<!-- <pre><?php var_dump($products); ?></pre> -->
 	<hr>
-	<!-- <?php if ($products->have_posts()) : 
+	<?php if ($products->have_posts()) : 
 		while ($products->have_posts()) : $products->the_post();
 			$brand = get_field('marca');
 			$model = get_field('modelo');
@@ -38,6 +38,6 @@
 			
 			<hr>
 		<?php endwhile; ?>
-	<?php endif; ?> -->
+	<?php endif; ?>
 	
 <?php get_footer(); ?>

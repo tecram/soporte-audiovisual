@@ -478,7 +478,7 @@ function create_typepost_taxonomies_categories() {
         'rewrite'           => array( 'slug' => 'categoria', 'with_front' => false),
     );
 
-    register_taxonomy( 'category', array( 'products' ), $args );
+    register_taxonomy( 'type', array( 'products' ), $args );
 }
 
 add_action( 'init', 'create_typepost_taxonomies_enabled', 0 );
