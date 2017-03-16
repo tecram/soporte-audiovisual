@@ -25,9 +25,20 @@
 			margin: 15px 0;
 		}
 	}
+	.show-more {
+		margin-top: 20px;
+	}
 }
 .product-b {
 	margin-bottom: 10px;
+	padding: 5px;
+	border-bottom: 2px solid transparent;
+	max-height: 345px;
+	overflow: hidden;
+	transition: all 0.3s ease;
+	&:hover {
+		border-color: $main-blue;
+	}
 	.content-img {
 		img {
 			width: 100%;
@@ -40,6 +51,10 @@
 			font-size: 18px;
 			color: #000;
 			margin-bottom: 5px;
+			width: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 		h4.sub-title{
 			font-family: $font-medium;
@@ -47,16 +62,22 @@
 			font-size: 14px;
 			color: #000;
 			margin-top: 0;
+			min-height: 15px;
+			width: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 		hr {
 			border-color: #000;
 			margin: 15px 0;
 		}
 		.description {
-			p {
-				height: 50px;
-				overflow: hidden;
-			}
+			height: 51px;
+			overflow: hidden;
 		}
+	}
+	.show-more {
+		margin-top: 20px;
 	}
 }
