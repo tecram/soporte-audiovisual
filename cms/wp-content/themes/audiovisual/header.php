@@ -13,8 +13,8 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
-		<div class="container">
-			<div class="header-container">
+		<div class="header-container">
+			<div class="container">
 				<div class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
 					<header role="logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Soporte Audiovisual">
@@ -46,54 +46,9 @@
 						</div>
 						<div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 position-initial">
 							<div class="search-content">
-								<div id="morphsearch" class="morphsearch">
-									<form class="morphsearch-form" method="get" id="advanced-searchform" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-										<input class="morphsearch-input" name="search" type="search" placeholder="Buscar..."/>
-										<input class="morphsearch-submit" type="submit" id="searchsubmit" value="Buscar..." />
-									</form>
-									<div class="morphsearch-content">
-										<div class="row">
-										<div class="panel panel-info">
-											<div class="panel-heading">
-												<h3 class="panel-title">Productos mas Buscados</h3>
-											</div>
-											<div class="panel-body">
-												<div class="col-md-4">
-													<div class="thumbnail">
-														<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=270%C3%97160&w=270&h=160" alt="...">
-														<div class="caption">
-															<h3>Thumbnail label</h3>
-															<p>...</p>
-															<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-4">
-													<div class="thumbnail">
-														<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=270%C3%97160&w=270&h=160" alt="...">
-														<div class="caption">
-															<h3>Thumbnail label</h3>
-															<p>...</p>
-															<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-4">
-													<div class="thumbnail">
-														<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=270%C3%97160&w=270&h=160" alt="...">
-														<div class="caption">
-															<h3>Thumbnail label</h3>
-															<p>...</p>
-															<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										</div>
-									</div>
-									<span class="morphsearch-close"></span>
-								</div>
+								<form>
+									<input class="form-control" type="search" placeholder="Buscar..."/>
+								</form>
 							</div>
 						</div>
 					</nav>
@@ -104,7 +59,6 @@
 						</a>
 					</div>
 				<div class="clearfix"></div>
-				<hr class="shadow"></hr>
 			</div>
 		</div>
 		<section class="loader">

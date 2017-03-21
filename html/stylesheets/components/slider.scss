@@ -21,6 +21,7 @@
 	.item {
 		position: relative;
 		height: 445px;
+		background-image: linear-gradient(120deg,#fdfbfb 0%,#ebedee 100%);
 		@include breakpoint(laptop) {
 			height: 375px;
 		}
@@ -28,13 +29,7 @@
 			height: 285px;
 		}
 		img {
-			position: absolute;
-			left: 0;
-			top: 0;
-			bottom: 0;
-			right: 0;
-			z-index: 1;
-			width: 100%;
+			float: right;
 			@include breakpoint(tablet) {
 				height: 285px;
 			}
@@ -49,14 +44,14 @@
 		}
 		h2{
 			top: 50px;
-			color: #fff;
+			color: $main-blue;
 		}
 		h3{
 			top: 20px;
-			color: #fff;
+			color: #000;
 		}
 		p{
-			color: #fff;
+			color: #000;
 			top: 160px;
 			max-width: 430px;
 			@include breakpoint(tablet) {

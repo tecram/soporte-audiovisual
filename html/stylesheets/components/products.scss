@@ -32,13 +32,9 @@
 .product-b {
 	margin-bottom: 10px;
 	padding: 5px;
-	border-bottom: 2px solid transparent;
 	max-height: 345px;
 	overflow: hidden;
 	transition: all 0.3s ease;
-	&:hover {
-		border-color: $main-blue;
-	}
 	.content-img {
 		img {
 			width: 100%;
