@@ -30,7 +30,7 @@
 	}
 
 ?>
-
+<pre><?php var_dump($current_category_slug); ?></pre>
 <div class="container">
 	<div class="main-content alquiler-page">
 
@@ -57,6 +57,7 @@
 					<?php $h++; } ?>
 			</div>
 		</div>
+		<div class="clearfix"></div>
 	<?php endif; ?>		
 
 
