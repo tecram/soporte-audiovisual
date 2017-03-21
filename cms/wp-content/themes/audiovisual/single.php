@@ -9,7 +9,6 @@
 		$descargas = get_field('descargas');
 		$productos_relacionados = get_field('productos_relacionados');
 		$big_image = get_the_post_thumbnail_url($post_id, $size = 'big-product');
-		echo $post_id;
 	?>
 		<div class="container">
 			<div class="main-content product-detail-page">
@@ -93,8 +92,6 @@
 							</div>
 						</div>
 				<?php } ?>
-
-
 			</div>
 		</div>
 	<?php endwhile; endif; ?>

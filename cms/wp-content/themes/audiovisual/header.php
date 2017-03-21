@@ -17,7 +17,7 @@
 			<div class="header-container">
 				<div class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
 					<header role="logo">
-						<a href="" title="Soporte Audiovisual">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Soporte Audiovisual">
 							<h1><strong>Soporte Audiovisual</strong></h1>
 						</a>
 					</header>
@@ -47,9 +47,9 @@
 						<div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 position-initial">
 							<div class="search-content">
 								<div id="morphsearch" class="morphsearch">
-									<form class="morphsearch-form">
-										<input class="morphsearch-input" type="search" placeholder="Buscar..."/>
-										<button class="morphsearch-submit" type="submit">Buscar...</button>
+									<form class="morphsearch-form" method="get" id="advanced-searchform" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+										<input class="morphsearch-input" name="search" type="search" placeholder="Buscar..."/>
+										<input class="morphsearch-submit" type="submit" id="searchsubmit" value="Buscar..." />
 									</form>
 									<div class="morphsearch-content">
 										<div class="row">
