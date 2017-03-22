@@ -6,15 +6,13 @@
 
 	if ($current_category_slug == 'alquiler') {
 		$page_id = 24;
-		$productos_seleccionados = get_field('productos_seleccionados', $page_id);
-		$slider = get_field('slider', $page_id);
 	}
 	elseif ($current_category_slug == 'venta') {
 		$page_id = 43;
-		$productos_seleccionados = get_field('productos_seleccionados', $page_id);
-		$slider = get_field('slider', $page_id);
 	}
-	else {
+	$productos_seleccionados = get_field('productos_seleccionados', $page_id);
+	$slider = get_field('slider', $page_id);
+	/*else {
 		$terms = array(
 			'post_type' => 'products',
 			'posts_per_page'	=> -1,
@@ -27,10 +25,10 @@
 			),
 		);
 		$products = new WP_Query ($terms);
-	}
+	}*/
 
 ?>
-<pre><?php var_dump($current_category_slug); ?></pre>
+
 <div class="container">
 	<div class="main-content alquiler-page">
 
@@ -134,9 +132,8 @@
 			</section>
 			<div class="clearfix"></div>
 				<?php $f++; } ?>
-		<?php else : ?>
+		<!-- <?php else : ?>
 
-			<!-- Taxonomy childrens -->
 			<?php if ($products->have_posts()) :
 				$h = 0;
 				while ($products->have_posts()) :
@@ -177,7 +174,7 @@
 			        	if ($h == 6) { $h = 0; }
 			        ?>
 				<?php endwhile; ?>
-			<?php endif; ?>
+			<?php endif; ?> -->
 		<?php endif; ?>
 	</div>
 </div>

@@ -64,7 +64,7 @@
 						<hr class="separator">
 						<div class="related-products">
 							<h4 class="title">Productos Relacionados</h4>
-							<div class="row">	
+							<div class="row">
 								<?php foreach ($productos_relacionados as $id) {
 									$post_id = $id;
 									$subtitulo = get_field('subtitulo', $post_id);

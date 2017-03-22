@@ -413,7 +413,7 @@ function products_post_type() {
 add_action( 'init', 'products_post_type');
 
 
-/*add_action( 'init', 'create_typepost_taxonomies_categories', 0 );
+add_action( 'init', 'create_typepost_taxonomies_categories', 0 );
 
 function create_typepost_taxonomies_categories() {
     // Add new taxonomy, make it hierarchical (like categories)
@@ -441,9 +441,9 @@ function create_typepost_taxonomies_categories() {
     );
 
     register_taxonomy( 'type', array( 'products' ), $args );
-}*/
+}
 
-add_action( 'init', 'create_typepost_taxonomies_enabled', 0 );
+add_action( 'init', 'create_typepost_taxonomies_enabled', 1 );
 
 function create_typepost_taxonomies_enabled() {
     // Add new taxonomy, make it hierarchical (like categories)
