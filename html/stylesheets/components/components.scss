@@ -16,8 +16,12 @@
 		vertical-align: middle;
 		position: relative;
 		margin-bottom: 20px;
+		display: inline-block;
 		@include breakpoint(tablet) {
 			margin-top: 20px;
+		}
+		span {
+			margin-right: 5px;
 		}
 		&:before {
 			content: '';
@@ -25,7 +29,7 @@
 			background-color: #000;
 			position: absolute;
 			bottom: -2px;
-			width: 70px;
+			width: 100%;
 		}
 	}
 }

@@ -6,7 +6,6 @@ var initPage = (function () {
 		var asd = 1;
 	};
 
-
 	if($('.nav-tabs').length){
 		$('.nav-tabs a').click( function (e) {
 			e.preventDefault();

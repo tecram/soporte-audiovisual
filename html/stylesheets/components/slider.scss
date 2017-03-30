@@ -37,7 +37,7 @@
 		h2, h3, p{
 			position: absolute;
 			z-index: 2;
-			left: 20%;
+			left: 5%;
 			@include breakpoint(laptop) {
 				left: 10%;
 			}
