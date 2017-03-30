@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Contact Form 7 - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-03-03 19:38:59+0000\n"
+"PO-Revision-Date: 2017-03-17 01:59:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,32 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: es_AR\n"
 "Project-Id-Version: Plugins - Contact Form 7 - Stable (latest release)\n"
+
+#: includes/rest-api.php:241
+msgid "There was an error deleting the contact form."
+msgstr "Hubo un error al borrar el formulario de contacto."
+
+#: includes/rest-api.php:157 includes/rest-api.php:184
+#: includes/rest-api.php:233
+msgid "You are not allowed to access the requested contact form."
+msgstr "No tenés permisos para acceder al formulario de contacto solicitado."
+
+#: includes/rest-api.php:151 includes/rest-api.php:178
+#: includes/rest-api.php:227
+msgid "The requested contact form was not found."
+msgstr "No se encontró el formulario de contacto solicitado."
+
+#: includes/rest-api.php:107
+msgid "You are not allowed to create a contact form."
+msgstr "No tenés permisos para crear un formulario de contacto."
+
+#: includes/rest-api.php:101
+msgid "Cannot create existing contact form."
+msgstr "No se puede crear un formulario de contacto existente."
+
+#: includes/rest-api.php:44
+msgid "You are not allowed to access contact forms."
+msgstr "No tenés permisos para acceder a los formularios de contacto."
 
 #: includes/config-validator.php:539
 msgid "Attachment file does not exist at %path%."
@@ -42,6 +68,32 @@ msgstr "Se utilizó una sintaxis no valida en el correo electrónico."
 #: includes/config-validator.php:131
 msgid "There is a possible empty field."
 msgstr "Es posible que haya un campo vacío."
+
+#: admin/includes/class-contact-forms-list-table.php:130
+msgid "%s configuration error detected"
+msgid_plural "%s configuration errors detected"
+msgstr[0] "Se encontró %s error de configuración"
+msgstr[1] "Se encontraron %s errores de configuración"
+
+#: admin/admin.php:319
+msgid "%d configuration errors detected in this tab panel"
+msgstr "Se encontraron %d errores de configuración en esta pestaña del panel"
+
+#: admin/admin.php:318
+msgid "1 configuration error detected in this tab panel"
+msgstr "Se encontró 1 error de configuración en esta pestaña del panel"
+
+#: admin/admin.php:317
+msgid "%d configuration errors detected"
+msgstr "Se encontraron %d errores de configuración"
+
+#: admin/admin.php:316
+msgid "1 configuration error detected"
+msgstr "Se encontró 1 error de configuración"
+
+#: admin/admin.php:495 includes/rest-api.php:118 includes/rest-api.php:194
+msgid "There was an error saving the contact form."
+msgstr "Hubo un error al guardar el formulario de contacto."
 
 #: includes/functions.php:357
 msgid "%1$s is <strong>deprecated</strong> since Contact Form 7 version %2$s! Use %3$s instead."
@@ -129,7 +181,7 @@ msgstr "El formato de número no es válido."
 
 #: modules/file.php:214
 msgid "There was an error uploading the file."
-msgstr "Se ha producido un error subiendo la imagen"
+msgstr "Hubo un error al subir el archivo."
 
 #: modules/file.php:209
 msgid "The file is too big."
@@ -178,7 +230,7 @@ msgstr "Uno o más campos tienen un error. Por favor, revisá e intentalo de nue
 #: includes/contact-form-template.php:141
 #: includes/contact-form-template.php:155
 msgid "There was an error trying to send your message. Please try again later."
-msgstr "Hubo un error intentando enviar tu mensaje. Por favor intentalo de nuevo después."
+msgstr "Hubo un error al intentar enviar tu mensaje. Intentalo de nuevo después."
 
 #: includes/contact-form-template.php:134
 msgid "Thank you for your message. It has been sent."
