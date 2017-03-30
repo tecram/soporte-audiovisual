@@ -28,13 +28,25 @@
 			$small_description = get_field('breve_descripcion', $post_id);
 			$product_link = get_the_permalink($post_id);
 			$taxonomies = get_terms( array( 'taxonomy' => 'disponibility' ));
+			$important = get_field('destacado');
+			$post_terms = get_the_terms( $post->ID , 'disponibility' );
+			$post_categories = array();
 			
+			foreach ($post_terms as $tax) {
+				$post_categories[] = $tax->slug;
+			}
+			$product_categories = join( " ", $post_categories );
+
+			$destacado = '';
+			if ($important) {
+				$destacado = ' destacado';
+			}
 		?>
 		<?php
 		if ($n == 0) { ?>
 			<div class="row">
 		<?php } ?>
-				<div class="col-md-3">
+				<div class="col-md-2 <?php echo $product_categories; echo $destacado; ?>">
 					<div class="product-b">
 						<div class="content-img">
 							<img src="<?php echo $image; ?>" alt="">
@@ -50,8 +62,8 @@
 						</div>
 					</div>
 				</div>
-
-		<?php if ($n == 3) { 
+		
+		<?php if ($n == 5) { 
 			$n = 0;
 		?>
 			</div>
@@ -60,6 +72,8 @@
 		<?php $n++; endwhile; ?>
 			<div class="clearfix"></div>
 		</section>
+	<?php else : ?>
+		<h4 class="text-center">No se encontraron productos disponibles.</h4>
 	<?php endif; ?>
 	
 <?php get_footer(); ?>

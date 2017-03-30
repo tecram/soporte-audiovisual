@@ -45,7 +45,7 @@
 				$f = 0;
 				foreach ($productos_seleccionados as $key) {
 					$icono_de_categoria = $productos_seleccionados[$f]['icono_de_categoria'];
-					$productos = $productos_seleccionados[$f]['elige_productos']; 
+					$productos = $productos_seleccionados[$f]['elige_productos'];
 			?>
 			<section class="projectors-module">
 				<div class="module-header">
@@ -60,6 +60,21 @@
 								$small_description = get_field('breve_descripcion', $key);
 								$product_link = get_the_permalink($key);
 
+								$important = get_field('destacado', $key);
+								$post_terms = get_the_terms( $key , 'disponibility' );
+								$post_categories = array();
+								
+								foreach ($post_terms as $tax) {
+									$post_categories[] = $tax->slug;
+								}
+								$product_categories = join( " ", $post_categories );
+
+								$destacado = '';
+								if ($important) {
+									$destacado = ' destacado';
+								}
+
+
 								if ($i == 0) : 
 									$image = get_the_post_thumbnail_url($key, $size = 'big-product');
 									if (empty($image)) {
@@ -67,7 +82,7 @@
 									}
 								?>
 									<div class="col-md-6">
-										<div class="product-a">
+										<div class="product-a <?php echo $product_categories; echo $destacado; ?>">
 											<div class="content-img">
 												<img src="<?php echo $image; ?>" alt="...">
 											</div>
@@ -90,7 +105,7 @@
 									}
 								?>
 										<div class="col-md-6">
-									        <div class="product-b">
+									        <div class="product-b <?php echo $product_categories; echo $destacado; ?>">
 								                <div class="content-img">
 								                    <img src="<?php echo $image; ?>" alt="...">
 								                </div>

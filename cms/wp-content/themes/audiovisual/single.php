@@ -9,9 +9,22 @@
 		$descargas = get_field('descargas');
 		$productos_relacionados = get_field('productos_relacionados');
 		$big_image = get_the_post_thumbnail_url($post_id, $size = 'big-product');
+		$important = get_field('destacado');
+		$post_terms = get_the_terms( $post->ID , 'disponibility' );
+		$post_categories = array();
+		
+		foreach ($post_terms as $tax) {
+			$post_categories[] = $tax->slug;
+		}
+		$product_categories = join( " ", $post_categories );
+
+		$destacado = '';
+		if ($important) {
+			$destacado = ' destacado';
+		}
 	?>
 		<div class="container">
-			<div class="main-content product-detail-page">
+			<div class="main-content product-detail-page <?php echo $product_categories; echo $destacado; ?>">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><span class="icon icon-projector"></span> <a href="#">Proyectores</a></li>
 					<li class="breadcrumb-item"><a href="#">Full HD</a></li>
