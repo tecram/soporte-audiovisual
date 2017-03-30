@@ -47,7 +47,7 @@
 						<div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 position-initial">
 							<div class="search-content">
 								<form>
-									<input class="form-control" type="search" placeholder="Buscar..."/>
+									<input class="form-control" type="search" name="s" placeholder="Buscar..."/>
 								</form>
 							</div>
 						</div>
