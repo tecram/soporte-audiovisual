@@ -64,13 +64,13 @@
 				@include breakpoint(tablet) {
 					display: block;
 					width: 100%;
-					font-size: 26px;
+					font-size: 19px;
 				}
 				a {
 					padding: 10px 9px;
 					transition: all .25s ease-in;
 					@include breakpoint(laptop) {
-						padding: 10px 5px;
+						padding: 5px 5px;
 					}
 				}
 				&.current-menu-item {

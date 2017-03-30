@@ -1,7 +1,165 @@
 .filter-container {
-	border: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-image: linear-gradient(to top,#e6e9f0 0%,#eef1f5 100%);
+	height: 100vh;
+	width: 0;
+	z-index: 5;
+	box-shadow: 3px 3px 5px 0 rgba(0,0,0,.2);
+	transition: all ease .4s;
+	&.active {
+		width: 250px;
+		@include breakpoint(tablet) {
+			z-index: 52;
+		}
+	}
+	a.show-filter {
+		position: absolute;
+		z-index: 7;
+		top: 25%;
+		left: 100%;
+		width: 48px;
+		height: 48px;
+		display: block;
+		background-image: linear-gradient(to top,#e6e9f0 0%,#eef1f5 100%);
+		border-radius: 0 5px 5px 0;
+		box-shadow: 3px 3px 5px 0 rgba(0,0,0,.2);
+		.icon {
+			margin: 10px;
+		}
+		&:after {
+			box-shadow: 3px 3px 5px 0 rgba(0,0,0,.2);
+			transition: all ease .4s;
+			content: 'Filtros';
+			position: absolute;
+			z-index: 6;
+			right: 3px;
+			height: 48px;
+			line-height: 48px;
+			font-size: 14px;
+			width: 0;
+			text-transform: uppercase;
+			color: #000;
+			background-image: linear-gradient(to top,#e6e9f0 0%,#eef1f5 100%);
+			overflow: hidden;
+			border-radius: 0 5px 5px 0;
+		}
+		&:hover {
+			&:after {
+				width: 65px;
+				right: -62px;
+			}
+		}
+	}
+	.content {
+		margin: 10px auto;
+		height: 100vh;
+		overflow: hidden;
+		z-index: 6;
+		padding: 0;
+		position: fixed;
+		width: 0;
+		transition: all ease .4s;
+		box-sizing: border-box;
+		.content-buttons {
+			margin: 15px auto;
+			.btn {
+				margin: 5px 0;
+			}
+		}
+		hr {
+			width: 100%;
+			border-top: 1px dashed #8c8b8b;
+			border-bottom: 1px dashed #fff;
+		}
+		form {
+			ul{
+				list-style: none;
+				li {
+					&:before {
+						content: '•';
+						color: $main-blue;
+					}
+					h5 {
+						margin: 0;
+					}
+					margin: 5px 0;
+					label {
+						margin: 0;
+						vertical-align: middle;
+						input {
+							margin: 0;
+							vertical-align: middle;
+						}
+					}
+				}
+			}
+		}
+		form > ul {
+			padding-left: 0;
+			list-style: none;
+			& > li {
+				margin-top: 10px;
+			}
+		}
+		&.active {
+			width: 250px;
+		}
+		.active-filter {
+			ul {
+				list-style: none;
+				padding: 0;
+				li {
+					display: inline-block;
+					margin: 5px;
+					a {
+						padding: 2px;
+						border: 1px solid $main-blue;
+						border-radius: 2px;
+						font-size: 12px;
+						padding-right: 11px;
+						vertical-align: middle;
+						position: relative;
+						text-decoration: none;
+						transition: all ease .2s;
+						&:after {
+							content: 'x';
+							vertical-align: middle;
+							font-size: 9px;
+							position: absolute;
+							right: 2px;
+							top: 3px;
+							display: block;
+						}
+						&:hover {
+							background-color: $main-blue;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.overlay-filter {
+	position: fixed;
+	background-color: rgba(0,0,0,.8);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 	width: 100%;
-	height: 50px;
-	border-bottom: 1px solid transparent;
-	box-shadow: 0 20px 20px -20px #333;
+	z-index: 4;
+	opacity: 0;
+	transition: opacity ease .4s;
+	cursor: pointer;
+	visibility: hidden;
+	@include breakpoint(tablet) {
+		z-index: 51;
+	}
+	&.active {
+		visibility: visible;
+		opacity: 1;
+	}
 }

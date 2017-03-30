@@ -6,6 +6,30 @@ var initPage = (function () {
 		var asd = 1;
 	};
 
+	var panelContainer = $('.filter-container'),
+		panelContent = $('.filter-container .content'),
+		panelBtn = $('.show-filter'),
+		panelOverlay = $('.overlay-filter'),
+		flag = 1;
+	if(panelContainer.length) {
+		if(flag===1){
+			panelContent.nanoScroller();
+			flag = 2;
+		}
+		panelBtn.click( function (e) {
+			e.preventDefault();
+			panelContainer.toggleClass('active');
+			panelContent.toggleClass('active');
+			panelOverlay.toggleClass('active');
+		});
+		panelOverlay.click( function (e) {
+			e.preventDefault();
+			panelContainer.removeClass('active');
+			panelContent.removeClass('active');
+			panelOverlay.removeClass('active');
+		});
+	};
+
 	if($('.nav-tabs').length){
 		$('.nav-tabs a').click( function (e) {
 			e.preventDefault();

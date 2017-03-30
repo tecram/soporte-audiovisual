@@ -1,9 +1,153 @@
 <div class="filter-container">
-	<div class="container">
-		<div class="col-md-12">
-			<div class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
-				<h5>Filtros:</h5>
+	<a href="" class="show-filter"><span class="icon icon-filters"></span></a>
+	<div class="content container nano">
+		<div class="nano-content">
+			<div class="col-md-12">
+				<div class="active-filter">
+					<h5>Filtros activos:</h5>
+					<ul>
+						<li><a href="">Full HD</a></li>
+						<li><a href="">XVGA</a></li>
+					</ul>
+				</div>
+				<form>
+					<ul>
+						<li>
+							<label class="form-check-label">
+								<h5><input class="form-check-input" type="checkbox"> Proyectores</h5>
+							</label>
+							<ul>
+								<li>
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> Full HD
+									</label>
+								</li>
+								<li>
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> XVGA
+									</label>
+								</li>
+								<li>
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> DLP
+									</label>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<label class="form-check-label">
+								<h5><input class="form-check-input" type="checkbox"> Pantallas</h5>
+							</label>
+							<ul>
+								<li>
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> Retractil
+									</label>
+									<ul>
+										<li>
+											<label class="form-check-label">
+												<input class="form-check-input" type="checkbox"> Tripode
+											</label>	
+										</li>
+										<li>
+											<label class="form-check-label">
+												<input class="form-check-input" type="checkbox"> Electrica
+											</label>	
+										</li>
+									</ul>
+								</li>
+								<li>
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> XVGA
+									</label>
+								</li>
+								<li>
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> DLP
+									</label>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<label class="form-check-label">
+								<h5><input class="form-check-input" type="checkbox"> Proyectores</h5>
+							</label>
+							<ul>
+								<li>
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> Full HD
+									</label>
+								</li>
+								<li>
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> XVGA
+									</label>
+								</li>
+								<li>
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> DLP
+									</label>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<label class="form-check-label">
+								<h5><input class="form-check-input" type="checkbox"> Proyectores</h5>
+							</label>
+							<ul>
+								<li>
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> Full HD
+									</label>
+								</li>
+								<li>
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> XVGA
+									</label>
+								</li>
+								<li>
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> DLP
+									</label>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<label class="form-check-label">
+								<h5><input class="form-check-input" type="checkbox"> Proyectores</h5>
+							</label>
+							<ul>
+								<li>
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> Full HD
+									</label>
+								</li>
+								<li>
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> XVGA
+									</label>
+								</li>
+								<li>
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> DLP
+									</label>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</form>	
 			</div>
+			<hr>
+			<div class="content-buttons">
+				<div class="row text-center">
+					<a href="" class="btn btn-primary">Aplicar Filtros</a>
+				</div>
+				<div class="row text-center">
+					<a href="" class="btn btn-default">Eliminar Filtros</a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
 		</div>
 	</div>
 </div>
+<div class="overlay-filter"></div>
