@@ -4,6 +4,35 @@ body{
 .pages {
 	color: #000;
 }
+.home #menu-menu-disponibilidad li:last-child{
+	a {
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			bottom: 6px;
+			left: 10%;
+			width: 80%;
+			height: 2px;
+			background-color: $main-blue;
+			display: block;
+			@include breakpoint(tablet) {
+				display: none;
+			}
+		}
+		@include breakpoint(tablet) {
+			background-color: $main-blue;
+			color: #fff;
+		}
+		&:hover {
+			background-color: transparent;
+			@include breakpoint(tablet) {
+				background-color: $main-blue;
+				color: #fff;
+			}
+		}
+	}
+}
 .contact-page {
 	textarea {
 		resize: none;

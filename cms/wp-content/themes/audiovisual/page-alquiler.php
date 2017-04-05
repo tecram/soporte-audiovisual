@@ -93,7 +93,7 @@
 												<div class="description">
 													<?php echo $small_description; ?>
 												</div>
-												<a class="show-more btn btn-primary" href="<?php echo $product_link; ?>">Ver mas</a>
+												<a class="show-more btn btn-primary" href="<?php echo $product_link; ?>">+</a>
 											</div>
 										</div>
 									</div>
@@ -116,7 +116,7 @@
 								                    <div class="description">
 								                        <?php echo $small_description; ?>
 								                    </div>
-								                    <a class="show-more btn btn-primary" href="<?php echo $product_link; ?>">Ver mas</a>
+								                    <a class="show-more btn btn-primary" href="<?php echo $product_link; ?>">+</a>
 								                </div>
 								            </div>
 									    </div>
@@ -157,7 +157,7 @@
 					                    <div class="description">
 					                        <?php echo $short_description; ?>
 					                    </div>
-					                    <a class="show-more btn btn-primary" href="<?php echo $product_link; ?>">Ver mas</a>
+					                    <a class="show-more btn btn-primary" href="<?php echo $product_link; ?>">+</a>
 					                </div>
 					            </div>
 					        </div>

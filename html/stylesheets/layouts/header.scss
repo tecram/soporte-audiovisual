@@ -73,7 +73,7 @@
 						padding: 5px 5px;
 					}
 				}
-				&.current-menu-item {
+				&.current-menu-item, .home #menu-menu-disponibilidad li:last-child{
 					a {
 						position: relative;
 						&:before{

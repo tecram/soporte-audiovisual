@@ -97,7 +97,7 @@
 												<div class="description">
 													<p><?php echo $breve_descripcion; ?></p>
 												</div>
-												<a class="show-more btn btn-primary" href="<?php echo get_the_permalink($post_id); ?>">Ver mas</a>
+												<a class="show-more btn btn-primary" href="<?php echo get_the_permalink($post_id); ?>">+</a>
 											</div>
 										</div>
 									</div>
