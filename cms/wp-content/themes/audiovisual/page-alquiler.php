@@ -82,18 +82,20 @@
 									}
 								?>
 									<div class="col-md-6">
-										<div class="product-a <?php echo $product_categories; echo $destacado; ?>">
-											<div class="content-img">
-												<img src="<?php echo $image; ?>" alt="...">
-											</div>
-											<div class="content-detail">
-												<h3 class="title"><?php echo $title; ?></h3>
-												<h4 class="sub-title"><?php echo $subtitle; ?></h4>
-												<hr>
-												<div class="description">
-													<?php echo $small_description; ?>
+										<div class="wow bounceInUp">
+											<div class="product-a <?php echo $product_categories; echo $destacado; ?>">
+												<div class="content-img">
+													<img src="<?php echo $image; ?>" alt="<?php echo $title; ?>">
 												</div>
-												<a class="show-more btn btn-primary" href="<?php echo $product_link; ?>">+</a>
+												<div class="content-detail">
+													<h3 class="title"><?php echo $title; ?></h3>
+													<h4 class="sub-title"><?php echo $subtitle; ?></h4>
+													<hr>
+													<div class="description">
+														<?php echo $small_description; ?>
+													</div>
+													<a class="show-more btn btn-primary" href="<?php echo $product_link; ?>">+</a>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -105,20 +107,22 @@
 									}
 								?>
 										<div class="col-md-6">
-									        <div class="product-b <?php echo $product_categories; echo $destacado; ?>">
-								                <div class="content-img">
-								                    <img src="<?php echo $image; ?>" alt="...">
-								                </div>
-								                <div class="content-detail">
-								                    <h3 class="title"><?php echo $title; ?></h3>
-								                    <h4 class="sub-title"><?php echo $subtitle; ?></h4>
-								                    <hr>
-								                    <div class="description">
-								                        <?php echo $small_description; ?>
-								                    </div>
-								                    <a class="show-more btn btn-primary" href="<?php echo $product_link; ?>">+</a>
-								                </div>
-								            </div>
+											<div class="wow fadeInRight">
+										        <div class="product-b <?php echo $product_categories; echo $destacado; ?>">
+									                <div class="content-img">
+									                    <img src="<?php echo $image; ?>" alt="<?php echo $title; ?>">
+									                </div>
+									                <div class="content-detail">
+									                    <h3 class="title"><?php echo $title; ?></h3>
+									                    <h4 class="sub-title"><?php echo $subtitle; ?></h4>
+									                    <hr>
+									                    <div class="description">
+									                        <?php echo $small_description; ?>
+									                    </div>
+									                    <a class="show-more btn btn-primary" href="<?php echo $product_link; ?>">+</a>
+									                </div>
+									            </div>
+									        </div>
 									    </div>
 								<?php endif; ?>
 								
@@ -146,19 +150,21 @@
 						<div class="col-md-12">
 					<?php endif; ?>
 							<div class="col-md-2">
-					            <div class="product-b">
-					                <div class="content-img">
-					                    <img src="<?php echo $image; ?>" alt="">
-					                </div>
-					                <div class="content-detail">
-					                    <h3 class="title"><?php echo $title; ?></h3>
-					                    <h4 class="sub-title"><?php echo $subtitle; ?></h4>
-					                    <hr>
-					                    <div class="description">
-					                        <?php echo $short_description; ?>
-					                    </div>
-					                    <a class="show-more btn btn-primary" href="<?php echo $product_link; ?>">+</a>
-					                </div>
+								<div class="wow fadeInRight">
+						            <div class="product-b">
+						                <div class="content-img">
+						                    <img src="<?php echo $image; ?>" alt="">
+						                </div>
+						                <div class="content-detail">
+						                    <h3 class="title"><?php echo $title; ?></h3>
+						                    <h4 class="sub-title"><?php echo $subtitle; ?></h4>
+						                    <hr>
+						                    <div class="description">
+						                        <?php echo $short_description; ?>
+						                    </div>
+						                    <a class="show-more btn btn-primary" href="<?php echo $product_link; ?>">+</a>
+						                </div>
+						            </div>
 					            </div>
 					        </div>
 			        <?php if ($h == 5) : ?>

@@ -2,41 +2,58 @@ var initPage = (function () {
 
 	'use strict';
 
-	function asd() {
-		var asd = 1;
-	};
-
-	var panelContainer = $('.filter-container'),
-		panelContent = $('.filter-container .content'),
-		panelBtn = $('.show-filter'),
-		panelOverlay = $('.overlay-filter'),
-		flag = 1;
-	if(panelContainer.length) {
-		if(flag===1){
-			panelContent.nanoScroller();
-			flag = 2;
+	var SoporteAudio = {
+		wowInit: function() {
+			var wow = new WOW({
+				boxClass: 'wow',
+				animateClass: 'animated',
+				offset: 200,
+				mobile: true,
+				live: true
+			})
+			wow.init();
+		},
+		panelFiltrosInit: function(){
+			var panelContainer = $('.filter-container'),
+				panelContent = $('.filter-container .content'),
+				panelBtn = $('.show-filter'),
+				panelOverlay = $('.overlay-filter'),
+				flag = 1;
+			if(panelContainer.length) {
+				if(flag===1){
+					panelContent.nanoScroller();
+					flag = 2;
+				}
+				panelBtn.click( function (e) {
+					e.preventDefault();
+					panelContainer.toggleClass('active');
+					panelContent.toggleClass('active');
+					panelOverlay.toggleClass('active');
+				});
+				panelOverlay.click( function (e) {
+					e.preventDefault();
+					panelContainer.removeClass('active');
+					panelContent.removeClass('active');
+					panelOverlay.removeClass('active');
+				});
+			};
+		},
+		tabsDescription: function(element){
+			$('.nav-tabs a, .nav-tabs li, .tab-pane').removeClass('active');
+			var tabToShow = $(element).attr('href');
+			$(element).parent().addClass('active');
+			$(tabToShow).addClass('active');
 		}
-		panelBtn.click( function (e) {
-			e.preventDefault();
-			panelContainer.toggleClass('active');
-			panelContent.toggleClass('active');
-			panelOverlay.toggleClass('active');
-		});
-		panelOverlay.click( function (e) {
-			e.preventDefault();
-			panelContainer.removeClass('active');
-			panelContent.removeClass('active');
-			panelOverlay.removeClass('active');
-		});
-	};
+	}
+	
+	SoporteAudio.panelFiltrosInit();
+
+	SoporteAudio.wowInit();
 
 	if($('.nav-tabs').length){
 		$('.nav-tabs a').click( function (e) {
 			e.preventDefault();
-			$('.nav-tabs a, .nav-tabs li, .tab-pane').removeClass('active');
-			var tabToShow = $(this).attr('href');
-			$(this).parent().addClass('active');
-			$(tabToShow).addClass('active');
+			SoporteAudio.tabsDescription(this);
 		})
 	}
 
@@ -51,7 +68,6 @@ var initPage = (function () {
 			dots: true
 		});
 	}
-	
 });
 
 $(window).load( function() {

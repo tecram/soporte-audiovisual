@@ -12,17 +12,19 @@
 <div class="container">
 	<div class="main-content contact-page">
 		<div class="col-md-3">
-			<div class="contact-info">
-				<?php echo $texto; ?>
-				<div class="details">
-					<p>
-						<span class="icon icon-phone pull-left"></span>
-						<span class="pull-left"><a href="tel:<?php echo $telefono_1; ?>"><?php echo $telefono_1; ?></a> <br><a href="tel: <?php echo $telefono_2; ?>"><?php echo $telefono_2; ?></a></span>
+			<div class="wow bounceInUp">
+				<div class="contact-info">
+					<?php echo $texto; ?>
+					<div class="details">
+						<p>
+							<span class="icon icon-phone pull-left"></span>
+							<span class="pull-left"><a href="tel:<?php echo $telefono_1; ?>"><?php echo $telefono_1; ?></a> <br><a href="tel: <?php echo $telefono_2; ?>"><?php echo $telefono_2; ?></a></span>
+							<div class="clearfix"></div>
+						</p>
 						<div class="clearfix"></div>
-					</p>
-					<div class="clearfix"></div>
-					<p><span class="icon icon-watch"></span><?php echo $horario_atencion; ?></p>
-					<p><span class="icon icon-email"></span><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></p>
+						<p><span class="icon icon-watch"></span><?php echo $horario_atencion; ?></p>
+						<p><span class="icon icon-email"></span><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></p>
+					</div>
 				</div>
 			</div>
 		</div>

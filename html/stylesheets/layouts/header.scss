@@ -47,6 +47,17 @@
 			bottom: 0;
 			transition: all .25s ease-in;
 		}
+		.search-content {
+			.input-group-addon {
+				margin: 0;
+				padding: 0;
+				background-color: #fff;
+				button {
+					background-color: #fff;
+					border: 0;
+				}
+			}
+		}
 
 		ul.nav {
 			@include breakpoint(tablet) {
@@ -70,7 +81,7 @@
 					padding: 10px 9px;
 					transition: all .25s ease-in;
 					@include breakpoint(laptop) {
-						padding: 5px 5px;
+						padding: 5px;
 					}
 				}
 				&.current-menu-item, .home #menu-menu-disponibilidad li:last-child{
