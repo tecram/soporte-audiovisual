@@ -136,49 +136,6 @@
 			</section>
 			<div class="clearfix"></div>
 				<?php $f++; } ?>
-		<!-- <?php else : ?>
-
-			<?php if ($products->have_posts()) :
-				$h = 0;
-				while ($products->have_posts()) :
-					$products->the_post();
-					
-					$current_id = get_the_ID();
-					$image = get_the_post_thumbnail_url();
-					$title = get_field('post_title');
-					$subtitle = get_field('subtitulo');
-					$short_description = get_field('breve_descripcion');
-					$product_link = get_the_permalink();
-			?>
-					<?php if ($h == 0) : ?>
-						<div class="col-md-12">
-					<?php endif; ?>
-							<div class="col-md-2">
-					            <div class="product-b">
-					                <div class="content-img">
-					                    <img src="<?php echo $image; ?>" alt="">
-					                </div>
-					                <div class="content-detail">
-					                    <h3 class="title"><?php echo $title; ?></h3>
-					                    <h4 class="sub-title"><?php echo $subtitle; ?></h4>
-					                    <hr>
-					                    <div class="description">
-					                        <?php echo $short_description; ?>
-					                    </div>
-					                    <a class="show-more btn btn-primary" href="<?php echo $product_link; ?>">Ver mas</a>
-					                </div>
-					            </div>
-					        </div>
-			        <?php if ($h == 5) : ?>
-			        	</div>
-			        	<div class="clearfix"></div>
-			        <?php endif; ?>
-			        <?php 
-			        	$h++; 
-			        	if ($h == 6) { $h = 0; }
-			        ?>
-				<?php endwhile; ?>
-			<?php endif; ?> -->
 		<?php endif; ?>
 	</div>
 </div>
