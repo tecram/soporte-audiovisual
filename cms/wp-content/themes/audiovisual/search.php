@@ -34,7 +34,7 @@
 					<div class="col-md-2 <?php echo $product_categories; echo $destacado; ?>">
 						<div class="product-b">
 							<div class="content-img">
-								<img src="<?php echo $image; ?>" alt="">
+								<img src="<?php echo $image; ?>" alt="<?php echo $title; ?>">
 							</div>
 							<div class="content-detail">
 								<h3 class="title"><?php echo $title; ?></h3>
@@ -43,7 +43,7 @@
 								<div class="description">
 									<p><?php echo $small_description; ?></p>
 								</div>
-								<a class="show-more btn btn-primary" href="<?php echo $product_link; ?>">Ver mas</a>
+								<a class="show-more btn btn-primary" href="<?php echo $product_link; ?>">+</a>
 							</div>
 						</div>
 					</div>
