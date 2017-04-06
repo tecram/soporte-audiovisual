@@ -113,6 +113,9 @@ body{
 .error-page {
 	padding: 40px 15px;
 	text-align: center;
+	img {
+		margin: 0 auto;
+	}
 	h1.404error {
 		font-size: 100px;
 	}
