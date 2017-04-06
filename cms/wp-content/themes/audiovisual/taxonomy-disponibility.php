@@ -67,7 +67,7 @@
 					$icono_de_categoria = $productos_seleccionados[$f]['icono_de_categoria'];
 					$productos = $productos_seleccionados[$f]['elige_productos']; 
 			?>
-			<section class="projectors-module">
+			<section class="category-module">
 				<div class="module-header">
 					<h3><?php if (!empty($icono_de_categoria)) { ?><span class="icon" style="background: url('<?php echo $icono_de_categoria; ?>') no-repeat center center;"></span><?php } ?><?php echo $productos_seleccionados[0]['seleccione_categoria']->name ?></h3>
 				</div>
@@ -90,7 +90,7 @@
 										<div class="wow bounceInUp">
 											<div class="product-a">
 												<div class="content-img">
-													<img src="<?php echo $image; ?>" alt="...">
+													<img src="<?php echo $image; ?>" alt="<?php echo $title; ?>">
 												</div>
 												<div class="content-detail">
 													<h3 class="title"><?php echo $title; ?></h3>

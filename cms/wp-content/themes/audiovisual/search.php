@@ -3,7 +3,7 @@
 	<div class="col-md-12">
 		<h4><?php echo sprintf( __( '%s Resultados de búsqueda de ', 'html5blank' ), $wp_query->found_posts ); echo "<b>" . get_search_query() . "<b>"; ?></h4>
 		<?php if (have_posts()) : ?>
-			<section class="projectors-module">
+			<section class="category-module">
 			<?php $n = 0; 
 			while (have_posts()) : the_post();
 				$post_id = get_the_ID();

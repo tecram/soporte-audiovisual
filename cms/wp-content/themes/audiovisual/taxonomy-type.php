@@ -20,7 +20,7 @@
 	$products = new WP_Query ($terms);
 ?>
 	<?php if ($products->have_posts()) : ?>
-		<section class="projectors-module">
+		<section class="category-module">
 			<div class="container">
 				<div class="main-content">
 					<h1><?php echo $current_category_name; ?></h1>
@@ -55,7 +55,7 @@
 							<div class="col-md-2 <?php echo $product_categories; echo $destacado; ?>">
 								<div class="product-b">
 									<div class="content-img">
-										<img src="<?php echo $image; ?>" alt="">
+										<img src="<?php echo $image; ?>" alt="<?php echo $title; ?>">
 									</div>
 									<div class="content-detail">
 										<h3 class="title"><?php echo $title; ?></h3>
