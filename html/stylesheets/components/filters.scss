@@ -107,6 +107,11 @@
 			width: 250px;
 		}
 		.active-filter {
+			h5 {
+				font-weight: bold;
+				text-transform: uppercase;
+				margin-bottom: 10px;
+			}
 			ul {
 				list-style: none;
 				padding: 0;

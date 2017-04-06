@@ -21,6 +21,7 @@
 			<div class="col-md-12">
 				<div class="active-filter">
 					<h5>Filtros:</h5>
+					<hr>
 					<!-- <ul>
 						<li><a href="">Full HD</a></li>
 						<li><a href="">XVGA</a></li>
