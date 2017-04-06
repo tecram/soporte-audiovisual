@@ -4,6 +4,7 @@
 
 	$currentterm = get_term_by( 'slug', get_query_var( 'type' ), get_query_var( 'taxonomy' ) );
 	$current_category_slug = $currentterm->slug;
+	$current_category_name = $currentterm->name;
 	
 	$terms = array(
 		'post_type' => 'products',
@@ -22,6 +23,7 @@
 		<section class="projectors-module">
 			<div class="container">
 				<div class="main-content">
+					<h1><?php echo $current_category_name; ?></h1>
 					<div class="col-md-12">
 					<?php $n = 0; 
 					while ($products->have_posts()) : $products->the_post();
