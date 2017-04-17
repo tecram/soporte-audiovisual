@@ -55,6 +55,13 @@
 							<div class="col-md-2 <?php echo $product_categories; echo $destacado; ?>">
 								<div class="product-b">
 									<div class="content-img">
+										<span class="ribbons">
+											<ul>
+												<li class="alquiler">Alquiler</li>
+												<li class="venta">Venta</li>
+												<li class="destacado"><!--&#9733;-->Destacado</li>
+											</ul>
+										</span>
 										<img src="<?php echo $image; ?>" alt="<?php echo $title; ?>">
 									</div>
 									<div class="content-detail">

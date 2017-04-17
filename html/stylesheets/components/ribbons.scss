@@ -1,0 +1,41 @@
+.ribbons {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			text-align: left;
+			margin: 0;
+			padding: 5px;
+			display: none;
+			border-radius: 2px;
+			overflow: hidden;
+			font-size: 9px;
+			box-shadow:inset 0 0 0 1px rgba(255,255,255,.2);
+			transition: all .3s ease;
+			line-height: 100%;
+		}
+	}
+}
+
+.destacado .ribbons li.destacado{
+	display: inline-block;
+	color: #fff;
+	background-image: linear-gradient(to top,#6f86d6 0%,#48c6ef 100%);
+	border: 1px solid #677cc5;
+}
+.alquiler .ribbons li.alquiler{
+	display: inline-block;
+	color: #fff;
+	background-image: linear-gradient(to top,#0ba360 0%,#3cba92 100%);
+	border: 1px solid #298668;
+}
+.venta .ribbons li.venta{
+	display: inline-block;
+	color: #fff;
+	background-image: linear-gradient(to top,#ff0844 0%,#ffb199 100%);
+	border: 1px solid #c40d3a;
+}

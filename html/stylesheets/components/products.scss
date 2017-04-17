@@ -1,6 +1,7 @@
 .product-a {
 	margin-bottom: 10px;
 	.content-img {
+		position: relative;
 		img {
 			width: 100%;
 		}
@@ -36,6 +37,7 @@
 	overflow: hidden;
 	transition: all .3s ease;
 	.content-img {
+		position: relative;
 		text-align: center;
 		height: 140px;
 		overflow: hidden;
