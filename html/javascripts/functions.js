@@ -43,6 +43,11 @@ var initPage = (function () {
 			var tabToShow = $(element).attr('href');
 			$(element).parent().addClass('active');
 			$(tabToShow).addClass('active');
+		},
+		getFiltersParams: function (e) {
+			e.preventDefault();
+			// $('.searchandfilter').val();
+			console.log('asd');
 		}
 	}
 	
@@ -67,7 +72,12 @@ var initPage = (function () {
 		$('.slick-slider').slick({
 			dots: true
 		});
-	}
+	};
+
+	$('.searchandfilter .apply').on('click', function (e) {
+		e.preventDefault();
+		SoporteAudio.getFiltersParams();
+	})
 });
 
 $(window).load( function() {

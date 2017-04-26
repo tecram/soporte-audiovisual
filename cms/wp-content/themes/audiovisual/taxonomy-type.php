@@ -19,6 +19,53 @@
 	);
 	$products = new WP_Query ($terms);
 ?>
+<div class="filter-container">
+	<a href="" class="show-filter"><span class="icon icon-filters"></span></a>
+	<div class="content container nano">
+		<div class="nano-content">
+			<div class="col-md-12">
+				<div class="active-filter">
+					<h5>Filtros:</h5>
+					<hr>
+				</div>
+				
+				<form>
+					<?php
+						hierarchical_category_tree( 0 ); // the function call; 0 for all categories; or cat ID  
+						function hierarchical_category_tree( $cat ) {
+						  $next = get_categories('hide_empty=false&orderby=name&order=ASC&taxonomy=type&parent=' . $cat);
+
+						  if( $next ) :    
+							echo '<ul>';
+						    foreach( $next as $cat ) :
+						    echo '<li>
+							<label class="form-check-label">
+								<h5><input id="' . $cat->term_id . '" class="form-check-input" type="checkbox"> ' . $cat->name . ' </h5>
+							</label>';
+						    // echo '<li>' . $cat->name . '</li>';
+						    /*echo ' / <a href="' . get_category_link( $cat->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $cat->name ) . '" ' . '>View ( '. $cat->count . ' posts )</a>  '; */
+						    /*echo ' / <a href="'. get_admin_url().'edit-tags.php?action=edit&taxonomy=category&tag_ID='.$cat->term_id.'&post_type=post" title="Edit Category">Edit</a>'; */
+						    hierarchical_category_tree( $cat->term_id );
+						    endforeach;
+						    echo '</ul>';
+						  endif;
+						}
+					?>
+				</form>
+			</div>
+			<hr>
+			<div class="content-buttons">
+				<div class="row text-center">
+					<a href="" class="btn btn-primary apply">Aplicar Filtros</a>
+				</div>
+				<div class="row text-center">
+					<a href="" class="btn btn-default reset">Eliminar Filtros</a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
 	<?php if ($products->have_posts()) : ?>
 		<section class="category-module">
 			<div class="container">

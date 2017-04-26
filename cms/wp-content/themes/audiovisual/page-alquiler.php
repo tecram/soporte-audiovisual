@@ -10,10 +10,6 @@
 	$slider = get_field('slider', $page_id);
 ?>
 
-<?php 
-	
-?>
-
 <div class="filter-container">
 	<a href="" class="show-filter"><span class="icon icon-filters"></span></a>
 	<div class="content container nano">
@@ -22,145 +18,39 @@
 				<div class="active-filter">
 					<h5>Filtros:</h5>
 					<hr>
-					<!-- <ul>
-						<li><a href="">Full HD</a></li>
-						<li><a href="">XVGA</a></li>
-					</ul> -->
 				</div>
+				
 				<form>
-					<ul>
-						<li>
+					<?php
+						hierarchical_category_tree( 0 ); // the function call; 0 for all categories; or cat ID  
+						function hierarchical_category_tree( $cat ) {
+						  $next = get_categories('hide_empty=false&orderby=name&order=ASC&taxonomy=type&parent=' . $cat);
+
+						  if( $next ) :    
+							echo '<ul>';
+						    foreach( $next as $cat ) :
+						    echo '<li>
 							<label class="form-check-label">
-								<h5><input class="form-check-input" type="checkbox"> Proyectores</h5>
-							</label>
-							<ul>
-								<li>
-									<label class="form-check-label">
-										<input class="form-check-input" type="checkbox"> Full HD
-									</label>
-								</li>
-								<li>
-									<label class="form-check-label">
-										<input class="form-check-input" type="checkbox"> XVGA
-									</label>
-								</li>
-								<li>
-									<label class="form-check-label">
-										<input class="form-check-input" type="checkbox"> DLP
-									</label>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<label class="form-check-label">
-								<h5><input class="form-check-input" type="checkbox"> Pantallas</h5>
-							</label>
-							<ul>
-								<li>
-									<label class="form-check-label">
-										<input class="form-check-input" type="checkbox"> Retractil
-									</label>
-									<ul>
-										<li>
-											<label class="form-check-label">
-												<input class="form-check-input" type="checkbox"> Tripode
-											</label>	
-										</li>
-										<li>
-											<label class="form-check-label">
-												<input class="form-check-input" type="checkbox"> Electrica
-											</label>	
-										</li>
-									</ul>
-								</li>
-								<li>
-									<label class="form-check-label">
-										<input class="form-check-input" type="checkbox"> XVGA
-									</label>
-								</li>
-								<li>
-									<label class="form-check-label">
-										<input class="form-check-input" type="checkbox"> DLP
-									</label>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<label class="form-check-label">
-								<h5><input class="form-check-input" type="checkbox"> Proyectores</h5>
-							</label>
-							<ul>
-								<li>
-									<label class="form-check-label">
-										<input class="form-check-input" type="checkbox"> Full HD
-									</label>
-								</li>
-								<li>
-									<label class="form-check-label">
-										<input class="form-check-input" type="checkbox"> XVGA
-									</label>
-								</li>
-								<li>
-									<label class="form-check-label">
-										<input class="form-check-input" type="checkbox"> DLP
-									</label>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<label class="form-check-label">
-								<h5><input class="form-check-input" type="checkbox"> Proyectores</h5>
-							</label>
-							<ul>
-								<li>
-									<label class="form-check-label">
-										<input class="form-check-input" type="checkbox"> Full HD
-									</label>
-								</li>
-								<li>
-									<label class="form-check-label">
-										<input class="form-check-input" type="checkbox"> XVGA
-									</label>
-								</li>
-								<li>
-									<label class="form-check-label">
-										<input class="form-check-input" type="checkbox"> DLP
-									</label>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<label class="form-check-label">
-								<h5><input class="form-check-input" type="checkbox"> Proyectores</h5>
-							</label>
-							<ul>
-								<li>
-									<label class="form-check-label">
-										<input class="form-check-input" type="checkbox"> Full HD
-									</label>
-								</li>
-								<li>
-									<label class="form-check-label">
-										<input class="form-check-input" type="checkbox"> XVGA
-									</label>
-								</li>
-								<li>
-									<label class="form-check-label">
-										<input class="form-check-input" type="checkbox"> DLP
-									</label>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</form>	
+								<h5><input id="' . $cat->term_id . '" class="form-check-input" type="checkbox"> ' . $cat->name . ' </h5>
+							</label>';
+						    // echo '<li>' . $cat->name . '</li>';
+						    /*echo ' / <a href="' . get_category_link( $cat->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $cat->name ) . '" ' . '>View ( '. $cat->count . ' posts )</a>  '; */
+						    /*echo ' / <a href="'. get_admin_url().'edit-tags.php?action=edit&taxonomy=category&tag_ID='.$cat->term_id.'&post_type=post" title="Edit Category">Edit</a>'; */
+						    hierarchical_category_tree( $cat->term_id );
+						    endforeach;
+						    echo '</ul>';
+						  endif;
+						}
+					?>
+				</form>
 			</div>
 			<hr>
 			<div class="content-buttons">
 				<div class="row text-center">
-					<a href="" class="btn btn-primary">Aplicar Filtros</a>
+					<a href="" class="btn btn-primary apply">Aplicar Filtros</a>
 				</div>
 				<div class="row text-center">
-					<a href="" class="btn btn-default">Eliminar Filtros</a>
+					<a href="" class="btn btn-default reset">Eliminar Filtros</a>
 				</div>
 			</div>
 			<div class="clearfix"></div>
