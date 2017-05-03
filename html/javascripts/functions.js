@@ -59,7 +59,7 @@ var initPage = (function () {
 				data: { products: filters.join() }
 	        })
 			.done(function( response ) {
-			    $('.products').html(response);
+			    $('.main-content').html(response);
 		  	});
 		}
 	}
