@@ -44,10 +44,23 @@ var initPage = (function () {
 			$(element).parent().addClass('active');
 			$(tabToShow).addClass('active');
 		},
-		getFiltersParams: function (e) {
-			e.preventDefault();
-			// $('.searchandfilter').val();
-			console.log('asd');
+		getFiltersParams: function () {
+			var filters = [],
+				id;
+
+			$.each($('.filter-container input:checked'), function () {
+				id = $(this).attr('id');
+				filters.push(id);
+			});
+			
+			$.ajax({
+  				method: "POST",
+				url: path + "/getProducts.php",
+				data: { products: filters.join() }
+	        })
+			.done(function( response ) {
+			    $('.products').html(response);
+		  	});
 		}
 	}
 	
@@ -74,7 +87,7 @@ var initPage = (function () {
 		});
 	};
 
-	$('.searchandfilter .apply').on('click', function (e) {
+	$('.content-buttons .apply').on('click', function (e) {
 		e.preventDefault();
 		SoporteAudio.getFiltersParams();
 	})

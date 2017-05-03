@@ -31,7 +31,7 @@
 						    foreach( $next as $cat ) :
 						    echo '<li>
 							<label class="form-check-label">
-								<h5><input id="' . $cat->term_id . '" class="form-check-input" type="checkbox"> ' . $cat->name . ' </h5>
+								<h5><input id="' . $cat->term_id . '" name="' . $cat->term_id . '" value="' . $cat->term_id . '" class="form-check-input" type="checkbox"> ' . $cat->name . ' </h5>
 							</label>';
 						    // echo '<li>' . $cat->name . '</li>';
 						    /*echo ' / <a href="' . get_category_link( $cat->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $cat->name ) . '" ' . '>View ( '. $cat->count . ' posts )</a>  '; */
@@ -47,10 +47,10 @@
 			<hr>
 			<div class="content-buttons">
 				<div class="row text-center">
-					<a href="" class="btn btn-primary apply">Aplicar Filtros</a>
+					<a href="javascript:void(0)" class="btn btn-primary apply">Aplicar Filtros</a>
 				</div>
 				<div class="row text-center">
-					<a href="" class="btn btn-default reset">Eliminar Filtros</a>
+					<a href="javascript:void(0)" class="btn btn-default reset">Eliminar Filtros</a>
 				</div>
 			</div>
 			<div class="clearfix"></div>
@@ -58,7 +58,7 @@
 	</div>
 </div>
 <div class="overlay-filter"></div>
-<div class="container">
+<div class="container products">
 	<div class="main-content alquiler-page">
 
 	<?php if (!empty($slider)) : ?>

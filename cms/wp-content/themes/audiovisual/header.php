@@ -1,3 +1,6 @@
+<?php
+	define("DIR", get_template_directory_uri());
+?>
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
