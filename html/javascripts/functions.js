@@ -60,6 +60,7 @@ var initPage = (function () {
 	        })
 			.done(function( response ) {
 			    $('.main-content').html(response);
+			    $('.overlay-filter').trigger('click');
 		  	});
 		}
 	}
