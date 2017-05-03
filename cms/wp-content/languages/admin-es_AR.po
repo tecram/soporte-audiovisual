@@ -935,7 +935,7 @@ msgstr "La hora universal (%1$s) es %2$s."
 msgid "The constant %s cannot be defined when installing WordPress."
 msgstr "La constante %s no puede estar definida mientras se instala WordPress."
 
-#: wp-admin/install.php:390
+#: wp-admin/install.php:376
 msgid "WordPress has been installed. Thank you, and enjoy!"
 msgstr "WordPress se ha instalado. ¡Gracias, y a disfrutar!"
 
@@ -3751,19 +3751,19 @@ msgstr "Copiando los archivos necesarios&#8230;"
 msgid "Please provide a valid username."
 msgstr "Por favor, facilita un nombre de usuario válido."
 
-#: wp-admin/install.php:354
+#: wp-admin/install.php:353
 msgid "The username you provided has invalid characters."
 msgstr "El nombre de usuario que has facilitado tiene caracteres no válidos."
 
-#: wp-admin/install.php:359
+#: wp-admin/install.php:357
 msgid "Your passwords do not match. Please try again."
 msgstr "Tus contraseñas no coinciden. Inténtalo de nuevo."
 
-#: wp-admin/install.php:364
+#: wp-admin/install.php:361
 msgid "You must provide an email address."
 msgstr "Debes facilitar una dirección de correo electrónico"
 
-#: wp-admin/install.php:369
+#: wp-admin/install.php:365
 msgid "Sorry, that isn&#8217;t a valid email address. Email addresses look like <code>username@example.com</code>."
 msgstr "Lo siento, no es una dirección de correo electrónica válida. Las direcciones de correo electrónico deben parecerse a <code>usuario@ejemplo.com</code>."
 
@@ -7893,7 +7893,7 @@ msgstr "Requisitos Insuficientes"
 msgid "Information needed"
 msgstr "Información necesaria"
 
-#: wp-admin/install.php:388
+#: wp-admin/install.php:374
 msgid "Success!"
 msgstr "¡Lo lograste!"
 

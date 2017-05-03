@@ -12,21 +12,7 @@
 	}
 	$productos_seleccionados = get_field('productos_seleccionados', $page_id);
 	$slider = get_field('slider', $page_id);
-	/*else {
-		$terms = array(
-			'post_type' => 'products',
-			'posts_per_page'	=> -1,
-			'tax_query' => array(
-				array(
-					'taxonomy' => 'disponibility',
-					'field'    => 'slug',
-					'terms'    => $current_category_slug,
-				),
-			),
-		);
-		$products = new WP_Query ($terms);
-	}*/
-
+	
 ?>
 <div class="filter-container">
 	<a href="" class="show-filter"><span class="icon icon-filters"></span></a>
@@ -51,9 +37,6 @@
 							<label class="form-check-label">
 								<h5><input id="' . $cat->term_id . '" class="form-check-input" type="checkbox"> ' . $cat->name . ' </h5>
 							</label>';
-						    // echo '<li>' . $cat->name . '</li>';
-						    /*echo ' / <a href="' . get_category_link( $cat->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $cat->name ) . '" ' . '>View ( '. $cat->count . ' posts )</a>  '; */
-						    /*echo ' / <a href="'. get_admin_url().'edit-tags.php?action=edit&taxonomy=category&tag_ID='.$cat->term_id.'&post_type=post" title="Edit Category">Edit</a>'; */
 						    hierarchical_category_tree( $cat->term_id );
 						    endforeach;
 						    echo '</ul>';
@@ -97,8 +80,6 @@
 							<img src="<?php echo $imagen; ?>" alt="...">
 							<p><?php echo $breve_descripcion; ?></p>
 						</div>
-						<!-- <div class="item"><img src="/assets/images/slider/slider.jpg" alt="..."></div>
-						<div class="item"><img src="/assets/images/slider/slider.jpg" alt="..."></div> -->
 					<?php $h++; } ?>
 			</div>
 		</div>
@@ -186,5 +167,4 @@
 		<?php endif; ?>
 	</div>
 </div>
-<!-- Taxonomy childrens -->
 <?php get_footer(); ?>

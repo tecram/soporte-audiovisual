@@ -2230,7 +2230,7 @@ msgid "Are you sure you want to delete %s?"
 msgstr "¿Estás seguro de que querés borrar %s?"
 
 #. translators: %s: site title
-#: wp-includes/pluggable.php:1720
+#: wp-includes/pluggable.php:1736
 msgid "[%s] Password Changed"
 msgstr "[%s] Contraseña cambiada"
 
@@ -2243,7 +2243,7 @@ msgid "Please select at least one item to perform this action on."
 msgstr "Por favor, seleccioná al menos un item para ejecutar esta acción."
 
 #. translators: %s: user name
-#: wp-includes/pluggable.php:1715
+#: wp-includes/pluggable.php:1731
 msgid "Password changed for user: %s"
 msgstr "Contraseña modificada para el usuario %s"
 
@@ -3457,7 +3457,7 @@ msgstr "Tu enlace de restablecimiento de contraseña ha expirado. Por favor, sol
 msgid "Username may not be longer than 60 characters."
 msgstr "El nombre de usuario no puede ser superior a 60 caracteres."
 
-#: wp-includes/pluggable.php:1790
+#: wp-includes/pluggable.php:1806
 msgid "To set your password, visit the following address:"
 msgstr "Para establecer tu contraseña, visitá la siguiente dirección:"
 
@@ -4132,7 +4132,7 @@ msgstr "Instalar ahora"
 #. translators: 1: comment author, 2: author IP, 3: author domain
 #. translators: 1: Comment author name, 2: comment author's IP, 3: comment
 #. author IP's hostname
-#: wp-includes/pluggable.php:1457 wp-includes/pluggable.php:1617
+#: wp-includes/pluggable.php:1473 wp-includes/pluggable.php:1633
 msgid "Author: %1$s (IP: %2$s, %3$s)"
 msgstr "Autor: %1$s (IP: %2$s, %3$s)"
 
@@ -4148,8 +4148,8 @@ msgstr "j de F, Y @ H:i:s"
 
 #. translators: 1: Trackback/pingback website name, 2: website IP, 3: website
 #. hostname
-#: wp-includes/pluggable.php:1436 wp-includes/pluggable.php:1447
-#: wp-includes/pluggable.php:1597 wp-includes/pluggable.php:1607
+#: wp-includes/pluggable.php:1452 wp-includes/pluggable.php:1463
+#: wp-includes/pluggable.php:1613 wp-includes/pluggable.php:1623
 msgid "Website: %1$s (IP: %2$s, %3$s)"
 msgstr "Sitio web: %1$s (IP: %2$s, %3$s)"
 
@@ -4391,9 +4391,9 @@ msgid "Trash"
 msgstr "Papelera"
 
 #. translators: 1: Trackback/pingback/comment author URL
-#: wp-includes/pluggable.php:1437 wp-includes/pluggable.php:1448
-#: wp-includes/pluggable.php:1459 wp-includes/pluggable.php:1599
-#: wp-includes/pluggable.php:1609 wp-includes/pluggable.php:1621
+#: wp-includes/pluggable.php:1453 wp-includes/pluggable.php:1464
+#: wp-includes/pluggable.php:1475 wp-includes/pluggable.php:1615
+#: wp-includes/pluggable.php:1625 wp-includes/pluggable.php:1637
 msgid "URL: %s"
 msgstr "URL: %s"
 
@@ -4403,8 +4403,8 @@ msgid "Trash"
 msgstr "Papelera"
 
 #. translators: 1: Comment text
-#: wp-includes/pluggable.php:1438 wp-includes/pluggable.php:1449
-#: wp-includes/pluggable.php:1460 wp-includes/pluggable.php:1623
+#: wp-includes/pluggable.php:1454 wp-includes/pluggable.php:1465
+#: wp-includes/pluggable.php:1476 wp-includes/pluggable.php:1639
 msgid "Comment: %s"
 msgstr "Comentario: %s"
 
@@ -4421,15 +4421,15 @@ msgstr "Entradas mas nuevas"
 msgid "Edit Selection"
 msgstr "Editar selección"
 
-#: wp-includes/pluggable.php:1439
+#: wp-includes/pluggable.php:1455
 msgid "You can see all trackbacks on this post here:"
 msgstr "Podés ver todos los trackbacks de esta entrada aquí:"
 
-#: wp-includes/pluggable.php:1450
+#: wp-includes/pluggable.php:1466
 msgid "You can see all pingbacks on this post here:"
 msgstr "Podés ver todos los pingbacks de esta entrada aquí:"
 
-#: wp-includes/pluggable.php:1461
+#: wp-includes/pluggable.php:1477
 msgid "You can see all comments on this post here:"
 msgstr "Podés ver todos los comentarios de esta entrada aquí:"
 
@@ -7171,7 +7171,7 @@ msgstr "Ver etiqueta"
 msgid "View Category"
 msgstr "Ver categoría"
 
-#: wp-includes/pluggable.php:1043 wp-includes/pluggable.php:1086
+#: wp-includes/pluggable.php:1059 wp-includes/pluggable.php:1102
 msgid "You should specify a nonce action to be verified by using the first parameter."
 msgstr "Tenés que especificar una acción \"nonce\" a verificar mediante el primer parámetro."
 
@@ -7273,7 +7273,7 @@ msgstr "%1$s se llamó <strong>incorrectamente</strong>. %2$s %3$s"
 msgid "(This message was added in version %s.)"
 msgstr "(Este mensaje se añadió en la versión %s.)"
 
-#: wp-includes/pluggable.php:1467
+#: wp-includes/pluggable.php:1483
 msgid "Permalink: %s"
 msgstr "Enlace permanente: %s"
 
@@ -7801,7 +7801,7 @@ msgstr "Lo siento, no podés utilizar este nombre para el sitio."
 msgid "Sorry, that site is reserved!"
 msgstr "Lo siento, este nombre de sitio está reservado"
 
-#: wp-includes/pluggable.php:1758
+#: wp-includes/pluggable.php:1774
 msgid "New user registration on your site %s:"
 msgstr "Registrado un nuevo usuario en tu sitio %s:"
 
@@ -8018,12 +8018,12 @@ msgid "sitename"
 msgstr "nombredelsitio"
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1445
+#: wp-includes/pluggable.php:1461
 msgid "New pingback on your post \"%s\""
 msgstr "Nuevo pingback en tu entrada \"%s\""
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1434
+#: wp-includes/pluggable.php:1450
 msgid "New trackback on your post \"%s\""
 msgstr "Nuevo trackback en tu entrada \"%s\""
 
@@ -8035,22 +8035,22 @@ msgstr "Si sos el propietario de esta red, por favor comprobá que MySQL esté f
 msgid "If your site does not display, please contact the owner of this network."
 msgstr "Si tu sitio no se muestra, por favor, contactá con el dueño de esta red."
 
-#: wp-includes/pluggable.php:1455
+#: wp-includes/pluggable.php:1471
 msgid "New comment on your post \"%s\""
 msgstr "Nuevo comentario en tu entrada \"%s\""
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1594
+#: wp-includes/pluggable.php:1610
 msgid "A new trackback on the post \"%s\" is waiting for your approval"
 msgstr "Un nuevo trackback en la entrada \"%s\" espera tu aprobación."
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1604
+#: wp-includes/pluggable.php:1620
 msgid "A new pingback on the post \"%s\" is waiting for your approval"
 msgstr "Un nuevo pingback en la entrada \"%s\" está esperando tu aprobación"
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1614
+#: wp-includes/pluggable.php:1630
 msgid "A new comment on the post \"%s\" is waiting for your approval"
 msgstr "Un nuevo comentario en la entrada \"%s\" está esperando tu aprobación"
 
@@ -9112,64 +9112,64 @@ msgid "New %1$s User: %2$s"
 msgstr "Nuevo %1$s usuario: %2$s"
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1463
+#: wp-includes/pluggable.php:1479
 msgid "[%1$s] Comment: \"%2$s\""
 msgstr "[%1$s] Comentario: \"%2$s\""
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1441
+#: wp-includes/pluggable.php:1457
 msgid "[%1$s] Trackback: \"%2$s\""
 msgstr "[%1$s] Trackback: \"%2$s\""
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1452
+#: wp-includes/pluggable.php:1468
 msgid "[%1$s] Pingback: \"%2$s\""
 msgstr "[%1$s] Pingback: \"%2$s\""
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1471 wp-includes/pluggable.php:1632
+#: wp-includes/pluggable.php:1487 wp-includes/pluggable.php:1648
 msgid "Trash it: %s"
 msgstr "Enviar a la papelera: %s"
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1473 wp-includes/pluggable.php:1635
+#: wp-includes/pluggable.php:1489 wp-includes/pluggable.php:1651
 msgid "Delete it: %s"
 msgstr "Borrarlo: %s"
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1475 wp-includes/pluggable.php:1639
+#: wp-includes/pluggable.php:1491 wp-includes/pluggable.php:1655
 msgid "Spam it: %s"
 msgstr "Marcarlo como spam: %s"
 
-#: wp-includes/pluggable.php:1600
+#: wp-includes/pluggable.php:1616
 msgid "Trackback excerpt: "
 msgstr "Extracto del trackback:"
 
-#: wp-includes/pluggable.php:1610
+#: wp-includes/pluggable.php:1626
 msgid "Pingback excerpt: "
 msgstr "Extracto del pingback:"
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1628
+#: wp-includes/pluggable.php:1644
 msgid "Approve it: %s"
 msgstr "Aprobarlo: %s"
 
 #. translators: Comment moderation notification email subject. 1: Site name, 2:
 #. Post title
-#: wp-includes/pluggable.php:1647
+#: wp-includes/pluggable.php:1663
 msgid "[%1$s] Please moderate: \"%2$s\""
 msgstr "[%1$s] Pendientes de moderación: \"%2$s\""
 
-#: wp-includes/pluggable.php:1759 wp-includes/pluggable.php:1789
+#: wp-includes/pluggable.php:1775 wp-includes/pluggable.php:1805
 #: wp-login.php:329
 msgid "Username: %s"
 msgstr "Nombre de usuario: %s"
 
-#: wp-includes/pluggable.php:1762
+#: wp-includes/pluggable.php:1778
 msgid "[%s] New User Registration"
 msgstr "[%s] Registro de nuevo usuario"
 
-#: wp-includes/pluggable.php:1795
+#: wp-includes/pluggable.php:1811
 msgid "[%s] Your username and password info"
 msgstr "[%s] Tu nombre de usuario y contraseña"
 
@@ -9674,7 +9674,7 @@ msgid "An error has occurred, which probably means the feed is down. Try again l
 msgstr "Ha ocurrido un error, probablemente el feed esté caído. Intentalo de nuevo más tarde."
 
 #. translators: Comment moderation. 1: Number of comments awaiting approval
-#: wp-includes/pluggable.php:1642
+#: wp-includes/pluggable.php:1658
 msgid "Currently %s comment is waiting for approval. Please visit the moderation panel:"
 msgid_plural "Currently %s comments are waiting for approval. Please visit the moderation panel:"
 msgstr[0] "Actualmente hay %s comentario en espera de aprobación. Por favor visitá el panel de moderación:"
@@ -10450,8 +10450,8 @@ msgid "Uncategorized"
 msgstr "Sin categoría"
 
 #. translators: 1: Comment author URL
-#: wp-includes/pluggable.php:1458 wp-includes/pluggable.php:1619
-#: wp-includes/pluggable.php:1760
+#: wp-includes/pluggable.php:1474 wp-includes/pluggable.php:1635
+#: wp-includes/pluggable.php:1776
 msgid "Email: %s"
 msgstr "Correo electrónico: %s"
 
