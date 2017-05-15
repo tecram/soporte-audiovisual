@@ -3,6 +3,9 @@
 	@include breakpoint(tablet) {
 		padding-top: 80px;
 	}
+	&.margin-v{
+		margin: 60px auto;
+	}
 }
 .position-initial {
 	position: initial;

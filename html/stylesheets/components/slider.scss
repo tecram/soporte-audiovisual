@@ -22,17 +22,21 @@
 	.item {
 		position: relative;
 		height: 445px;
+		overflow: hidden;
 		background-image: linear-gradient(120deg,#fdfbfb 0%,#ebedee 100%);
 		@include breakpoint(laptop) {
 			height: 375px;
 		}
 		@include breakpoint(tablet) {
-			height: 285px;
+			height: 225px;
 		}
 		img {
 			float: right;
+			width: 55%;
 			@include breakpoint(tablet) {
-				height: 285px;
+				float: none;
+				width: 100%;
+				height: auto;
 			}
 		}
 		h2, h3, p{
@@ -54,7 +58,7 @@
 		p{
 			color: #000;
 			top: 160px;
-			max-width: 430px;
+			max-width: 35%;
 			@include breakpoint(tablet) {
 				display: none;
 			}

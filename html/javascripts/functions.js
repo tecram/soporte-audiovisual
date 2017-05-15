@@ -59,10 +59,24 @@ var SoporteAudio = {
 			data: { products: filters.join() }
 		})
 		.done(function( response ) {
-		    $('.main-content').html(response);
+		    $('.main-content').html(response).addClass('margin-v');
+		    $('.active-filter .list').html(SoporteAudio.showFiltersActive(filters));
 		    SoporteAudio.loading('hide');
 		    $('.overlay-filter').trigger('click');
 	  	});
+	},
+	showFiltersActive: function(filters) {
+		'use strict';
+		var string="";
+		string += "<ul>";
+		$.each(filters, function(index, val) {
+			var parent = $('.filter-container input[value="'+val+'"]').parent();
+			if(parent){
+				string += "<li><a href='#' data-id='"+val+"'>"+parent.text()+"</a></li>";
+			}
+		});
+		string += "</ul>";
+		return string;
 	},
 	loading: function(status){
 		'use strict';
@@ -103,6 +117,17 @@ var initPage = (function () {
 			dots: true
 		});
 	};
+
+	$('.filter-container').on('click', '.active-filter a', function(){
+		var id = $(this).attr('data-id');
+		$('.filter-container input[value="'+id+'"]').removeAttr('checked');
+		SoporteAudio.getFiltersParams();
+	})
+	$('.content-buttons .reset').on('click', function (e) {
+		e.preventDefault();
+		$('.filter-container input').removeAttr('checked');
+		SoporteAudio.getFiltersParams();
+	})
 
 	$('.content-buttons .apply').on('click', function (e) {
 		e.preventDefault();

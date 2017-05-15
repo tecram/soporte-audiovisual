@@ -17,6 +17,7 @@
 			<div class="col-md-12">
 				<div class="active-filter">
 					<h5>Filtros:</h5>
+					<div class="list"></div>
 					<hr>
 				</div>
 				

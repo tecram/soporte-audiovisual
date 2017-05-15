@@ -8,6 +8,46 @@
 	z-index: 5;
 	box-shadow: 3px 3px 5px 0 rgba(0,0,0,.2);
 	transition: all ease .4s;
+	.active-filter {
+		h5 {
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+			li {
+				display: inline-block;
+				margin: 5px;
+				a {
+					padding: 3px 6px;
+					border: 1px solid $main-blue;
+					border-radius: 2px;
+					font-size: 12px;
+					padding-right: 11px;
+					vertical-align: middle;
+					position: relative;
+					text-decoration: none;
+					transition: all ease .2s;
+					display: inline-block;
+					&:after {
+						content: 'x';
+						vertical-align: middle;
+						font-size: 9px;
+						position: absolute;
+						right: 3px;
+						top: 5px;
+						display: block;
+					}
+					&:hover {
+						background-color: $main-blue;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
 	&.active {
 		width: 300px;
 		@include breakpoint(tablet) {
@@ -109,47 +149,9 @@
 		&.active {
 			width: 300px;
 		}
-		.active-filter {
-			h5 {
-				font-weight: bold;
-				text-transform: uppercase;
-				margin-bottom: 10px;
-			}
-			ul {
-				list-style: none;
-				padding: 0;
-				li {
-					display: inline-block;
-					margin: 5px;
-					a {
-						padding: 2px;
-						border: 1px solid $main-blue;
-						border-radius: 2px;
-						font-size: 12px;
-						padding-right: 11px;
-						vertical-align: middle;
-						position: relative;
-						text-decoration: none;
-						transition: all ease .2s;
-						&:after {
-							content: 'x';
-							vertical-align: middle;
-							font-size: 9px;
-							position: absolute;
-							right: 2px;
-							top: 3px;
-							display: block;
-						}
-						&:hover {
-							background-color: $main-blue;
-							color: #fff;
-						}
-					}
-				}
-			}
-		}
 	}
 }
+
 .overlay-filter {
 	position: fixed;
 	background-color: rgba(0,0,0,.8);
