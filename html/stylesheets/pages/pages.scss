@@ -94,9 +94,13 @@ body{
 			}
 		}
 	}
-	#description {
+	.tab-content {
+		padding: 30px 10px;
+	}
+	#description, #specifications {
 		p {
 			margin: 20px 0;
+			line-height: 200%;
 			strong {
 				font-family: $font-bold;
 			}

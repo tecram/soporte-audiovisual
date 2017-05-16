@@ -32,7 +32,7 @@
 						    foreach( $next as $cat ) :
 						    echo '<li>
 							<label class="form-check-label">
-								<h5><input id="' . $cat->term_id . '" name="' . $cat->term_id . '" value="' . $cat->term_id . '" class="form-check-input" type="checkbox"> ' . $cat->name . ' </h5>
+								<h5><input data-name="' . $cat->name . '" id="' . $cat->term_id . '" name="' . $cat->term_id . '" value="' . $cat->term_id . '" class="form-check-input" type="checkbox"> ' . $cat->name . ' </h5>
 							</label>';
 						    hierarchical_category_tree( $cat->term_id );
 						    endforeach;
@@ -154,6 +154,13 @@
 											<div class="wow fadeInRight">
 										        <div class="product-b <?php echo $product_categories; echo $destacado; ?>">
 									                <div class="content-img">
+									                	<span class="ribbons">
+															<ul>
+																<li class="alquiler">Alquiler</li>
+																<li class="venta">Venta</li>
+																<li class="destacado"><!--&#9733;-->Destacado</li>
+															</ul>
+														</span>
 									                    <img src="<?php echo $image; ?>" alt="<?php echo $title; ?>">
 									                </div>
 									                <div class="content-detail">

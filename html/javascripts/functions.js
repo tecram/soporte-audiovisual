@@ -62,7 +62,7 @@ var SoporteAudio = {
 		    $('.main-content').html(response).addClass('margin-v');
 		    $('.active-filter .list').html(SoporteAudio.showFiltersActive(filters));
 		    SoporteAudio.loading('hide');
-		    $('.overlay-filter').trigger('click');
+		    $('.show-filter').trigger('click');
 	  	});
 	},
 	showFiltersActive: function(filters) {
@@ -70,9 +70,9 @@ var SoporteAudio = {
 		var string="";
 		string += "<ul>";
 		$.each(filters, function(index, val) {
-			var parent = $('.filter-container input[value="'+val+'"]').parent();
+			var element = $('.filter-container input[value="'+val+'"]');
 			if(parent){
-				string += "<li><a href='#' data-id='"+val+"'>"+parent.text()+"</a></li>";
+				string += "<li><a href='#' data-id='"+val+"'>"+element.attr('data-name')+"</a></li>";
 			}
 		});
 		string += "</ul>";

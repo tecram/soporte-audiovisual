@@ -26,6 +26,7 @@
 			<div class="col-md-12">
 				<div class="active-filter">
 					<h5>Filtros:</h5>
+					<div class="list"></div>
 					<hr>
 				</div>
 				
@@ -40,7 +41,7 @@
 						    foreach( $next as $cat ) :
 						    echo '<li>
 							<label class="form-check-label">
-								<h5><input id="' . $cat->term_id . '" class="form-check-input" type="checkbox"> ' . $cat->name . ' </h5>
+								<h5><input value="' . $cat->term_id . '" id="' . $cat->term_id . '" data-name="' . $cat->name . '"  class="form-check-input" type="checkbox"> ' . $cat->name . ' </h5>
 							</label>';
 						    // echo '<li>' . $cat->name . '</li>';
 						    /*echo ' / <a href="' . get_category_link( $cat->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $cat->name ) . '" ' . '>View ( '. $cat->count . ' posts )</a>  '; */
