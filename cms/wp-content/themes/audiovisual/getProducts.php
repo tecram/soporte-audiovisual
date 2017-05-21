@@ -18,8 +18,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	$query = new WP_Query( $args );
 
 ?>
-
-
 	<?php if ($query->have_posts()) : ?>
 		<section class="category-module">
 			<div class="container">

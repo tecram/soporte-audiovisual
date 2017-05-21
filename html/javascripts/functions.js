@@ -52,18 +52,21 @@ var SoporteAudio = {
 			id = $(this).attr('id');
 			filters.push(id);
 		});
-		SoporteAudio.loading('show');
-		$.ajax({
-			method: "POST",
-			url: path + "/getProducts.php",
-			data: { products: filters.join() }
-		})
-		.done(function( response ) {
-		    $('.main-content').html(response).addClass('margin-v');
-		    $('.active-filter .list').html(SoporteAudio.showFiltersActive(filters));
-		    SoporteAudio.loading('hide');
-		    $('.show-filter').trigger('click');
-	  	});
+		var filtersId = filters.join();
+		if ( filtersId.length > 0 ) {
+			SoporteAudio.loading('show');
+			$.ajax({
+				method: "POST",
+				url: path + "/getProducts.php",
+				data: { products: filtersId }
+			})
+			.done(function( response ) {
+			    $('.main-content').html(response).addClass('margin-v');
+			    $('.active-filter .list').html(SoporteAudio.showFiltersActive(filters));
+			    SoporteAudio.loading('hide');
+			    $('.show-filter').trigger('click');
+		  	});
+	  	}
 	},
 	showFiltersActive: function(filters) {
 		'use strict';
