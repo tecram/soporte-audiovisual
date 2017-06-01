@@ -35,6 +35,13 @@
 						<div class="product-b">
 							<div class="content-img">
 								<img src="<?php echo $image; ?>" alt="<?php echo $title; ?>">
+								<span class="ribbons">
+									<ul>
+										<li class="alquiler">Alquiler</li>
+										<li class="venta">Venta</li>
+										<li class="destacado"><!--&#9733;-->Destacado</li>
+									</ul>
+								</span>
 							</div>
 							<div class="content-detail">
 								<h3 class="title"><?php echo $title; ?></h3>

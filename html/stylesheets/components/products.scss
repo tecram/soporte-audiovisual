@@ -26,20 +26,17 @@
 			margin: 15px 0;
 		}
 	}
-	.show-more {
-		margin-top: 20px;
-	}
 }
 .product-b {
 	margin-bottom: 10px;
 	padding: 5px;
-	max-height: 345px;
+	max-height: 375px;
 	overflow: hidden;
 	transition: all .3s ease;
 	.content-img {
 		position: relative;
 		text-align: center;
-		height: 140px;
+		height: 170px;
 		overflow: hidden;
 		img {
 			max-height: 140px;
@@ -79,7 +76,26 @@
 			overflow: hidden;
 		}
 	}
+}
+.product-b, .product-a{
 	.show-more {
 		margin-top: 20px;
+		border: 2px solid $main-blue;
+		background: #fff;
+		box-shadow: none;
+		color: $main-blue;
+		font-weight: bold;
+		border-radius: 0;
+		transition: all .3s ease-in-out;
+		&:hover{
+			border-color: lighten($main-blue,20%);
+			color: lighten($main-blue,20%);
+			background: #fff;
+		}
+		&:active{
+			border-color: darken($main-blue,20%);
+			color: darken($main-blue,20%);
+			background: #fff;
+		}
 	}
 }

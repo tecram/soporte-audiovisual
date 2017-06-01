@@ -78,6 +78,7 @@
 						<div class="item">
 							<h3><?php echo $volanta; ?></h3>
 							<h2><?php echo $titulo; ?></h2>
+							<div class="overlay hidden-lg hidden-md"></div>
 							<img src="<?php echo $imagen; ?>" alt="...">
 							<p><?php echo $breve_descripcion; ?></p>
 						</div>
@@ -144,14 +145,14 @@
 											<div class="wow fadeInRight">
 										        <div class="product-b">
 									                <div class="content-img">
-									                <span class="ribbons">
+									                    <img src="<?php echo $image; ?>" alt="<?php echo $title; ?>">
+									                	<span class="ribbons">
 															<ul>
 																<li class="alquiler">Alquiler</li>
 																<li class="venta">Venta</li>
 																<li class="destacado"><!--&#9733;-->Destacado</li>
 															</ul>
 														</span>
-									                    <img src="<?php echo $image; ?>" alt="<?php echo $title; ?>">
 									                </div>
 									                <div class="content-detail">
 									                    <h3 class="title"><?php echo $title; ?></h3>

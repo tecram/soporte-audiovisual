@@ -86,20 +86,25 @@
 
 								?>
 									<div class="col-md-3">
-										<div class="wow fadeInRight">
-											<div class="product-b">
-												<div class="content-img">
-													<img src="<?php echo $small_image; ?>" alt="...">
+										<div class="product-b">
+											<div class="content-img">
+												<img src="<?php echo $small_image; ?>" alt="<?php echo get_the_title($post_id); ?>">
+												<span class="ribbons">
+													<ul>
+														<li class="alquiler">Alquiler</li>
+														<li class="venta">Venta</li>
+														<li class="destacado"><!--&#9733;-->Destacado</li>
+													</ul>
+												</span>
+											</div>
+											<div class="content-detail">
+												<h3 class="title"><?php echo get_the_title($post_id); ?></h3>
+												<h4 class="sub-title"><?php echo $subtitulo; ?></h4>
+												<hr>
+												<div class="description">
+													<p><?php echo $breve_descripcion; ?></p>
 												</div>
-												<div class="content-detail">
-													<h3 class="title"><?php echo get_the_title($post_id); ?></h3>
-													<h4 class="sub-title"><?php echo $subtitulo; ?></h4>
-													<hr>
-													<div class="description">
-														<p><?php echo $breve_descripcion; ?></p>
-													</div>
-													<a class="show-more btn btn-primary" href="<?php echo get_the_permalink($post_id); ?>">+</a>
-												</div>
+												<a class="show-more btn btn-primary" href="<?php echo get_the_permalink($post_id); ?>">+</a>
 											</div>
 										</div>
 									</div>
