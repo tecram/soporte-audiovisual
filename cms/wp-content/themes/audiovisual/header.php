@@ -10,8 +10,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/vendors.css" />
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.min.css" />
+		<link rel="stylesheet" href="<?php echo DIR; ?>/assets/css/vendors.css" />
+		<link rel="stylesheet" href="<?php echo DIR; ?>/assets/css/main.min.css" />
 
 		<?php wp_head(); ?>
 	</head>

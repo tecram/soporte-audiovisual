@@ -5,8 +5,18 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	
 	$products = (isset($_POST['products']) ? $_POST['products'] : null);
 
+	if($products != null && strpos($products, ",")){
+		$list=explode(",", $products);
+		unset($products);
+		$products=array();
+		foreach ($list as $value) {
+			$products[]=$value;
+		}
+	}
+
 	$args = array(
 		'post_type' => 'products',
+		'nopaging' => true,
 		'tax_query' => array(
 			array(
 				'taxonomy' => 'type',
@@ -22,7 +32,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 		<section class="category-module">
 			<div class="container">
 				<div class="main-content">
-					
+					<?php //echo "<pre>";print_r($query);echo "</pre>"; ?>
 					<div class="col-md-12">
 					<?php $n = 0; 
 					while ($query->have_posts()) : $query->the_post();
