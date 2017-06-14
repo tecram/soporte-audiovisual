@@ -23,7 +23,6 @@
 		position: relative;
 		height: 445px;
 		overflow: hidden;
-		background-image: linear-gradient(120deg,#fdfbfb 0%,#ebedee 100%);
 		@include breakpoint(laptop) {
 			height: 375px;
 		}
@@ -31,8 +30,7 @@
 			height: 225px;
 		}
 		img {
-			float: right;
-			width: 55%;
+			width: 100%;
 			@include breakpoint(tablet) {
 				float: none;
 				width: 100%;

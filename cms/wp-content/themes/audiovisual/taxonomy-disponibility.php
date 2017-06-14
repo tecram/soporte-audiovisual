@@ -76,11 +76,11 @@
 							$imagen = $key['imagen'];
 						?>
 						<div class="item">
-							<h3><?php echo $volanta; ?></h3>
+							<!--<h3><?php echo $volanta; ?></h3>
 							<h2><?php echo $titulo; ?></h2>
-							<div class="overlay hidden-lg hidden-md"></div>
-							<img src="<?php echo $imagen; ?>" alt="...">
-							<p><?php echo $breve_descripcion; ?></p>
+							<div class="overlay hidden-lg hidden-md"></div>-->
+							<img src="<?php echo $imagen; ?>" alt="<?php echo $titulo; ?>">
+							<!--<p><?php echo $breve_descripcion; ?></p>-->
 						</div>
 					<?php $h++; } ?>
 			</div>
