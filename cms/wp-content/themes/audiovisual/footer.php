@@ -1,5 +1,5 @@
 <footer>
-	<p class="text-center">© 2004-2017 Digital Inspiration, tech à la carte. Made in India.</p>
+	<p class="text-center">© Soporte Audio Visual 2017. Todos los derechos reservados.</p>
 </footer>
 
 <script src="<?php echo DIR; ?>/assets/js/vendors.js"></script>
