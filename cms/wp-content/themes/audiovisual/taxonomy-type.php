@@ -125,12 +125,15 @@
 							</div>
 					
 					<?php if ($n == 5) { 
-						$n = 0;
 					?>
 						</div>
 						<div class="clearfix"></div>
 					<?php } ?>
-					<?php $n++; endwhile; ?>
+					<?php $n++; 
+					if($n == 6){
+						$n = 0;
+					}
+					endwhile; ?>
 						<div class="clearfix"></div>
 					</div>
 				</div>
