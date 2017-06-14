@@ -83,6 +83,7 @@
 									$subtitulo = get_field('subtitulo', $post_id);
 									$breve_descripcion = get_field('breve_descripcion', $post_id);
 									$small_image = get_the_post_thumbnail_url($post_id, $size = 'small-product');
+									$post_terms = get_the_terms( $post_id , 'disponibility' );
 
 								?>
 									<div class="col-md-3">
@@ -91,9 +92,11 @@
 												<img src="<?php echo $small_image; ?>" alt="<?php echo get_the_title($post_id); ?>">
 												<span class="ribbons">
 													<ul>
-														<li class="alquiler">Alquiler</li>
-														<li class="venta">Venta</li>
-														<li class="destacado"><!--&#9733;-->Destacado</li>
+														<?php foreach ($post_terms as $dispon) { ?>
+														<li class="<?php echo $dispon->slug; ?>"><?php echo $dispon->name; ?></li>
+														<?php } ?>
+														<!--<li class="venta">Venta</li>-->
+														<!--<li class="destacado">--><!--&#9733;--><!--Destacado</li>-->
 													</ul>
 												</span>
 											</div>
