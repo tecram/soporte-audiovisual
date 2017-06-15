@@ -44,6 +44,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 						$product_link = get_the_permalink($post_id);
 						$taxonomies = get_terms( array( 'taxonomy' => 'disponibility' ));
 						$important = get_field('destacado');
+						$post_terms = array();
 						$post_terms = get_the_terms( $post->ID , 'disponibility' );
 						$post_categories = array();
 						
@@ -64,6 +65,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 							<div class="col-md-2 <?php echo $product_categories; echo $destacado; ?>">
 								<div class="product-b">
 									<div class="content-img">
+										<img src="<?php echo $image; ?>" alt="<?php echo $title; ?>">
 										<span class="ribbons">
 											<ul>
 												<li class="alquiler">Alquiler</li>
@@ -71,7 +73,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 												<li class="destacado"><!--&#9733;-->Destacado</li>
 											</ul>
 										</span>
-										<img src="<?php echo $image; ?>" alt="<?php echo $title; ?>">
 									</div>
 									<div class="content-detail">
 										<h3 class="title"><?php echo $title; ?></h3>
