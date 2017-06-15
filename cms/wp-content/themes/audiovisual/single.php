@@ -53,7 +53,7 @@
 					</div>
 					<div class="clearfix"></div>
 					<ul class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Descripcion</a></li>
+						<?php if (!empty($descripcion)) { ?><li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Descripcion</a></li><?php } ?>
 						<?php if ($especificaciones) { ?><li role="presentation"><a href="#specifications" aria-controls="specifications" role="tab" data-toggle="tab">Especificaciones</a></li><?php } ?>
 						<?php if (!empty($descargas)) { ?><li role="presentation"><a href="#download" aria-controls="download" role="tab" data-toggle="tab">Descargas</a></li><?php } ?>
 					</ul>
