@@ -128,8 +128,7 @@ var initPage = (function () {
 	})
 	$('.content-buttons .reset').on('click', function (e) {
 		e.preventDefault();
-		$('.filter-container input').removeAttr('checked');
-		SoporteAudio.getFiltersParams();
+		location.reload();
 	})
 
 	$('.content-buttons .apply').on('click', function (e) {
