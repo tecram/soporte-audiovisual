@@ -94,7 +94,7 @@
 			?>
 			<section class="category-module">
 				<div class="module-header">
-					<h3><?php if (!empty($icono_de_categoria)) { ?><span class="icon" style="background: url('<?php echo $icono_de_categoria; ?>') no-repeat center center;"></span><?php } ?><?php echo $productos_seleccionados[0]['seleccione_categoria']->name ?></h3>
+					<h3><?php if (!empty($icono_de_categoria)) { ?><span class="icon" style="background: url('<?php echo $icono_de_categoria; ?>') no-repeat center center;"></span><?php } ?><?php echo $productos_seleccionados[$f]['seleccione_categoria']->name; ?></h3>
 				</div>
 				<div class="clearfix"></div>
 
