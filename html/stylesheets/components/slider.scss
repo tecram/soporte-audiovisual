@@ -21,14 +21,8 @@
 	}
 	.item {
 		position: relative;
-		height: 445px;
 		overflow: hidden;
-		@include breakpoint(laptop) {
-			height: 375px;
-		}
-		@include breakpoint(tablet) {
-			height: 225px;
-		}
+		max-height: 445px;
 		img {
 			width: 100%;
 			@include breakpoint(tablet) {
