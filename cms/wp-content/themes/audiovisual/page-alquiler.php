@@ -70,14 +70,20 @@
 							$titulo = $key['titulo'];
 							$breve_descripcion = $key['breve_descripcion'];
 							$imagen = $key['imagen'];
+							$link = $key['link'];
+						
+						if (!empty($link)) {
 						?>
-						<div class="item">
-							<!--<h3><?php echo $volanta; ?></h3>
-							<h2><?php echo $titulo; ?></h2>
-							<div class="overlay hidden-lg hidden-md"></div>-->
+							<div class="item">
+								<a href="<?php echo $link->guid; ?>">
+									<img src="<?php echo $imagen; ?>" alt="<?php echo $titulo; ?>">
+								</a>
+							</div>
+						<?php }
+							else {
+						?>
 							<img src="<?php echo $imagen; ?>" alt="<?php echo $titulo; ?>">
-							<!--<p><?php echo $breve_descripcion; ?></p>-->
-						</div>
+						<?php } ?>
 					<?php $h++; } ?>
 			</div>
 		</div>
