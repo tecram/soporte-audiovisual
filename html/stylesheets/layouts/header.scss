@@ -81,7 +81,7 @@
 					padding: 10px 9px;
 					transition: all .25s ease-in;
 					@include breakpoint(laptop) {
-						padding: 5px;
+						padding: 12px 4px;
 					}
 				}
 				&.current-menu-item, .home #menu-menu-disponibilidad li:last-child{
